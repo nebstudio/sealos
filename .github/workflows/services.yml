@@ -45,7 +45,7 @@ on:
 env:
   # Common versions
   GO_VERSION: "1.20"
-  DEFAULT_OWNER: "labring"
+  DEFAULT_OWNER: "nebstudio"
   CRYPTOKEY: ${{ secrets.CONTROLLER_BUILD_CRYPTOKEY }}
 
 jobs:
@@ -203,7 +203,7 @@ jobs:
         id: prepare
         run: |
           bash ./scripts/resolve-tag-image.sh "${{ inputs.push_image }}" "${{ steps.check_tag.outputs.isTag }}"  "${{ inputs.push_image_tag }}"
-          echo old_docker_repo=ghcr.io/labring/sealos-${{ matrix.module }}-service >> $GITHUB_OUTPUT
+          echo old_docker_repo=ghcr.io/nebstudio/sealos-${{ matrix.module }}-service >> $GITHUB_OUTPUT
           echo new_docker_repo=ghcr.io/${{ github.repository_owner }}/sealos-${{ matrix.module }}-service >> $GITHUB_OUTPUT
           echo cluster_repo=ghcr.io/${{ github.repository_owner }}/sealos-cloud-${{ matrix.module }}-service >> $GITHUB_OUTPUT
 
@@ -248,7 +248,7 @@ jobs:
           bash docker/patch/manifest-cluster-images.sh $CLUSTER_IMAGE_NAME
           bash docker/patch/manifest-cluster-images.sh $CLUSTER_IMAGE_NAME_LATEST
       - name: Renew issue and Sync Images
-        uses: labring/gh-rebot@v0.0.6
+        uses: nebstudio/gh-rebot@v0.0.6
         if: ${{ github.repository_owner == env.DEFAULT_OWNER }}
         with:
           version: v0.0.8-rc1
@@ -259,10 +259,10 @@ jobs:
           SEALOS_ISSUE_BODYFILE: "scripts/ISSUE_RENEW.md"
           SEALOS_ISSUE_LABEL: "dayly-report"
           SEALOS_ISSUE_TYPE: "day"
-          SEALOS_ISSUE_REPO: "labring-actions/cluster-image"
+          SEALOS_ISSUE_REPO: "nebstudio-actions/cluster-image"
           SEALOS_COMMENT_BODY: "/imagesync ghcr.io/${{ github.repository_owner }}/sealos-cloud-${{ matrix.module }}-service:${{ steps.prepare.outputs.tag_name }}"
       - name: Renew issue and Sync Images for latest
-        uses: labring/gh-rebot@v0.0.6
+        uses: nebstudio/gh-rebot@v0.0.6
         if: ${{ github.repository_owner == env.DEFAULT_OWNER }}
         with:
           version: v0.0.8-rc1
@@ -273,5 +273,5 @@ jobs:
           SEALOS_ISSUE_BODYFILE: "scripts/ISSUE_RENEW.md"
           SEALOS_ISSUE_LABEL: "dayly-report"
           SEALOS_ISSUE_TYPE: "day"
-          SEALOS_ISSUE_REPO: "labring-actions/cluster-image"
+          SEALOS_ISSUE_REPO: "nebstudio-actions/cluster-image"
           SEALOS_COMMENT_BODY: "/imagesync ghcr.io/${{ github.repository_owner }}/sealos-cloud-${{ matrix.module }}-service:latest"

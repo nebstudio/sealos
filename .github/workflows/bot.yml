@@ -11,7 +11,7 @@ jobs:
       - name: Checkout the latest code
         uses: actions/checkout@v3
       - name: Gh Robot for Sealos
-        uses: labring/robot@v2.0.0
+        uses: nebstudio/robot@v2.0.0
         with:
           version: v2.0.0
         env:

@@ -24,7 +24,7 @@ jobs:
           images: |
             ${{ secrets.DOCKER_USERNAME }}/sealos-site
             ghcr.io/${{ github.repository_owner }}/sealos-site
-            registry.cn-hangzhou.aliyuncs.com/labring4docker/sealos-site
+            registry.cn-hangzhou.aliyuncs.com/nebstudio4docker/sealos-site
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -66,7 +66,7 @@ jobs:
   update-docs-image:
     needs: build-docs-image
     runs-on: ubuntu-latest
-    if: github.repository == 'labring/sealos'
+    if: github.repository == 'nebstudio/sealos'
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

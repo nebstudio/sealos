@@ -45,7 +45,7 @@ on:
 env:
   # Common versions
   GO_VERSION: "1.22"
-  DEFAULT_OWNER: "labring"
+  DEFAULT_OWNER: "nebstudio"
   CRYPTOKEY: ${{ secrets.CONTROLLER_BUILD_CRYPTOKEY }}
   LICENSE_KEY: ${{ secrets.LICENSE_KEY }}
 jobs:
@@ -222,7 +222,7 @@ jobs:
         id: prepare
         run: |
           tag_name=$(bash ./scripts/resolve-tag-image.sh "${{ inputs.push_image }}" "${{ steps.check_tag.outputs.isTag }}"  "${{ inputs.push_image_tag }}")
-          echo old_docker_repo=ghcr.io/labring/sealos-${{ matrix.module.name }}-controller >> $GITHUB_OUTPUT
+          echo old_docker_repo=ghcr.io/nebstudio/sealos-${{ matrix.module.name }}-controller >> $GITHUB_OUTPUT
           echo new_docker_repo=ghcr.io/${{ github.repository_owner }}/sealos-${{ matrix.module.name }}-controller >> $GITHUB_OUTPUT
           echo cluster_repo=ghcr.io/${{ github.repository_owner }}/sealos-cloud-${{ matrix.module.name }}-controller >> $GITHUB_OUTPUT
           echo cluster_image=ghcr.io/${{ github.repository_owner }}/sealos-cloud-${{ matrix.module.name }}-controller:${tag_name} >> $GITHUB_OUTPUT
@@ -270,7 +270,7 @@ jobs:
           OWNER: ${{ github.repository_owner }}
 
       - name: Renew issue and Sync Images for ${{ steps.prepare.outputs.cluster_image }}
-        uses: labring/gh-rebot@v0.0.6
+        uses: nebstudio/gh-rebot@v0.0.6
         if: ${{ github.repository_owner == env.DEFAULT_OWNER }}
         with:
           version: v0.0.8-rc1
@@ -281,11 +281,11 @@ jobs:
           SEALOS_ISSUE_BODYFILE: "scripts/ISSUE_RENEW.md"
           SEALOS_ISSUE_LABEL: "dayly-report"
           SEALOS_ISSUE_TYPE: "day"
-          SEALOS_ISSUE_REPO: "labring-actions/cluster-image"
+          SEALOS_ISSUE_REPO: "nebstudio-actions/cluster-image"
           SEALOS_COMMENT_BODY: "/imagesync ${{ steps.prepare.outputs.cluster_image }}"
 
       - name: Renew issue and Sync Images for ${{ steps.prepare.outputs.latest_cluster_image }}
-        uses: labring/gh-rebot@v0.0.6
+        uses: nebstudio/gh-rebot@v0.0.6
         if: ${{ github.repository_owner == env.DEFAULT_OWNER }}
         with:
           version: v0.0.8-rc1
@@ -296,5 +296,5 @@ jobs:
           SEALOS_ISSUE_BODYFILE: "scripts/ISSUE_RENEW.md"
           SEALOS_ISSUE_LABEL: "dayly-report"
           SEALOS_ISSUE_TYPE: "day"
-          SEALOS_ISSUE_REPO: "labring-actions/cluster-image"
+          SEALOS_ISSUE_REPO: "nebstudio-actions/cluster-image"
           SEALOS_COMMENT_BODY: "/imagesync ${{ steps.prepare.outputs.latest_cluster_image }}"

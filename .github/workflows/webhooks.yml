@@ -24,7 +24,7 @@ on:
 env:
   # Common versions
   GO_VERSION: "1.22"
-  DEFAULT_OWNER: "labring"
+  DEFAULT_OWNER: "nebstudio"
 
 jobs:
   resolve-modules:

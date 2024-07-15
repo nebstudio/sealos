@@ -62,7 +62,7 @@ jobs:
           sudo mv /tmp/sealos /usr/bin/
           sudo sealos version
       - name: Remove containerd && docker
-        uses: labring/sealos-action@v0.0.7
+        uses: nebstudio/sealos-action@v0.0.7
         with:
           type: prune
 

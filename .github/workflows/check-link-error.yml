@@ -40,7 +40,7 @@ jobs:
           echo "[Full Github Actions output](${GITHUB_WORKFLOW_URL})" >> report.md
           cat report.md
       - name: Gh Rebot for Sealos
-        uses: labring/gh-rebot@v0.0.6
+        uses: nebstudio/gh-rebot@v0.0.6
         if: ${{ (github.event_name == 'pull_request_target') }}
         with:
           version: v0.0.6

@@ -3,7 +3,7 @@ name: CI Patch Images Package
 env:
   # Common versions
   GO_VERSION: "1.20"
-  DEFAULT_OWNER: "labring"
+  DEFAULT_OWNER: "nebstudio"
 
 on:
   workflow_dispatch:
@@ -119,7 +119,7 @@ jobs:
       - name: Expose git commit data
         uses: rlespinasse/git-commit-data-action@v1
       - name: Renew issue and Sync Images
-        uses: labring/gh-rebot@v0.0.6
+        uses: nebstudio/gh-rebot@v0.0.6
         if: ${{ github.repository_owner == env.DEFAULT_OWNER }}
         with:
           version: v0.0.8-rc1
@@ -130,7 +130,7 @@ jobs:
           SEALOS_ISSUE_BODYFILE: "scripts/ISSUE_RENEW.md"
           SEALOS_ISSUE_LABEL: "dayly-report"
           SEALOS_ISSUE_TYPE: "day"
-          SEALOS_ISSUE_REPO: "labring-actions/cluster-image"
+          SEALOS_ISSUE_REPO: "nebstudio-actions/cluster-image"
           SEALOS_COMMENT_BODY: "/imagebuild_apps sealos latest"
   save-sealos:
     uses: ./.github/workflows/import-save-sealos.yml
@@ -187,7 +187,7 @@ jobs:
         env:
           OWNER: ${{ github.repository_owner }}
       - name: Renew issue and Sync Images
-        uses: labring/gh-rebot@v0.0.6
+        uses: nebstudio/gh-rebot@v0.0.6
         if: ${{ github.repository_owner == env.DEFAULT_OWNER }}
         with:
           version: v0.0.8-rc1
@@ -198,5 +198,5 @@ jobs:
           SEALOS_ISSUE_BODYFILE: "scripts/ISSUE_RENEW.md"
           SEALOS_ISSUE_LABEL: "dayly-report"
           SEALOS_ISSUE_TYPE: "day"
-          SEALOS_ISSUE_REPO: "labring-actions/cluster-image"
+          SEALOS_ISSUE_REPO: "nebstudio-actions/cluster-image"
           SEALOS_COMMENT_BODY: "/imagesync ghcr.io/${{ github.repository_owner }}/sealos-patch:latest"

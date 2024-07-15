@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install sealos
-        uses: labring/sealos-action@v0.0.7
+        uses: nebstudio/sealos-action@v0.0.7
         with:
           sealosVersion: "4.1.7"
       - name: Save Binaries
