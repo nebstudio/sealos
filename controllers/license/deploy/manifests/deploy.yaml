@@ -384,7 +384,7 @@ spec:
         envFrom:
           - configMapRef:
               name: account-manager-env
-        image: ghcr.io/labring/sealos-license-controller:latest
+        image: ghcr.io/nebstudio/sealos-license-controller:latest
         livenessProbe:
           httpGet:
             path: /healthz

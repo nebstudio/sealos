@@ -7,7 +7,7 @@ sidebar_position: 3
 如果你想要升级你的 Kubernetes 集群，你只需要运行以下命令：
 
 ```sh
-sealos run labring/kubernetes:<新版本号>
+sealos run nebstudio/kubernetes:<新版本号>
 ```
 
 确保你已经建立了集群。
@@ -17,13 +17,13 @@ sealos run labring/kubernetes:<新版本号>
 1. 假设你已经运行过以下命令：
 
 ```sh
-sealos run labring/kubernetes:v1.24.0 labring/calico:v3.22.1 --masters 192.168.64.8 --nodes 192.168.64.7
+sealos run nebstudio/kubernetes:v1.24.0 nebstudio/calico:v3.22.1 --masters 192.168.64.8 --nodes 192.168.64.7
 ```
 
 2. 现在你想要升级集群到 v1.25.0，你可以这样操作：
 
 ```sh
-sealos run labring/kubernetes:v1.25.0 
+sealos run nebstudio/kubernetes:v1.25.0 
 ```
 
 在运行到 'kubeadm upgrade v1.25.0' 的时候，你将看到：
@@ -37,7 +37,7 @@ sealos run labring/kubernetes:v1.25.0
 
 输入 'y' 来继续升级。
 
-如果**出现错误**，你可以再次运行命令 'sealos run labring/kubernetes:v1.25.0'。即使失败，它也能保证得到相同的结果。
+如果**出现错误**，你可以再次运行命令 'sealos run nebstudio/kubernetes:v1.25.0'。即使失败，它也能保证得到相同的结果。
 
 ## 注意事项
 

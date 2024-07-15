@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 You can get the list of versions by running:
 
 ```bash
-curl --silent "https://api.github.com/repos/labring/sealos/releases" | jq -r '.[].tag_name'
+curl --silent "https://api.github.com/repos/nebstudio/sealos/releases" | jq -r '.[].tag_name'
 ```
 
 Note: While choosing the version, it's recommended to use a stable version. The versions like `v4.3.0-rcx`, `v4.3.0-alpha1` are pre-releases, use them with caution.
@@ -19,14 +19,14 @@ Note: While choosing the version, it's recommended to use a stable version. The 
 Set the 'VERSION' environment variable to the latest VERSION number, or replace 'version' with the Sealos version you want to install:
 
 ```shell
-VERSION=`curl -s https://api.github.com/repos/labring/sealos/releases/latest | grep -oE '"tag_name": "[^"]+"' | head -n1 | cut -d'"' -f4`
+VERSION=`curl -s https://api.github.com/repos/nebstudio/sealos/releases/latest | grep -oE '"tag_name": "[^"]+"' | head -n1 | cut -d'"' -f4`
 ```
 
 ## Binary Auto Download
 
 ```bash
-curl -sfL https://raw.githubusercontent.com/labring/sealos/${VERSION}/scripts/install.sh |
-  sh -s ${VERSION} labring/sealos
+curl -sfL https://raw.githubusercontent.com/nebstudio/sealos/${VERSION}/scripts/install.sh |
+  sh -s ${VERSION} nebstudio/sealos
 
 ```
 
@@ -36,7 +36,7 @@ curl -sfL https://raw.githubusercontent.com/labring/sealos/${VERSION}/scripts/in
   <TabItem value="amd64" label="amd64" default>
 
 ```bash
-$ wget https://github.com/labring/sealos/releases/download/${VERSION}/sealos_${VERSION#v}_linux_amd64.tar.gz \
+$ wget https://github.com/nebstudio/sealos/releases/download/${VERSION}/sealos_${VERSION#v}_linux_amd64.tar.gz \
    && tar zxvf sealos_${VERSION#v}_linux_amd64.tar.gz sealos && chmod +x sealos && mv sealos /usr/bin
 ```
 
@@ -44,7 +44,7 @@ $ wget https://github.com/labring/sealos/releases/download/${VERSION}/sealos_${V
   <TabItem value="arm64" label="arm64">
 
 ```bash
-$ wget https://github.com/labring/sealos/releases/download/${VERSION}/sealos_${VERSION#v}_linux_arm64.tar.gz \
+$ wget https://github.com/nebstudio/sealos/releases/download/${VERSION}/sealos_${VERSION#v}_linux_arm64.tar.gz \
    && tar zxvf sealos_${VERSION#v}_linux_arm64.tar.gz sealos && chmod +x sealos && mv sealos /usr/bin
 ```
 
@@ -56,7 +56,7 @@ $ wget https://github.com/labring/sealos/releases/download/${VERSION}/sealos_${V
 ### DEB Repository
 
 ```bash
-echo "deb [trusted=yes] https://apt.fury.io/labring/ /" | sudo tee /etc/apt/sources.list.d/labring.list
+echo "deb [trusted=yes] https://apt.fury.io/nebstudio/ /" | sudo tee /etc/apt/sources.list.d/nebstudio.list
 sudo apt update
 sudo apt install sealos
 ```
@@ -64,10 +64,10 @@ sudo apt install sealos
 ### RPM Repository
 
 ```bash
-sudo cat > /etc/yum.repos.d/labring.repo << EOF
+sudo cat > /etc/yum.repos.d/nebstudio.repo << EOF
 [fury]
-name=labring Yum Repo
-baseurl=https://yum.fury.io/labring/
+name=nebstudio Yum Repo
+baseurl=https://yum.fury.io/nebstudio/
 enabled=1
 gpgcheck=0
 EOF
@@ -89,7 +89,7 @@ If you are in an `arm64` environment, add the `:arm64` suffix.
 
 ```bash
 # git clone the repo
-git clone https://github.com/labring/sealos.git
+git clone https://github.com/nebstudio/sealos.git
 # just make it
 make build BINS=sealos
 ```

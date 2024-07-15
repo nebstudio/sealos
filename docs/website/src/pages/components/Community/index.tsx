@@ -39,7 +39,7 @@ const Community = ({ isPc }: { isPc: boolean }) => {
     {
       key: 'GitHub',
       label: <GithubIcon width={20} height={20} />,
-      to: 'https://github.com/labring/sealos',
+      to: 'https://github.com/nebstudio/sealos',
     },
     {
       key: 'Discord Community',

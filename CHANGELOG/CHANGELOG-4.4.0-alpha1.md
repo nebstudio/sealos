@@ -30,10 +30,10 @@ Welcome to the v4.4.0-alpha1 release of Sealos!🎉🎉!
 * 2a265f1f3f9c145e2bebc07f8a23aca9eadd8a44: style: rename some functions and constants related with runtime implementation (#3763) (#3779) (@sealos-ci-robot)
 * 5c2bca39fbda60813314399292c90b2400d0e2c8: test(main): add test for k3s (#3875) (#3878) (@sealos-ci-robot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.3.1...v4.4.0-alpha1
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.3.1...v4.4.0-alpha1
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

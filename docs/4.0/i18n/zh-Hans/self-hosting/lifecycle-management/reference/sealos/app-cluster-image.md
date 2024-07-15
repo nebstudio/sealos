@@ -4,7 +4,7 @@ sidebar_position: 11
 
 # 应用集群镜像使用指南
 
-Sealos 提供了一个名为 [cluster-image](https://github.com/labring-actions/cluster-image) 的仓库，该仓库在 GitHub 上用于构建并发布 Kubernetes 集群的应用镜像。这些镜像可以通过提交代码到这个仓库来创建，并可以发布到 `docker.io/labring/` 作为官方的应用镜像。它支持构建 Docker 容器镜像以及应用的集群镜像。
+Sealos 提供了一个名为 [cluster-image](https://github.com/nebstudio-actions/cluster-image) 的仓库，该仓库在 GitHub 上用于构建并发布 Kubernetes 集群的应用镜像。这些镜像可以通过提交代码到这个仓库来创建，并可以发布到 `docker.io/nebstudio/` 作为官方的应用镜像。它支持构建 Docker 容器镜像以及应用的集群镜像。
 
 ## 镜像的类型
 

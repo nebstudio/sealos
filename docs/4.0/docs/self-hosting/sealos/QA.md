@@ -8,7 +8,7 @@ Encountering issues during the deployment and use of Sealos Cloud is not uncommo
 
 ## Deployment Related Issues
 
-This section details the problems you may face during the deployment phase and their respective solutions. For issues not covered here, please consult with us at the [Sealos Community](https://github.com/labring/sealos/discussions).
+This section details the problems you may face during the deployment phase and their respective solutions. For issues not covered here, please consult with us at the [Sealos Community](https://github.com/nebstudio/sealos/discussions).
 
 ### Q1: iptables / ip_forward Concerns
 

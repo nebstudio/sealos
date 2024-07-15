@@ -32,30 +32,30 @@ import (
 
 	"github.com/volcengine/volc-sdk-golang/service/vms"
 
-	"github.com/labring/sealos/controllers/pkg/pay"
+	"github.com/nebstudio/sealos/controllers/pkg/pay"
 
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
 	"gorm.io/gorm"
 
-	"github.com/labring/sealos/controllers/pkg/database/cockroach"
+	"github.com/nebstudio/sealos/controllers/pkg/database/cockroach"
 
-	pkgtypes "github.com/labring/sealos/controllers/pkg/types"
+	pkgtypes "github.com/nebstudio/sealos/controllers/pkg/types"
 
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 
-	"github.com/labring/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
 
 	client2 "github.com/alibabacloud-go/dysmsapi-20170525/v3/client"
 
-	"github.com/labring/sealos/controllers/account/controllers/utils"
+	"github.com/nebstudio/sealos/controllers/account/controllers/utils"
 
 	"github.com/go-logr/logr"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
-	v1 "github.com/labring/sealos/controllers/pkg/notification/api/v1"
-	"github.com/labring/sealos/controllers/pkg/utils/env"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
+	v1 "github.com/nebstudio/sealos/controllers/pkg/notification/api/v1"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/env"
 
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

@@ -25,12 +25,12 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/sets"
 
-	"github.com/labring/sealos/pkg/ssh"
-	"github.com/labring/sealos/pkg/unshare"
-	fileutil "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/iputils"
-	"github.com/labring/sealos/pkg/utils/logger"
-	netutil "github.com/labring/sealos/pkg/utils/net"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	"github.com/nebstudio/sealos/pkg/unshare"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	netutil "github.com/nebstudio/sealos/pkg/utils/net"
 )
 
 type Interface ssh.Interface

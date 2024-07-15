@@ -56,7 +56,7 @@ The current directory structure is as follows:
 Now, everything is ready, and you can begin building the cluster image:
 
 ```shell
-sealos build -t labring/helm:v3.10.1 .
+sealos build -t nebstudio/helm:v3.10.1 .
 ```
 
 **Note:** Firstly, you need to install the `sealos` command on the local host.
@@ -64,7 +64,7 @@ sealos build -t labring/helm:v3.10.1 .
 You can view the build log to understand the building process.
 
 ```shell
-root@ubuntu:~/cluster-images# sealos build -t labring/helm:v3.10.1 .
+root@ubuntu:~/cluster-images# sealos build -t nebstudio/helm:v3.10.1 .
 ...
 ```
 
@@ -72,7 +72,7 @@ View the built image, and now all the dependent binary files have been built int
 
 ```shell
 root@ubuntu:~/cluster-images# sealos images
-labring/helm                      v3.10.1          19ed4a24f0fe   3 minutes ago       45.1 MB
+nebstudio/helm                      v3.10.1          19ed4a24f0fe   3 minutes ago       45.1 MB
 ```
 
 ## Push the Image
@@ -80,7 +80,7 @@ labring/helm                      v3.10.1          19ed4a24f0fe   3 minutes ago 
 You can push the image to any Docker image repository, the following command pushes the image to DockerHub:
 
 ```shell
-sealos push labring/helm:v3.10.1
+sealos push nebstudio/helm:v3.10.1
 ```
 
 **Note:** Please use the `sealos` command to operate the cluster image; Docker commands are not supported.

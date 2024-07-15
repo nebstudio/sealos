@@ -23,17 +23,17 @@ import (
 	"github.com/containers/storage"
 	"golang.org/x/exp/slices"
 
-	"github.com/labring/sealos/pkg/buildah"
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/exec"
-	"github.com/labring/sealos/pkg/filesystem/registry"
-	"github.com/labring/sealos/pkg/ssh"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/confirm"
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/maps"
-	"github.com/labring/sealos/pkg/utils/rand"
+	"github.com/nebstudio/sealos/pkg/buildah"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/exec"
+	"github.com/nebstudio/sealos/pkg/filesystem/registry"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/confirm"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/maps"
+	"github.com/nebstudio/sealos/pkg/utils/rand"
 )
 
 type Interface interface {

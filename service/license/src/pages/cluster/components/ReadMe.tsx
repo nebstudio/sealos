@@ -32,7 +32,7 @@ export default function ReadMe() {
           <ListItem>建议使用干净的操作系统来创建集群。不要自己装 Docker！</ListItem>
           <ListItem>支持大多数 Linux 发行版，例如：Ubuntu、CentOS、Rocky linux。</ListItem>
           <ListItem>
-            支持 [Docker Hub](https://hub.docker.com/r/labring/kubernetes/tags) 中的所有 Kubernetes
+            支持 [Docker Hub](https://hub.docker.com/r/nebstudio/kubernetes/tags) 中的所有 Kubernetes
             版本。
           </ListItem>
         </UnorderedList>

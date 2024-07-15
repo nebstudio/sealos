@@ -24,9 +24,9 @@ spec:
       - master
       - amd64
   image:
-  - labring/kubernetes-docker:v1.25.0
-  - labring/helm:v3.8.2
-  - labring/calico:v3.24.1
+  - nebstudio/kubernetes-docker:v1.25.0
+  - nebstudio/helm:v3.8.2
+  - nebstudio/calico:v3.24.1
   ssh:
     pk: /root/.ssh/id_rsa
     port: 22

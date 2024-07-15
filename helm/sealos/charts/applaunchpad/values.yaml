@@ -26,7 +26,7 @@ applaunchpad:
   fastgptKey: ""
 
   ## sealos applaunchpad image
-  ## ref: https://github.com/labring/sealos/pkgs/container/sealos-applaunchpad-frontend/
+  ## ref: https://github.com/nebstudio/sealos/pkgs/container/sealos-applaunchpad-frontend/
   ## @param applaunchpad.image.registry applaunchpad image registry
   ## @param applaunchpad.image.repository applaunchpad image repository
   ## @param applaunchpad.image.tag applaunchpad image tag (immutable tags are recommended)
@@ -36,7 +36,7 @@ applaunchpad:
   ##
   image:
     registry: ghcr.io
-    repository: labring/sealos-applaunchpad-frontend
+    repository: nebstudio/sealos-applaunchpad-frontend
     tag: latest
     digest: ""
     pullPolicy: IfNotPresent

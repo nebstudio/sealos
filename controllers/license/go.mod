@@ -1,12 +1,12 @@
-module github.com/labring/sealos/controllers/license
+module github.com/nebstudio/sealos/controllers/license
 
 go 1.22
 
 require (
 	github.com/go-logr/logr v1.3.0
 	github.com/golang-jwt/jwt/v4 v4.5.0
-	github.com/labring/sealos/controllers/account v0.0.0-00010101000000-000000000000
-	github.com/labring/sealos/controllers/pkg v0.0.0-20240402041753-99ca1d9840de
+	github.com/nebstudio/sealos/controllers/account v0.0.0-00010101000000-000000000000
+	github.com/nebstudio/sealos/controllers/pkg v0.0.0-20240402041753-99ca1d9840de
 	github.com/mitchellh/mapstructure v1.5.1-0.20220423185008-bf980b35cac4
 	github.com/onsi/ginkgo/v2 v2.11.0
 	github.com/onsi/gomega v1.27.10
@@ -60,7 +60,7 @@ require (
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/compress v1.17.7 // indirect
-	github.com/labring/sealos/controllers/user v0.0.0 // indirect
+	github.com/nebstudio/sealos/controllers/user v0.0.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/matoous/go-nanoid/v2 v2.0.0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
@@ -112,8 +112,8 @@ require (
 )
 
 replace (
-	github.com/labring/sealos/controllers/account => ../account
-	github.com/labring/sealos/controllers/user => ../user
+	github.com/nebstudio/sealos/controllers/account => ../account
+	github.com/nebstudio/sealos/controllers/user => ../user
 )
 
 replace (

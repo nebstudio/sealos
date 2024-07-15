@@ -23,7 +23,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 // Filename returns the file name after the last "/".

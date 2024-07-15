@@ -19,7 +19,7 @@ package toml
 import (
 	"github.com/pelletier/go-toml"
 
-	fileutil "github.com/labring/sealos/pkg/utils/file"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
 )
 
 func MarshalFile(file string, obj interface{}) error {

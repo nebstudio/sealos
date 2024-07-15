@@ -17,8 +17,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/labring/sealos/pkg/checker"
-	"github.com/labring/sealos/pkg/clusterfile"
+	"github.com/nebstudio/sealos/pkg/checker"
+	"github.com/nebstudio/sealos/pkg/clusterfile"
 
 	"github.com/spf13/cobra"
 )

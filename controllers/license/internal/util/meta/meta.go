@@ -15,9 +15,9 @@
 package meta
 
 import (
-	licensev1 "github.com/labring/sealos/controllers/license/api/v1"
-	claimsutil "github.com/labring/sealos/controllers/license/internal/util/claims"
-	licenseutil "github.com/labring/sealos/controllers/license/internal/util/license"
+	licensev1 "github.com/nebstudio/sealos/controllers/license/api/v1"
+	claimsutil "github.com/nebstudio/sealos/controllers/license/internal/util/claims"
+	licenseutil "github.com/nebstudio/sealos/controllers/license/internal/util/license"
 )
 
 // Meta is the license metadata, which will be stored in database

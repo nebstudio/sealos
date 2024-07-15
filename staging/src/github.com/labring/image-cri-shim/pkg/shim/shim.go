@@ -20,13 +20,13 @@ import (
 	"os"
 	"sync"
 
-	"github.com/labring/image-cri-shim/pkg/types"
+	"github.com/nebstudio/image-cri-shim/pkg/types"
 
 	"google.golang.org/grpc"
 
-	"github.com/labring/image-cri-shim/pkg/server"
+	"github.com/nebstudio/image-cri-shim/pkg/server"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 const (

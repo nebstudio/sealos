@@ -25,7 +25,7 @@ import (
 
 	api "k8s.io/cri-api/pkg/apis/runtime/v1"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 type v1ImageService struct {

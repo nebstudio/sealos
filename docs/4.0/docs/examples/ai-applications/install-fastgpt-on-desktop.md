@@ -6,7 +6,7 @@ sidebar_position: 1
 
 No server, no magic, no domain name, click to deploy 👇
 
-[![](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://cloud.sealos.io/?openapp=system-fastdeploy%3FtemplateName%3Dfastgpt)
+[![](https://raw.githubusercontent.com/nebstudio-actions/templates/main/Deploy-on-Sealos.svg)](https://cloud.sealos.io/?openapp=system-fastdeploy%3FtemplateName%3Dfastgpt)
 
 The database needs to be deployed. After the deployment, you need to wait 2 to 4 minutes to access the database. The minimum configuration is used by default, and the first access is a little slow.
 

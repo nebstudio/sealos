@@ -1,5 +1,5 @@
 /*
-Copyright 2023 labring.
+Copyright 2023 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -38,8 +38,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	adminerv1 "github.com/labring/sealos/controllers/db/adminer/api/v1"
-	"github.com/labring/sealos/controllers/pkg/utils/label"
+	adminerv1 "github.com/nebstudio/sealos/controllers/db/adminer/api/v1"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/label"
 )
 
 const (
@@ -59,7 +59,7 @@ const (
 	DefaultDomain          = "cloud.sealos.io"
 	DefaultSecretName      = "wildcard-cloud-sealos-io-cert"
 	DefaultSecretNamespace = "sealos-system"
-	DefaultImage           = "docker.io/labring4docker/adminer:v4.8.1"
+	DefaultImage           = "docker.io/nebstudio4docker/adminer:v4.8.1"
 )
 
 var (

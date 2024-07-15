@@ -18,14 +18,14 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/labring/sealos/test/e2e/testhelper/settings"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/settings"
 
-	"github.com/labring/sealos/test/e2e/terraform"
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/terraform"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	cmd2 "github.com/labring/sealos/test/e2e/testhelper/cmd"
+	cmd2 "github.com/nebstudio/sealos/test/e2e/testhelper/cmd"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 
 	. "github.com/onsi/ginkgo/v2"
 )

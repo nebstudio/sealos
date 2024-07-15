@@ -21,13 +21,13 @@ import (
 	"github.com/spf13/cobra"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/labring/sealos/pkg/clusterfile"
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/ssh"
-	"github.com/labring/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/clusterfile"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
 
-	"github.com/labring/sealos/pkg/apply/applydrivers"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/apply/applydrivers"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 func TestClusterArgs_SetClusterRunArgs(t *testing.T) {
@@ -146,7 +146,7 @@ func TestNewApplierFromArgs(t *testing.T) {
 		{
 			name: "test set master ip in single mode",
 			args: args{
-				imageName: []string{"labring/kubernetes:v1.24.0"},
+				imageName: []string{"nebstudio/kubernetes:v1.24.0"},
 				args: &RunArgs{
 					Cluster: &Cluster{
 						Masters:     "",
@@ -169,14 +169,14 @@ func TestNewApplierFromArgs(t *testing.T) {
 						Hosts: []v2.Host{
 							{IPS: []string{iputils.LocalIP(addr) + ":22"}, Roles: []string{v2.MASTER, GetHostArch(ssh.MustNewClient(&v2.SSH{}, true), iputils.LocalIP(addr)+":22")}},
 						},
-						Image: []string{"labring/kubernetes:v1.24.0"},
+						Image: []string{"nebstudio/kubernetes:v1.24.0"},
 						SSH:   v2.SSH{},
 					},
 					Status: v2.ClusterStatus{},
 				},
 				ClusterFile:    clusterfile.NewClusterFile(constants.Clusterfile(Default)),
 				ClusterCurrent: nil,
-				RunNewImages:   []string{"labring/kubernetes:v1.24.0"},
+				RunNewImages:   []string{"nebstudio/kubernetes:v1.24.0"},
 			},
 			wantErr: false,
 		},

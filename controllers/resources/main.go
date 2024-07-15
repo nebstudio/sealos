@@ -23,19 +23,19 @@ import (
 	"os"
 	"time"
 
-	"github.com/labring/sealos/controllers/pkg/objectstorage"
+	"github.com/nebstudio/sealos/controllers/pkg/objectstorage"
 
-	"github.com/labring/sealos/controllers/pkg/utils/env"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/env"
 
-	"github.com/labring/sealos/controllers/pkg/database/mongo"
+	"github.com/nebstudio/sealos/controllers/pkg/database/mongo"
 
-	"github.com/labring/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
 
-	"github.com/labring/sealos/controllers/pkg/resources"
+	"github.com/nebstudio/sealos/controllers/pkg/resources"
 
-	"github.com/labring/sealos/controllers/resources/controllers"
+	"github.com/nebstudio/sealos/controllers/resources/controllers"
 
-	objectstoragev1 "github/labring/sealos/controllers/objectstorage/api/v1"
+	objectstoragev1 "github/nebstudio/sealos/controllers/objectstorage/api/v1"
 
 	// Import all Kubernetes client auth plugins (e.g. Azure, GCP, OIDC, etc.)
 	// to ensure that exec-entrypoint and run can make use of them.

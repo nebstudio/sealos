@@ -6,7 +6,7 @@ domain: sealos.io
 layout:
 - go.kubebuilder.io/v4
 projectName: app
-repo: github.com/labring/sealos/controllers/app
+repo: github.com/nebstudio/sealos/controllers/app
 resources:
 - api:
     crdVersion: v1
@@ -14,7 +14,7 @@ resources:
   domain: sealos.io
   group: app
   kind: App
-  path: github.com/labring/sealos/controllers/app/api/v1
+  path: github.com/nebstudio/sealos/controllers/app/api/v1
   version: v1
 - api:
     crdVersion: v1
@@ -22,6 +22,6 @@ resources:
   domain: sealos.io
   group: app
   kind: Template
-  path: github.com/labring/sealos/controllers/app/api/v1
+  path: github.com/nebstudio/sealos/controllers/app/api/v1
   version: v1
 version: "3"

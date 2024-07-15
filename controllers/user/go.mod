@@ -1,10 +1,10 @@
-module github.com/labring/sealos/controllers/user
+module github.com/nebstudio/sealos/controllers/user
 
 go 1.20
 
 require (
 	github.com/go-logr/logr v1.2.3
-	github.com/labring/operator-sdk v1.0.1
+	github.com/nebstudio/operator-sdk v1.0.1
 	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/gomega v1.22.1
 	golang.org/x/exp v0.0.0-20200224162631-6cc2880d07d6

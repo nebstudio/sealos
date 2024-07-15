@@ -51,7 +51,7 @@ spec:
       serviceAccountName: desktop-frontend
       initContainers:
         - name: init-database
-          image: ghcr.io/labring/sealos-desktop-frontend:latest
+          image: ghcr.io/nebstudio/sealos-desktop-frontend:latest
           command: ["/bin/sh", "-c"]
           args:
             - |
@@ -87,7 +87,7 @@ spec:
             timeoutSeconds: 2
             successThreshold: 3
             failureThreshold: 3
-          image: ghcr.io/labring/sealos-desktop-frontend:latest
+          image: ghcr.io/nebstudio/sealos-desktop-frontend:latest
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - mountPath: /app/data/config.yaml

@@ -3,9 +3,9 @@ package dao
 import (
 	"os"
 
-	"github.com/labring/sealos/service/exceptionmonitor/api"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/api"
 
-	"github.com/labring/sealos/controllers/pkg/database/cockroach"
+	"github.com/nebstudio/sealos/controllers/pkg/database/cockroach"
 )
 
 var (

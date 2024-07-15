@@ -2,7 +2,7 @@ domain: sealos.io
 layout:
 - go.kubebuilder.io/v3
 projectName: objectstorage
-repo: github/labring/sealos/controllers/objectstorage
+repo: github/nebstudio/sealos/controllers/objectstorage
 resources:
 - api:
     crdVersion: v1
@@ -11,7 +11,7 @@ resources:
   domain: sealos.io
   group: objectstorage
   kind: ObjectStorageUser
-  path: github/labring/sealos/controllers/objectstorage/api/v1
+  path: github/nebstudio/sealos/controllers/objectstorage/api/v1
   version: v1
 - api:
     crdVersion: v1
@@ -20,6 +20,6 @@ resources:
   domain: sealos.io
   group: objectstorage
   kind: ObjectStorageBucket
-  path: github/labring/sealos/controllers/objectstorage/api/v1
+  path: github/nebstudio/sealos/controllers/objectstorage/api/v1
   version: v1
 version: "3"

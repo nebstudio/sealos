@@ -56,7 +56,7 @@ alias vm_node_exec="multipass exec $NODE_NAME -- sudo -u root"
 echo "Installing sealos..."
 set -x
 vm_root_exec -s << EOF
-echo "deb [trusted=yes] https://apt.fury.io/labring/ /" | tee /etc/apt/sources.list.d/labring.list
+echo "deb [trusted=yes] https://apt.fury.io/nebstudio/ /" | tee /etc/apt/sources.list.d/nebstudio.list
 apt update
 apt install sealos
 EOF
@@ -64,7 +64,7 @@ set +x
 
 set -x
 vm_node_exec -s << EOF
-echo "deb [trusted=yes] https://apt.fury.io/labring/ /" | tee /etc/apt/sources.list.d/labring.list
+echo "deb [trusted=yes] https://apt.fury.io/nebstudio/ /" | tee /etc/apt/sources.list.d/nebstudio.list
 apt update
 apt install sealos
 EOF
@@ -98,7 +98,7 @@ echo node_ip: $node_ip
 
 echo "Installing k8s..."
 set -x
-vm_root_exec sealos run labring/kubernetes:v1.25.0 labring/helm:v3.8.2 labring/calico:v3.24.1 --masters $master_ip --nodes $node_ip
+vm_root_exec sealos run nebstudio/kubernetes:v1.25.0 nebstudio/helm:v3.8.2 nebstudio/calico:v3.24.1 --masters $master_ip --nodes $node_ip
 #vm_root_exec kubectl taint node $NAME node-role.kubernetes.io/master-
 #vm_root_exec kubectl taint node $NAME node-role.kubernetes.io/control-plane-
 set +x

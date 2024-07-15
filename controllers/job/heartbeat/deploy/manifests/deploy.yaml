@@ -28,7 +28,7 @@ spec:
           restartPolicy: Never
           containers:
             - name: heartbeat
-              image: ghcr.io/labring/sealos-job-heartbeat-controller:latest
+              image: ghcr.io/nebstudio/sealos-job-heartbeat-controller:latest
               securityContext:
                 allowPrivilegeEscalation: false
           serviceAccountName: heartbeat-cronjob

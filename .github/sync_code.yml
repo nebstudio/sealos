@@ -1,9 +1,9 @@
-labring/lvscare:
-  - source: staging/src/github.com/labring/lvscare/
+nebstudio/lvscare:
+  - source: staging/src/github.com/nebstudio/lvscare/
     dest: .
     deleteOrphaned: true
 
-labring/image-cri-shim:
-  - source: staging/src/github.com/labring/image-cri-shim/
+nebstudio/image-cri-shim:
+  - source: staging/src/github.com/nebstudio/image-cri-shim/
     dest: .
     deleteOrphaned: true

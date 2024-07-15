@@ -17,8 +17,8 @@ To solve the above problems, Sealos provides an elegant solution. Below, I will 
 First, we need the registry directory in the cluster image for image synchronization. Therefore, execute the following command to pull the cluster image and create a working directory:
 
 ```shell
-sealos pull labring/kubernetes:v1.24.0 
-sealos create labring/kubernetes:v1.24.0
+sealos pull nebstudio/kubernetes:v1.24.0 
+sealos create nebstudio/kubernetes:v1.24.0
 ```
 
 Then, we start a temporary registry in the registry directory of the working directory. For convenience, we can fix a port, such as 9090. Then, execute the following command:

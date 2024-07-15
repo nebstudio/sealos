@@ -27,8 +27,8 @@ import (
 	clientset "k8s.io/client-go/kubernetes"
 	ckubeadm "k8s.io/kubernetes/cmd/kubeadm/app/constants"
 
-	"github.com/labring/sealos/pkg/utils/iputils"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 var (

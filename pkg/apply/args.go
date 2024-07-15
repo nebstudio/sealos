@@ -22,7 +22,7 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/labring/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/constants"
 )
 
 type Cluster struct {

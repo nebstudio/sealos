@@ -23,7 +23,7 @@ import (
 
 	rbacv1 "k8s.io/api/rbac/v1"
 
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 )
 
 func GetDefaultNamespace() string {

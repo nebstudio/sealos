@@ -18,10 +18,10 @@ Welcome to the v4.3.1-rc2 release of Sealos!🎉🎉!
 * 8f63707b64b9f036b7700e02ba4e91676625a115: refactor(main): using new runtime interface (#3691) (#3732) (@sealos-ci-robot)
 * da01479f408408da58c0fe98860886408b6397b3: refactor: use http mode as default to sync registry contents (#3659) (#3661) (@sealos-ci-robot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.3.1-rc1...v4.3.1-rc2
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.3.1-rc1...v4.3.1-rc2
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

@@ -20,7 +20,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/labring/sealos/test/e2e/testhelper/settings"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/settings"
 )
 
 func TestSealosTest(t *testing.T) {

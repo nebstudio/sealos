@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/labring/image-cri-shim/pkg/cri"
+	"github.com/nebstudio/image-cri-shim/pkg/cri"
 	"github.com/spf13/cobra"
 	utilsexec "k8s.io/utils/exec"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 var (

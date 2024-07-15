@@ -15,7 +15,7 @@ date: 2023-06-13T10:00
 
 在今天这个快速发展的云计算领域，Sealos 不仅是一个项目，它是对未来云操作系统概念的重新定义和实践。从一个简单的 K8s 安装工具开始，Sealos 的发展已迈入了全新的领域，目标是构建一个完整、高效且易于管理的[云操作系统](https://sealos.run)。
 
-2018 年的某个夜晚，夜深人静，我挥舞键盘，敲下了 Sealos 的第一行代码。当时仓库命名为 “kubeinit”，后来觉得格局太小，我不可能只做一个安装 K8s 的工具。安装只是更大计划的一部分，于是更名为 [Sealos](https://github.com/labring/sealos/ "Sealos")，一个宏大的[云操作系统](https://sealos.run)计划就此诞生！
+2018 年的某个夜晚，夜深人静，我挥舞键盘，敲下了 Sealos 的第一行代码。当时仓库命名为 “kubeinit”，后来觉得格局太小，我不可能只做一个安装 K8s 的工具。安装只是更大计划的一部分，于是更名为 [Sealos](https://github.com/nebstudio/sealos/ "Sealos")，一个宏大的[云操作系统](https://sealos.run)计划就此诞生！
 
 ![](https://jsd.cdn.zzko.cn/gh/yangchuansheng/imghosting5@main/uPic/2023-08-31-09-52-gLmSek.jpg)
 

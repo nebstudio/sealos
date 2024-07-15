@@ -19,7 +19,7 @@ source /etc/profile  && go version
 ## Build the project
 
 ```shell script
-git clone https://github.com/labring/sealos.git
+git clone https://github.com/nebstudio/sealos.git
 cd sealos
 make build BINS=sealos
 ```
@@ -62,9 +62,9 @@ export CRD_GROUP=changeme
 # copy and paste to create a new CRD and Controller
 mkdir controllers/${CRD_NAME} 
 cd controllers/${CRD_NAME}
-kubebuilder init --domain sealos.io --repo github.com/labring/sealos/controllers/${CRD_NAME}
+kubebuilder init --domain sealos.io --repo github.com/nebstudio/sealos/controllers/${CRD_NAME}
 # note: for darwin/arm64, execute the following command instead, refer: https://book.kubebuilder.io/quick-start.html#create-a-project
-# kubebuilder init --domain sealos.io --repo github.com/labring/sealos/controllers/${CRD_NAME} --plugins=go/v4-alpha
+# kubebuilder init --domain sealos.io --repo github.com/nebstudio/sealos/controllers/${CRD_NAME} --plugins=go/v4-alpha
 go work use -r .
 kubebuilder create api --group ${CRD_GROUP} --version v1 --kind ${CRD_NAME}
 cd -
@@ -139,10 +139,10 @@ cd -
 1. launch vm and mount sealos source code:
 ```shell
 # edit the SEALOS_CODE_DIR to your own
-export SEALOS_CODE_DIR=/Users/fanux/work/src/github.com/labring/sealos
+export SEALOS_CODE_DIR=/Users/fanux/work/src/github.com/nebstudio/sealos
 # copy, paste and run to launch vm
 multipass launch \
-   --mount ${SEALOS_CODE_DIR}:/go/src/github.com/labring/sealos \
+   --mount ${SEALOS_CODE_DIR}:/go/src/github.com/nebstudio/sealos \
    --name sealos-dev --cpus 2 --mem 4G --disk 40G
 ```
 
@@ -171,6 +171,6 @@ make build
 
 ## FAQ
 
-1. clone code slow, your can use ghproxy: `git clone https://ghproxy.com/https://github.com/labring/sealos`
+1. clone code slow, your can use ghproxy: `git clone https://ghproxy.com/https://github.com/nebstudio/sealos`
 2. build download package slow, you can use goproxy: `go env -w GOPROXY=https://goproxy.cn,direct && make build`
 3. `cgo: C compiler "x86_64-linux-gnu-gcc" not found: exec: "x86_64-linux-gnu-gcc": executable file not found in $PATH` you need install gnu-gcc, like: `apt-get install build-essential` or `yum -y install gcc-c++-x86_64-linux-gnu`

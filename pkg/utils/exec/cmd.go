@@ -21,7 +21,7 @@ import (
 	"os/exec"
 	"strings"
 
-	strutil "github.com/labring/sealos/pkg/utils/strings"
+	strutil "github.com/nebstudio/sealos/pkg/utils/strings"
 )
 
 func CmdWithContext(ctx context.Context, name string, args ...string) error {

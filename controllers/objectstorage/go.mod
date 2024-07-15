@@ -1,4 +1,4 @@
-module github/labring/sealos/controllers/objectstorage
+module github/nebstudio/sealos/controllers/objectstorage
 
 go 1.20
 

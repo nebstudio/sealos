@@ -21,14 +21,14 @@ import (
 
 	"github.com/Masterminds/semver/v3"
 
-	"github.com/labring/sealos/pkg/client-go/kubernetes"
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/exec"
-	"github.com/labring/sealos/pkg/runtime/kubernetes/types"
-	"github.com/labring/sealos/pkg/ssh"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/yaml"
+	"github.com/nebstudio/sealos/pkg/client-go/kubernetes"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/exec"
+	"github.com/nebstudio/sealos/pkg/runtime/kubernetes/types"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/yaml"
 )
 
 type KubeadmRuntime struct {

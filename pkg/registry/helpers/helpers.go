@@ -18,15 +18,15 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/labring/image-cri-shim/pkg/types"
+	"github.com/nebstudio/image-cri-shim/pkg/types"
 
 	"k8s.io/apimachinery/pkg/util/yaml"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/exec"
-	"github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/iputils"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/exec"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 const RegistryCustomConfig = "registry.yml"

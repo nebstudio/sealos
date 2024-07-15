@@ -81,8 +81,8 @@ github.com/klauspost/pgzip v1.2.6 h1:8RXeL5crjEUFnR2/Sn6GJNWtSQ3Dk8pq4CL3jvdDyjU
 github.com/konsorten/go-windows-terminal-sequences v1.0.1/go.mod h1:T0+1ngSBFLxvqU3pZ+m/2kptfBszLMUkC4ZK/EgS/cQ=
 github.com/kr/pretty v0.3.0 h1:WgNl7dwNpEZ6jJ9k1snq4pZsg7DOEN8hP9Xw0Tsjwk0=
 github.com/kr/text v0.2.0 h1:5Nx0Ya0ZqY2ygV366QzturHI13Jq95ApcVaJBhpS+AY=
-github.com/labring/sreg v0.1.6 h1:MPM8BNoFj8Ikw2FUk8Kd/uD0saxay0dT06kKPXWf/g4=
-github.com/labring/sreg v0.1.6/go.mod h1:d519C7n2ekJJX6KxsUV78MeKO5Zon+atP4FkfwB++DM=
+github.com/nebstudio/sreg v0.1.6 h1:MPM8BNoFj8Ikw2FUk8Kd/uD0saxay0dT06kKPXWf/g4=
+github.com/nebstudio/sreg v0.1.6/go.mod h1:d519C7n2ekJJX6KxsUV78MeKO5Zon+atP4FkfwB++DM=
 github.com/letsencrypt/boulder v0.0.0-20230213213521-fdfea0d469b6 h1:unJdfS94Y3k85TKy+mvKzjW5R9rIC+Lv4KGbE7uNu0I=
 github.com/mailru/easyjson v0.7.7 h1:UGYAvKxe3sBsEDzO8ZeWOSlIQfWFlxbzLZe7hwFURr0=
 github.com/mattn/go-runewidth v0.0.14 h1:+xnbZSEeDbOIg5/mE6JF0w6n9duR1l3/WmbinWVwUuU=

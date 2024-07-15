@@ -121,10 +121,10 @@ Welcome to the v5.0.0 release of Sealos!🎉🎉!
 * 7974ba511348f0e1a1acb472e694c460744a9cb4: 为kubepanel network 添加service (#4705) (@bearslyricattack)
 * 4535a7fcaceeeb9de1b61018e013abf3674db0a0: 🤖 add release changelog using rebot. (#4681) (@sealos-release-robot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v5.0.0-beta5...v5.0.0
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v5.0.0-beta5...v5.0.0
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

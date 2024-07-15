@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/labring/sealos/service/exceptionmonitor/api"
-	"github.com/labring/sealos/service/exceptionmonitor/helper/notification"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/api"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/helper/notification"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 )

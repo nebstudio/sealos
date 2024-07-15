@@ -20,18 +20,18 @@ import (
 
 	"github.com/onsi/gomega"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
 
-	"github.com/labring/image-cri-shim/pkg/server"
-	shimType "github.com/labring/image-cri-shim/pkg/types"
+	"github.com/nebstudio/image-cri-shim/pkg/server"
+	shimType "github.com/nebstudio/image-cri-shim/pkg/types"
 	"github.com/onsi/ginkgo/v2"
 	k8sv1 "k8s.io/cri-api/pkg/apis/runtime/v1"
 
-	"github.com/labring/sealos/pkg/utils/exec"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/test/e2e/suites/image"
+	"github.com/nebstudio/sealos/pkg/utils/exec"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/test/e2e/suites/image"
 )
 
 const (
@@ -130,18 +130,18 @@ var _ = ginkgo.Describe("E2E_image-cri-shim_run_test", func() {
 	}
 
 	var removeByIDTestCases = func() {
-		id, err := imageShimService.PullImage("docker.io/labring/kubernetes-docker:v1.23.8")
-		utils.CheckErr(err, fmt.Sprintf("failed to pull image %s: %v", "docker.io/labring/kubernetes-docker:v1.23.8", err))
-		logger.Info("pull images %s success, return image id %s \n", "docker.io/labring/kubernetes-docker:v1.23.8", id)
+		id, err := imageShimService.PullImage("docker.io/nebstudio/kubernetes-docker:v1.23.8")
+		utils.CheckErr(err, fmt.Sprintf("failed to pull image %s: %v", "docker.io/nebstudio/kubernetes-docker:v1.23.8", err))
+		logger.Info("pull images %s success, return image id %s \n", "docker.io/nebstudio/kubernetes-docker:v1.23.8", id)
 		err = imageShimService.RemoveImage(id)
 		utils.CheckErr(err, fmt.Sprintf("failed to remove image %s: %v", id, err))
 		logger.Info("remove images %s success \n", id)
 	}
 
 	var statusByIDTestCases = func() {
-		id, err := imageShimService.PullImage("docker.io/labring/kubernetes-docker:v1.23.8")
-		utils.CheckErr(err, fmt.Sprintf("failed to pull image %s: %v", "docker.io/labring/kubernetes-docker:v1.23.8", err))
-		logger.Info("pull images %s success, return image id %s \n", "docker.io/labring/kubernetes-docker:v1.23.8", id)
+		id, err := imageShimService.PullImage("docker.io/nebstudio/kubernetes-docker:v1.23.8")
+		utils.CheckErr(err, fmt.Sprintf("failed to pull image %s: %v", "docker.io/nebstudio/kubernetes-docker:v1.23.8", err))
+		logger.Info("pull images %s success, return image id %s \n", "docker.io/nebstudio/kubernetes-docker:v1.23.8", id)
 		img, err := imageShimService.ImageStatus(id)
 		utils.CheckErr(err, fmt.Sprintf("failed to get image %s status: %v", id, err))
 		if img == nil || img.Image == nil || img.Image.Id == "" {
@@ -162,7 +162,7 @@ var _ = ginkgo.Describe("E2E_image-cri-shim_run_test", func() {
 	ginkgo.Context("install cluster using hack image shim", func() {
 		ginkgo.It("init cluster", func() {
 			//checkout image-cri-shim status running
-			sealFile := `FROM labring/kubernetes:v1.25.0
+			sealFile := `FROM nebstudio/kubernetes:v1.25.0
 COPY image-cri-shim cri`
 			err = utils.WriteFile("Dockerfile", []byte(sealFile))
 			utils.CheckErr(err)

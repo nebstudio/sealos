@@ -18,11 +18,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/labring/sealos/pkg/runtime"
-	"github.com/labring/sealos/pkg/runtime/k3s"
-	"github.com/labring/sealos/pkg/runtime/kubernetes"
-	"github.com/labring/sealos/pkg/runtime/kubernetes/types"
-	"github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/runtime"
+	"github.com/nebstudio/sealos/pkg/runtime/k3s"
+	"github.com/nebstudio/sealos/pkg/runtime/kubernetes"
+	"github.com/nebstudio/sealos/pkg/runtime/kubernetes/types"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 func New(cluster *v1beta1.Cluster, cfg runtime.Config) (runtime.Interface, error) {

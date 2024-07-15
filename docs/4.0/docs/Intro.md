@@ -44,7 +44,7 @@ If your business requires operation within a public cloud environment, you can d
 
 ### Private Cloud
 
-The Sealos cloud operating system is **100% open source**. You can find all source code on [GitHub](https://github.com/labring/sealos), which means all features of the **Sealos Public Cloud** can also be deployed in a private cloud environment to meet more diversified business needs.
+The Sealos cloud operating system is **100% open source**. You can find all source code on [GitHub](https://github.com/nebstudio/sealos), which means all features of the **Sealos Public Cloud** can also be deployed in a private cloud environment to meet more diversified business needs.
 
 ### Strong Application Delivery Capability
 

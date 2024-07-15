@@ -17,8 +17,8 @@ sidebar_position: 1
 首先，我们需要集群镜像里的registry目录来进行镜像同步。因此，执行以下命令来拉取集群镜像并生成一个工作目录：
 
 ```shell
-sealos pull labring/kubernetes:v1.24.0 
-sealos create labring/kubernetes:v1.24.0
+sealos pull nebstudio/kubernetes:v1.24.0 
+sealos create nebstudio/kubernetes:v1.24.0
 ```
 
 随后，我们在工作目录的registry目录启动一个临时registry。为了方便操作，我们可以固定一个端口，例如9090。然后，执行以下命令：

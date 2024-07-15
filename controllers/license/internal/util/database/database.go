@@ -17,8 +17,8 @@ package database
 import (
 	"context"
 
-	"github.com/labring/sealos/controllers/license/internal/util/meta"
-	"github.com/labring/sealos/controllers/pkg/utils/logger"
+	"github.com/nebstudio/sealos/controllers/license/internal/util/meta"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/logger"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"

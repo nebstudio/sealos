@@ -1,9 +1,9 @@
-module github.com/labring/sealos/service/database
+module github.com/nebstudio/sealos/service/database
 
 go 1.20
 
 require (
-	github.com/labring/sealos/service v0.0.0-00010101000000-000000000000
+	github.com/nebstudio/sealos/service v0.0.0-00010101000000-000000000000
 	gopkg.in/yaml.v2 v2.4.0
 )
 
@@ -58,4 +58,4 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace github.com/labring/sealos/service => ../../service
+replace github.com/nebstudio/sealos/service => ../../service

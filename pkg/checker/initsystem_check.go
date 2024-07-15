@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/labring/sealos/pkg/template"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/initsystem"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/template"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/initsystem"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 type InitSystemChecker struct {

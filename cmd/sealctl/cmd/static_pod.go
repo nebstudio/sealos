@@ -19,18 +19,18 @@ import (
 	"os"
 	"path"
 
-	"github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
 
 	v1 "k8s.io/api/core/v1"
 
-	"github.com/labring/sealos/pkg/utils/yaml"
+	"github.com/nebstudio/sealos/pkg/utils/yaml"
 
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/ipvs"
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/ipvs"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 var staticPodPath string

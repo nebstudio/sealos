@@ -18,10 +18,10 @@ In the above command, `outputFilename` is the name of the archive file you want 
 
 ## Example
 
-For example, you can use the following command to save an image named `labring/kubernetes:latest` to an archive file named `kubernetes.tar`:
+For example, you can use the following command to save an image named `nebstudio/kubernetes:latest` to an archive file named `kubernetes.tar`:
 
 ```bash
-sealos save -o kubernetes.tar labring/kubernetes:v1.24.0
+sealos save -o kubernetes.tar nebstudio/kubernetes:v1.24.0
 ```
 
 ## Optional Parameters
@@ -30,11 +30,11 @@ sealos save -o kubernetes.tar labring/kubernetes:v1.24.0
 - `-m`: This parameter can be used to save multiple images at the same time, but it is only applicable to the `docker-archive` format.
 
 
-For example, you can use the following command to save an image named `labring/kubernetes:latest` to an archive file named `kubernetes.tar` in the `docker-archive` method:
+For example, you can use the following command to save an image named `nebstudio/kubernetes:latest` to an archive file named `kubernetes.tar` in the `docker-archive` method:
 
 ```bash
-sealos save -o kubernetes.tar --format docker-archive labring/kubernetes:v1.24.0
-sealos save -o kubernetes.tar -m --format docker-archive labring/kubernetes:v1.24.0 labring/helm:v3.5.0
+sealos save -o kubernetes.tar --format docker-archive nebstudio/kubernetes:v1.24.0
+sealos save -o kubernetes.tar -m --format docker-archive nebstudio/kubernetes:v1.24.0 nebstudio/helm:v3.5.0
 ```
 
 The above is the usage guide of the `sealos save` command, and we hope it is helpful to you. If you encounter any problems during use, feel free to ask us.

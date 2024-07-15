@@ -23,10 +23,10 @@ import (
 	"helm.sh/helm/v3/pkg/cli/values"
 	"helm.sh/helm/v3/pkg/getter"
 
-	"github.com/labring/sealos/pkg/template"
-	fileutils "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/maps"
+	"github.com/nebstudio/sealos/pkg/template"
+	fileutils "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/maps"
 )
 
 type renderOptions struct {

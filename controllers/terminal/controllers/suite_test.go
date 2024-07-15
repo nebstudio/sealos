@@ -1,5 +1,5 @@
 /*
-Copyright 2022 labring.
+Copyright 2022 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	terminalv1 "github.com/labring/sealos/controllers/terminal/api/v1"
+	terminalv1 "github.com/nebstudio/sealos/controllers/terminal/api/v1"
 	//+kubebuilder:scaffold:imports
 )
 

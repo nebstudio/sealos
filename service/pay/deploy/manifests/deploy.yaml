@@ -28,7 +28,7 @@ spec:
             - secretRef:
                 name: pay-secret
                 optional: true
-          image: ghcr.io/labring/sealos-pay-service:latest
+          image: ghcr.io/nebstudio/sealos-pay-service:latest
           imagePullPolicy: Always
           name: pay-service
           securityContext:

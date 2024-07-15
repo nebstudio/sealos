@@ -49,8 +49,8 @@ Sealos Boot is the core component of Sealos, mainly responsible for the lifecycl
 #### Binary Installation
 
 ```shell
-    curl -sfL  https://raw.githubusercontent.com/labring/sealos/v4.2.1-rc4/scripts/install.sh \
-    | sh -s v4.2.1-rc4 labring/sealos
+    curl -sfL  https://raw.githubusercontent.com/nebstudio/sealos/v4.2.1-rc4/scripts/install.sh \
+    | sh -s v4.2.1-rc4 nebstudio/sealos
 ```
 
 
@@ -68,7 +68,7 @@ Sealos provides two Docker containers: sealos and lvscare, as well as two binary
 
 ```shell
 # Create a cluster
-sealos run labring/kubernetes:v1.25.0 labring/helm:v3.8.2 labring/calico:v3.24.1 \
+sealos run nebstudio/kubernetes:v1.25.0 nebstudio/helm:v3.8.2 nebstudio/calico:v3.24.1 \
     --masters 192.168.64.2,192.168.64.22,192.168.64.20 \
     --nodes 192.168.64.21,192.168.64.19 \
     --passwd your-own-ssh-passwd
@@ -149,9 +149,9 @@ sealos run labring/kubernetes:v1.25.0 labring/helm:v3.8.2 labring/calico:v3.24.1
 * 2b964edf8e6e6b71f606058d4b9adfe93cf75411: update doc. (#3196) (@zzjin)
 * 9c20dacb539d0063053d4665116d1f21b42edb44: 🤖 add release changelog using rebot. (#3134) (@sealos-release-rebot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.2.1-rc3...v4.2.1-rc4
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.2.1-rc3...v4.2.1-rc4
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 ## Roadmap
 
@@ -167,4 +167,4 @@ We are very proud to introduce the two major functional modules of Sealos Cloud 
 
 Thank you for your support of Sealos🎉🎉.
 
-If you encounter any problems during use, please submit an issue in the [GitHub repository](https://github.com/labring/sealos) , and we will solve your problem as soon as possible.
+If you encounter any problems during use, please submit an issue in the [GitHub repository](https://github.com/nebstudio/sealos) , and we will solve your problem as soon as possible.

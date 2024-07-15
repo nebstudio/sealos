@@ -27,7 +27,7 @@ import (
 	"github.com/containers/storage/pkg/unshare"
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 func newUnshareCommand() *cobra.Command {

@@ -84,13 +84,13 @@ sealos build --arch arm64 --build-arg TARGETOS=linux --build-arg TARGETARCH=arm6
 
 ### Q4: How to Build Cluster Images Using Other Build Tools?
 
-If you want to use other container tools like Docker or Podman to build cluster images, you can utilize [sreg](https://github.com/labring/sreg) to cache the images.
+If you want to use other container tools like Docker or Podman to build cluster images, you can utilize [sreg](https://github.com/nebstudio/sreg) to cache the images.
 
 Follow these steps:
 
 1. Install sreg:
    ```shell
-   wget https://github.com/labring/sreg/releases/download/v0.1.1/sreg_0.1.1_linux_amd64.tar.gz
+   wget https://github.com/nebstudio/sreg/releases/download/v0.1.1/sreg_0.1.1_linux_amd64.tar.gz
    tar -xzf sreg_0.1.1_linux_amd64.tar.gz sreg
    mv sreg /usr/bin/
    ```
@@ -123,7 +123,7 @@ This error is often caused by a mismatch between the version of Sealos and the v
 
 ### Q2: Error when adding additional domains or modifying the service CIDR in the cluster during the addition of a master node
 
-To address this issue, the Sealos team made the necessary fixes in version 4.2.0. You can refer to the specific fix and discussion in this pull request: [https://github.com/labring/sealos/pull/2943](https://github.com/labring/sealos/pull/2943).
+To address this issue, the Sealos team made the necessary fixes in version 4.2.0. You can refer to the specific fix and discussion in this pull request: [https://github.com/nebstudio/sealos/pull/2943](https://github.com/nebstudio/sealos/pull/2943).
 
 Therefore, if you encounter this problem, we recommend upgrading to Sealos version 4.2.0. The updated version should handle these changes correctly and not produce errors when adding a master node.
 
@@ -135,7 +135,7 @@ If you need to change the default storage location, you can set the `SEALOS_RUNT
 
 ```shell
 export SEALOS_RUNTIME_ROOT=/data/.sealos 
-sealos run labring/kubernetes:v1.24.0
+sealos run nebstudio/kubernetes:v1.24.0
 ```
 
 ### Q2: How to modify the default storage location for `/var/lib/sealos`?
@@ -144,7 +144,7 @@ If you need to change the default storage location, you can set the `SEALOS_DATA
 
 ```shell
 export SEALOS_DATA_ROOT=/data/sealos 
-sealos run labring/kubernetes:v1.24.0
+sealos run nebstudio/kubernetes:v1.24.0
 ```
 
 ### Q3: How to modify the storage paths for Sealos image data and status?

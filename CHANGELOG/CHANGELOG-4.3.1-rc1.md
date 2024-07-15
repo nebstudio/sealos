@@ -18,10 +18,10 @@ Welcome to the v4.3.1-rc1 release of Sealos!🎉🎉!
 * 65b7a43da4fbe3103fe02db0780bfb3491ecc1dc: fix the current cluster does not exist, but the creationTimestamp of the expected cluster is not zero. (#3549) (@bxy4543)
 * 98719a4e3ed6c9fc4e2b3a017aa2fc670ffc451a: refactor: remove versionutils (#3592) (#3593) (@sealos-ci-robot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.3.0...v4.3.1-rc1
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.3.0...v4.3.1-rc1
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

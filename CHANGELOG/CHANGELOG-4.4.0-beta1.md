@@ -15,10 +15,10 @@ Welcome to the v4.4.0-beta1 release of Sealos!🎉🎉!
 * 13b303669565694d22df284a3ef0c73a7b3f853e: feature(main): using sreg 0.1.4 build image (#4023) (#4028) (@cuisongliu)
 * b8affb05bc7436515abb4e6933553176c45ace59: refactor env keys (#4066) (#4076) (@sealos-ci-robot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.4.0-alpha3...v4.4.0-beta1
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.4.0-alpha3...v4.4.0-beta1
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

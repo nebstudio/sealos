@@ -19,15 +19,15 @@ import (
 	"io"
 	"os"
 
-	sreglog "github.com/labring/sreg/pkg/utils/logger"
+	sreglog "github.com/nebstudio/sreg/pkg/utils/logger"
 	"github.com/spf13/cobra"
 	"k8s.io/kubectl/pkg/util/templates"
 
-	"github.com/labring/sealos/pkg/buildah"
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/system"
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/buildah"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/system"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 var (

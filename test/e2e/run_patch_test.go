@@ -20,14 +20,14 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/labring/sealos/test/e2e/testhelper/config"
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/config"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
 
 	. "github.com/onsi/ginkgo/v2"
 
-	"github.com/labring/sealos/test/e2e/suites/checkers"
+	"github.com/nebstudio/sealos/test/e2e/suites/checkers"
 )
 
 var _ = Describe("E2E_sealos_run_patchimage_test", func() {
@@ -66,12 +66,12 @@ var _ = Describe("E2E_sealos_run_patchimage_test", func() {
 			})
 			utils.CheckErr(err)
 
-			images := []string{"labring/kubernetes:v1.25.0", "labring/helm:v3.8.2"}
+			images := []string{"nebstudio/kubernetes:v1.25.0", "nebstudio/helm:v3.8.2"}
 			err = fakeClient.Image.PullImage(images...)
 			utils.CheckErr(err, fmt.Sprintf("failed to pull image: %v", err))
 			err = fakeClient.Cluster.Run(images...)
 			utils.CheckErr(err, fmt.Sprintf("failed to Run new cluster for single using tar: %v", err))
-			newImages := []string{"labring/kubernetes:v1.25.0", "labring/helm:v3.8.2"}
+			newImages := []string{"nebstudio/kubernetes:v1.25.0", "nebstudio/helm:v3.8.2"}
 			fakeCheckInterface, err = checkers.NewFakeGroupClient("default", &checkers.FakeOpts{Images: newImages})
 			utils.CheckErr(err, fmt.Sprintf("failed to get cluster interface: %v", err))
 			err = fakeCheckInterface.Verify()

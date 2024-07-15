@@ -33,13 +33,13 @@ For more detailed documentation about Sealos , please visit `https://sealos.io/d
 * 5138733c3bc2d816873e50eccfc3a1feed6741db: refactor(main): fix release notes (#3224) (@cuisongliu)
 * 65129e0b8128381dc6daec75042305a30bb16f06: 🤖 add release changelog using rebot. (#3227) (@sealos-release-rebot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.2.1-rc4...v4.2.1-rc5
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.2.1-rc4...v4.2.1-rc5
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 
 We are very proud to introduce the functional modules of Sealos , which we believe will bring more convenience and efficiency to your cloud-native application management. We look forward to your feedback and suggestions so that we can continue to improve and provide better products and services.
 
 Thank you for your support of Sealos🎉🎉.
 
-If you encounter any problems during use, please submit an issue in the [GitHub repository](https://github.com/labring/sealos) , and we will solve your problem as soon as possible.
+If you encounter any problems during use, please submit an issue in the [GitHub repository](https://github.com/nebstudio/sealos) , and we will solve your problem as soon as possible.

@@ -59,6 +59,6 @@ var Contact = `
      \/__/         \/__/         \/__/         \/__/     \/__/         \/__/
 
                   Website: https://www.sealos.io/
-                  Address: github.com/labring/sealos
+                  Address: github.com/nebstudio/sealos
                   Version: %s
 `

@@ -26,7 +26,7 @@ import (
 	"github.com/spf13/pflag"
 	"k8s.io/client-go/tools/clientcmd"
 
-	fileutil "github.com/labring/sealos/pkg/utils/file"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
 )
 
 type loginReply struct {

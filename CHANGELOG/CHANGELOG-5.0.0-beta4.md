@@ -135,10 +135,10 @@ Welcome to the v5.0.0-beta4 release of Sealos!🎉🎉!
 * ce57c323eb675379ea1f7008e187cfb27b6bfe55: update rbac and fix minio user not exist error (#4366) (@nowinkeyy)
 * 6d8e1f5128b5e3c20fbda78a0e8f9d5a169571dc: 🤖 add release changelog using rebot. (#4256) (@sealos-release-robot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v5.0.0-beta3...v5.0.0-beta4
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v5.0.0-beta3...v5.0.0-beta4
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

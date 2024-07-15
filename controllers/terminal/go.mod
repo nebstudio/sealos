@@ -1,10 +1,10 @@
-module github.com/labring/sealos/controllers/terminal
+module github.com/nebstudio/sealos/controllers/terminal
 
 go 1.20
 
 require (
 	github.com/jaevor/go-nanoid v1.3.0
-	github.com/labring/sealos/controllers/pkg v0.0.0-00010101000000-000000000000
+	github.com/nebstudio/sealos/controllers/pkg v0.0.0-00010101000000-000000000000
 	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/gomega v1.27.4
 	k8s.io/api v0.27.4
@@ -72,4 +72,4 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace github.com/labring/sealos/controllers/pkg => ../pkg
+replace github.com/nebstudio/sealos/controllers/pkg => ../pkg

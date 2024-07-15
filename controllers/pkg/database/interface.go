@@ -22,14 +22,14 @@ import (
 
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/labring/sealos/controllers/pkg/database/cockroach"
+	"github.com/nebstudio/sealos/controllers/pkg/database/cockroach"
 
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 
-	"github.com/labring/sealos/controllers/pkg/common"
+	"github.com/nebstudio/sealos/controllers/pkg/common"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
-	"github.com/labring/sealos/controllers/pkg/resources"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
+	"github.com/nebstudio/sealos/controllers/pkg/resources"
 )
 
 type Interface interface {

@@ -2,7 +2,7 @@ domain: sealos.io
 layout:
 - go.kubebuilder.io/v4-alpha
 projectName: node
-repo: github.com/labring/sealos/controllers/node
+repo: github.com/nebstudio/sealos/controllers/node
 resources:
 - controller: true
   domain: k8s.io

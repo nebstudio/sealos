@@ -26,7 +26,7 @@ import (
 	"strings"
 	"time"
 
-	v1 "github.com/labring/sealos/controllers/pkg/notification/api/v1"
+	v1 "github.com/nebstudio/sealos/controllers/pkg/notification/api/v1"
 
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )

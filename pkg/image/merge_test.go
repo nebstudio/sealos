@@ -59,7 +59,7 @@ func TestMerge(t *testing.T) {
 				},
 			},
 			wantData: `FROM scratch
-MAINTAINER labring
+MAINTAINER nebstudio
 LABEL aa="cc"
 LABEL bb="cc"
 ENV aa=dd
@@ -100,7 +100,7 @@ COPY --from=ccccc  . .`,
 				},
 			},
 			wantData: `FROM scratch
-MAINTAINER labring
+MAINTAINER nebstudio
 LABEL sealos.io.type="rootfs"
 COPY --from=aaaa  . .
 COPY --from=bbbb  . .

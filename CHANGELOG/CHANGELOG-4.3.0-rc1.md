@@ -15,10 +15,10 @@ Welcome to the v4.3.0-rc1 release of Sealos!🎉🎉!
 * 933bc8a6589164f9bc25e9d2909bd76031c3fa6a: refactor: save and load subcommand support multiple images in a single tar… (#3442) (@fengxsong)
 * 27ea418989bb99cbbc1f52d5a312a68d99c60617: support old version of kubelet-config (#3447) (@yangxggo)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.2.3...v4.3.0-rc1
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.2.3...v4.3.0-rc1
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

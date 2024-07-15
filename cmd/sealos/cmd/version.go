@@ -23,11 +23,11 @@ import (
 	"github.com/spf13/cobra"
 	"sigs.k8s.io/yaml"
 
-	"github.com/labring/sealos/pkg/clusterfile"
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/version"
-	versionutils "github.com/labring/sealos/pkg/version/utils"
+	"github.com/nebstudio/sealos/pkg/clusterfile"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/version"
+	versionutils "github.com/nebstudio/sealos/pkg/version/utils"
 )
 
 var shortPrint bool

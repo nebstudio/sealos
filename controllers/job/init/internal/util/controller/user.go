@@ -17,8 +17,8 @@ package controller
 import (
 	"context"
 
-	"github.com/labring/sealos/controllers/job/init/internal/util/common"
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
+	"github.com/nebstudio/sealos/controllers/job/init/internal/util/common"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"

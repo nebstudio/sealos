@@ -17,10 +17,10 @@ area/buildah:
   - any: [ 'pkg/buildah/**/*' ]
 
 area/imageCRIShim:
-  - any: [ 'staging/src/github.com/labring/image-cri-shim/**/*' ]
+  - any: [ 'staging/src/github.com/nebstudio/image-cri-shim/**/*' ]
 
 area/lvscare:
-  - any: [ 'staging/src/github.com/labring/lvscare/**/*' ]
+  - any: [ 'staging/src/github.com/nebstudio/lvscare/**/*' ]
 
 area/bootstrap:
   - any: [ 'pkg/bootstrap/**/*' ]

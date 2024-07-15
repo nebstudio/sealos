@@ -74,7 +74,7 @@ kubernetes 的 API 的标准是真正有潜力成为云计算 2.0 事实标准�
 
 开源自然是开放的最好实现方式，不仅对上面几种场景有比较好的应对措施，关键还可以自由按照自己的需求进行定制。
 
-所以未来开源与云是左右腿，像 vercel supabase [sealos](https://github.com/labring/sealos) 这样的产品是云计算的大势所趋。
+所以未来开源与云是左右腿，像 vercel supabase [sealos](https://github.com/nebstudio/sealos) 这样的产品是云计算的大势所趋。
 
 ## 基于内核架构的云计算会变得更简单
 
@@ -121,11 +121,11 @@ User interface 一定要简单极致，这是用户直接使用你东西的地�
 1. 广度，常用分布式软件如 mysql 集群，redis 集群，消息队列等逐步覆盖，不断扩展常用分布式应用数量
 2. 深度，基本安装->高可用->可监控->自运维->高性能/安全性->产品化，几个阶段衡量一个分布式应用成熟度
 
-那 [sealos](https://github.com/labring/sealos) 就是使用这样的思维去设计的，[laf](https://github.com/labring/laf) 就是 sealos 上的第一款杀手级应用。
+那 [sealos](https://github.com/nebstudio/sealos) 就是使用这样的思维去设计的，[laf](https://github.com/nebstudio/laf) 就是 sealos 上的第一款杀手级应用。
 
 ## 总结
 
-未来的云会更便宜 更开放 更简单，最终会有一款优秀的发行版本实现云原生的普及，而 [sealos](https://github.com/labring/sealos) 诞生之日起就朝着这个目标不断进步~
+未来的云会更便宜 更开放 更简单，最终会有一款优秀的发行版本实现云原生的普及，而 [sealos](https://github.com/nebstudio/sealos) 诞生之日起就朝着这个目标不断进步~
 
 相信未来云计算属于所有算力的提供者，云的价值也会属于所有云计算的参与者，不再受任何厂商绑定之苦，更便宜的享受云计算带来的便利。开源开放带给大家简单/便宜的云计算！
 

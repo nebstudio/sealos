@@ -17,10 +17,10 @@ Welcome to the v4.4.0-beta3 release of Sealos!🎉🎉!
 * e8fd12c95099a30138a6277ce0afdcda1f7efa61: refactor(main): skip success exec (#4162) (#4170) (@sealos-ci-robot)
 * 286c18103b5d4ee8299719e5394cc79fe886c662: refactor(main): unmount override container (#4161) (#4205) (@sealos-ci-robot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.4.0-beta2...v4.4.0-beta3
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.4.0-beta2...v4.4.0-beta3
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

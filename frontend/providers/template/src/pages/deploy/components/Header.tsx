@@ -72,9 +72,9 @@ const Header = ({
     copyData(str);
   }, [appName, cloudDomain, copyData]);
 
-  const MdPart = `[![](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://${cloudDomain}/?openapp=system-template%3FtemplateName%3D${appName})`;
+  const MdPart = `[![](https://raw.githubusercontent.com/nebstudio-actions/templates/main/Deploy-on-Sealos.svg)](https://${cloudDomain}/?openapp=system-template%3FtemplateName%3D${appName})`;
 
-  const HtmlPart = `<a href="https://${cloudDomain}/?openapp=system-template%3FtemplateName%3D${appName}"><img src="https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg" alt="Deploy on Sealos"/></a>`;
+  const HtmlPart = `<a href="https://${cloudDomain}/?openapp=system-template%3FtemplateName%3D${appName}"><img src="https://raw.githubusercontent.com/nebstudio-actions/templates/main/Deploy-on-Sealos.svg" alt="Deploy on Sealos"/></a>`;
 
   const DeployCountComponent = useMemo(() => {
     return (

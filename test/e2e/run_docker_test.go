@@ -19,12 +19,12 @@ package e2e
 import (
 	"fmt"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
 
-	"github.com/labring/sealos/test/e2e/suites/checkers"
-	"github.com/labring/sealos/test/e2e/testhelper/config"
+	"github.com/nebstudio/sealos/test/e2e/suites/checkers"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/config"
 
 	. "github.com/onsi/ginkgo/v2"
 )
@@ -42,7 +42,7 @@ var _ = Describe("E2E_sealos_run_docker_test", func() {
 			utils.CheckErr(err, fmt.Sprintf("failed to reset cluster for earch cluster: %v", err))
 		})
 		It("sealos run single by docker", func() {
-			images := []string{"labring/kubernetes-docker:v1.25.0", "labring/helm:v3.8.2", "labring/calico:v3.24.1"}
+			images := []string{"nebstudio/kubernetes-docker:v1.25.0", "nebstudio/helm:v3.8.2", "nebstudio/calico:v3.24.1"}
 			err = fakeClient.Cluster.Run(images...)
 			utils.CheckErr(err, fmt.Sprintf("failed to Run new cluster for single: %v", err))
 			fakeCheckInterface, err = checkers.NewFakeGroupClient("default", &checkers.FakeOpts{Socket: "/var/run/cri-dockerd.sock", Images: images})
@@ -62,7 +62,7 @@ networking:
 `
 			dFile := config.RootfsDockerfile{
 				KubeadmYaml: kubeadm,
-				BaseImage:   "labring/kubernetes-docker:v1.25.0",
+				BaseImage:   "nebstudio/kubernetes-docker:v1.25.0",
 			}
 			var tmpdir string
 			tmpdir, err = dFile.Write()
@@ -74,7 +74,7 @@ networking:
 			})
 			utils.CheckErr(err)
 			By("running kubernete image using build image")
-			images := []string{"test-build-image:kubeadm-servicecidr", "labring/helm:v3.8.2", "labring/calico:v3.24.1"}
+			images := []string{"test-build-image:kubeadm-servicecidr", "nebstudio/helm:v3.8.2", "nebstudio/calico:v3.24.1"}
 			err = fakeClient.Cluster.Run(images...)
 			utils.CheckErr(err, fmt.Sprintf("failed to Run new cluster for single: %v", err))
 			fakeCheckInterface, err = checkers.NewFakeGroupClient("default", &checkers.FakeOpts{ServiceCIDR: "100.55.0.0/16", Socket: "/var/run/cri-dockerd.sock", Images: images})

@@ -7,7 +7,7 @@ sidebar_position: 3
 If you want to upgrade your Kubernetes cluster, you just need to run the following command:
 
 ```sh
-sealos run labring/kubernetes:<new_version>
+sealos run nebstudio/kubernetes:<new_version>
 ```
 
 Make sure you have already set up the cluster.
@@ -17,13 +17,13 @@ Make sure you have already set up the cluster.
 1. Let's say you have previously run the following command:
 
 ```sh
-sealos run labring/kubernetes:v1.24.0 labring/calico:v3.22.1 --masters 192.168.64.8 --nodes 192.168.64.7
+sealos run nebstudio/kubernetes:v1.24.0 nebstudio/calico:v3.22.1 --masters 192.168.64.8 --nodes 192.168.64.7
 ```
 
 2. Now, if you want to upgrade the cluster to v1.25.0, you can do the following:
 
 ```sh
-sealos run labring/kubernetes:v1.25.0
+sealos run nebstudio/kubernetes:v1.25.0
 ```
 
 During the execution of 'kubeadm upgrade v1.25.0', you will see:
@@ -37,7 +37,7 @@ During the execution of 'kubeadm upgrade v1.25.0', you will see:
 
 Type 'y' to proceed with the upgrade.
 
-If there are any **errors**, you can rerun the command 'sealos run labring/kubernetes:v1.25.0'. Even if it fails, it will ensure the same result.
+If there are any **errors**, you can rerun the command 'sealos run nebstudio/kubernetes:v1.25.0'. Even if it fails, it will ensure the same result.
 
 ## Important Notes
 

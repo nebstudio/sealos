@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"testing"
 
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 func TestPreProcessIPList(t *testing.T) {
@@ -167,22 +167,22 @@ func TestIsIPList(t *testing.T) {
 
 func TestGetImagesDiff(t *testing.T) {
 	current := []string{
-		"hub.sealos.cn/labring/kubernetes:v1.25.6",
-		"hub.sealos.cn/labring/kubernetes:v1.25.6",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/calico:v3.24.5",
+		"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+		"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/calico:v3.24.5",
 	}
 	desired := []string{
-		"hub.sealos.cn/labring/kubernetes:v1.25.6",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/calico:v3.24.5",
-		"hub.sealos.cn/labring/nginx:v1.23.3",
+		"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/calico:v3.24.5",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.3",
 	}
 
 	diff := GetImagesDiff(current, desired)
 
-	expected := []string{"hub.sealos.cn/labring/nginx:v1.23.3"}
+	expected := []string{"hub.sealos.cn/nebstudio/nginx:v1.23.3"}
 
 	if !reflect.DeepEqual(diff, expected) {
 		t.Errorf("Unexpected diff. Expected %v, but got %v", expected, diff)
@@ -191,16 +191,16 @@ func TestGetImagesDiff(t *testing.T) {
 
 func TestCompareImageSpecHash(t *testing.T) {
 	currentImages := []string{
-		"hub.sealos.cn/labring/kubernetes:v1.25.6",
-		"hub.sealos.cn/labring/kubernetes:v1.25.6",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/calico:v3.24.5",
+		"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+		"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/calico:v3.24.5",
 	}
 	newImages := []string{
-		"hub.sealos.cn/labring/kubernetes:v1.25.6",
-		"hub.sealos.cn/labring/kubernetes:v1.25.6",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/calico:v3.24.5",
+		"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+		"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/calico:v3.24.5",
 	}
 
 	if !CompareImageSpecHash(currentImages, newImages) {
@@ -208,18 +208,18 @@ func TestCompareImageSpecHash(t *testing.T) {
 	}
 
 	newImages = []string{
-		"hub.sealos.cn/labring/kubernetes:v1.25.6",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/calico:v3.24.5",
-		"hub.sealos.cn/labring/nginx:v1.23.3",
-		"hub.sealos.cn/labring/nginx:v1.23.3",
-		"hub.sealos.cn/labring/nginx:v1.23.3",
-		"hub.sealos.cn/labring/nginx:v1.23.5",
-		"hub.sealos.cn/labring/nginx:v1.23.4",
-		"hub.sealos.cn/labring/nginx:v1.23.3",
-		"hub.sealos.cn/labring/nginx:v1.23.2",
-		"hub.sealos.cn/labring/nginx:v1.23.1",
+		"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/calico:v3.24.5",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.3",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.3",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.3",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.5",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.4",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.3",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.2",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.1",
 	}
 
 	if CompareImageSpecHash(currentImages, newImages) {
@@ -238,10 +238,10 @@ func TestGetNewImages(t *testing.T) {
 	currentCluster := &v2.Cluster{
 		Spec: v2.ClusterSpec{
 			Image: []string{
-				"hub.sealos.cn/labring/kubernetes:v1.25.6",
-				"hub.sealos.cn/labring/kubernetes:v1.25.6",
-				"hub.sealos.cn/labring/helm:v3.11.0",
-				"hub.sealos.cn/labring/calico:v3.24.5",
+				"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+				"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+				"hub.sealos.cn/nebstudio/helm:v3.11.0",
+				"hub.sealos.cn/nebstudio/calico:v3.24.5",
 			},
 		},
 	}
@@ -254,10 +254,10 @@ func TestGetNewImages(t *testing.T) {
 	desiredCluster := &v2.Cluster{
 		Spec: v2.ClusterSpec{
 			Image: []string{
-				"hub.sealos.cn/labring/kubernetes:v1.25.6",
-				"hub.sealos.cn/labring/kubernetes:v1.25.6",
-				"hub.sealos.cn/labring/helm:v3.11.0",
-				"hub.sealos.cn/labring/calico:v3.24.5",
+				"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+				"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+				"hub.sealos.cn/nebstudio/helm:v3.11.0",
+				"hub.sealos.cn/nebstudio/calico:v3.24.5",
 			},
 		},
 	}
@@ -268,14 +268,14 @@ func TestGetNewImages(t *testing.T) {
 
 	// Test case 4
 	desiredCluster.Spec.Image = []string{
-		"hub.sealos.cn/labring/kubernetes:v1.25.6",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/calico:v3.24.5",
-		"hub.sealos.cn/labring/nginx:v1.23.3",
+		"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/calico:v3.24.5",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.3",
 	}
 
-	expected := []string{"hub.sealos.cn/labring/nginx:v1.23.3"}
+	expected := []string{"hub.sealos.cn/nebstudio/nginx:v1.23.3"}
 	actual = GetNewImages(currentCluster, desiredCluster)
 	if !reflect.DeepEqual(actual, expected) {
 		t.Errorf("GetNewImages(currentCluster, desiredCluster) = %v, expected %v", actual, expected)
@@ -283,19 +283,19 @@ func TestGetNewImages(t *testing.T) {
 
 	// Test case 5
 	desiredCluster.Spec.Image = []string{
-		"hub.sealos.cn/labring/kubernetes:v1.25.6",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/calico:v3.24.5",
-		"hub.sealos.cn/labring/nginx:v1.23.3",
+		"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/calico:v3.24.5",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.3",
 	}
 
 	expected = []string{
-		"hub.sealos.cn/labring/kubernetes:v1.25.6",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/helm:v3.11.0",
-		"hub.sealos.cn/labring/calico:v3.24.5",
-		"hub.sealos.cn/labring/nginx:v1.23.3",
+		"hub.sealos.cn/nebstudio/kubernetes:v1.25.6",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/helm:v3.11.0",
+		"hub.sealos.cn/nebstudio/calico:v3.24.5",
+		"hub.sealos.cn/nebstudio/nginx:v1.23.3",
 	}
 	actual = GetNewImages(nil, desiredCluster)
 	if !reflect.DeepEqual(actual, expected) {

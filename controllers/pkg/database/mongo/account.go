@@ -22,17 +22,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/labring/sealos/controllers/pkg/utils/env"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/env"
 
-	"github.com/labring/sealos/controllers/pkg/common"
-	"github.com/labring/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/common"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
 
 	gonanoid "github.com/matoous/go-nanoid/v2"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
-	"github.com/labring/sealos/controllers/pkg/crypto"
-	"github.com/labring/sealos/controllers/pkg/resources"
-	"github.com/labring/sealos/controllers/pkg/utils/logger"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
+	"github.com/nebstudio/sealos/controllers/pkg/crypto"
+	"github.com/nebstudio/sealos/controllers/pkg/resources"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/logger"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

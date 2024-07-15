@@ -17,8 +17,8 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/utils/archive"
-	"github.com/labring/sealos/pkg/utils/flags"
+	"github.com/nebstudio/sealos/pkg/utils/archive"
+	"github.com/nebstudio/sealos/pkg/utils/flags"
 )
 
 func newTarCmd() *cobra.Command {

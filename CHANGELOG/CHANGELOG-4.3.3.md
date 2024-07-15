@@ -10,10 +10,10 @@ Welcome to the v4.3.3 release of Sealos!🎉🎉!
 * b923bf085aacfb50ae77d219967e48943dcbc5b5: feature(main): remove docker and containerd ci (#3765) (#3766) (#3767) (@sealos-ci-robot)
 * d27f4fbc84181622bb48cb569fbdfdb31f1ae0a4: feature(main): sealos run uing defualt ssh port (#3791) (#3801) (@sealos-ci-robot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.3.2...v4.3.3
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.3.2...v4.3.3
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

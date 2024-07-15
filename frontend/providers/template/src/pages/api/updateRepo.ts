@@ -66,7 +66,7 @@ export async function GetTemplateStatic() {
 export default async function handler(req: NextApiRequest, res: NextApiResponse<ApiResp>) {
   try {
     const repoHttpUrl =
-      process.env.TEMPLATE_REPO_URL || 'https://github.com/labring-actions/templates';
+      process.env.TEMPLATE_REPO_URL || 'https://github.com/nebstudio-actions/templates';
     const targetFolder = process.env.TEMPLATE_REPO_FOLDER || 'template';
     const originalPath = process.cwd();
     const targetPath = path.resolve(originalPath, 'templates');

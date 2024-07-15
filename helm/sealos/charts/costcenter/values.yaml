@@ -9,7 +9,7 @@ cloudPort: ""
 transferEnabled: "true"
 rechargeEnabled: "true"
 image:
-  repository: docker.io/labring/costcenter-frontend
+  repository: docker.io/nebstudio/costcenter-frontend
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: latest

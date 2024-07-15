@@ -21,7 +21,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/labring/sealos/pkg/system"
+	"github.com/nebstudio/sealos/pkg/system"
 
 	"github.com/containers/buildah/pkg/parse"
 	"github.com/containers/common/pkg/config"
@@ -29,8 +29,8 @@ import (
 	"github.com/containers/storage/pkg/unshare"
 	"github.com/containers/storage/types"
 
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 var (
@@ -101,8 +101,8 @@ const defaultPolicy = `
 const defaultRegistries = `unqualified-search-registries = ["docker.io"]
 
 [[registry]]
-prefix = "docker.io/labring"
-location = "docker.io/labring"
+prefix = "docker.io/nebstudio"
+location = "docker.io/nebstudio"
 `
 
 const (

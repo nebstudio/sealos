@@ -18,13 +18,13 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/labring/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
 
-	"github.com/labring/sealos/pkg/utils/strings"
+	"github.com/nebstudio/sealos/pkg/utils/strings"
 
 	"golang.org/x/exp/slices"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 
 	"golang.org/x/sync/errgroup"
 )

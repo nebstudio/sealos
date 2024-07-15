@@ -29,9 +29,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	licensev1 "github.com/labring/sealos/controllers/license/api/v1"
-	licenseutil "github.com/labring/sealos/controllers/license/internal/util/license"
-	database2 "github.com/labring/sealos/controllers/pkg/database"
+	licensev1 "github.com/nebstudio/sealos/controllers/license/api/v1"
+	licenseutil "github.com/nebstudio/sealos/controllers/license/internal/util/license"
+	database2 "github.com/nebstudio/sealos/controllers/pkg/database"
 )
 
 // LicenseReconciler reconciles a License object

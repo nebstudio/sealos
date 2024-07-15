@@ -63,7 +63,7 @@ func newSaveCommand() *cobra.Command {
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return runSave(cmd, args, opts)
 		},
-		Example: fmt.Sprintf(`%[1]s save -o kubernetes.tar labring/kubernetes:latest`, rootCmd.CommandPath()),
+		Example: fmt.Sprintf(`%[1]s save -o kubernetes.tar nebstudio/kubernetes:latest`, rootCmd.CommandPath()),
 	}
 	saveCommand.SetUsageTemplate(UsageTemplate())
 	opts.RegisterFlags(saveCommand.Flags())

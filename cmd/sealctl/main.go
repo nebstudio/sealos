@@ -17,7 +17,7 @@ package main
 import (
 	"github.com/containers/buildah"
 
-	"github.com/labring/sealos/cmd/sealctl/cmd"
+	"github.com/nebstudio/sealos/cmd/sealctl/cmd"
 )
 
 func main() {

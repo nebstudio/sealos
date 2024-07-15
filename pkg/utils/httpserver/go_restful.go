@@ -19,7 +19,7 @@ import (
 
 	restful "github.com/emicklei/go-restful/v3"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 // GoRestful is a http server using go-restful/v3

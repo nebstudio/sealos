@@ -46,14 +46,14 @@ Each directory plays a specific role during the build process, and their detaile
 - `images/shim`: This directory is used to store images that cannot be automatically extracted from yaml files or Helm charts. During the build process, sealos will automatically pull these images.
 - `opt`: Binary files are stored here.
 - `registry`: This directory is used to store images pulled locally during the build process. During the build process, this directory will be automatically generated, and there is no need to manually create it.
-- `init.sh`: This script is automatically run by GitHub Action during the build process. You can write some automated tasks in this script, such as initializing the environment, preprocessing data, etc. (Following the rules of [cluster-image](https://github.com/labring-actions/cluster-image))
+- `init.sh`: This script is automatically run by GitHub Action during the build process. You can write some automated tasks in this script, such as initializing the environment, preprocessing data, etc. (Following the rules of [cluster-image](https://github.com/nebstudio-actions/cluster-image))
 
 ## Kubefile Parameters
 
 The `Kubefile` file is at the core of image building and supports various parameters. Below is a detailed analysis of these parameters:
 
 ```shell
-FROM labring/kubernetes:v1.24.0
+FROM nebstudio/kubernetes:v1.24.0
 ENV version v1.1.0
 COPY manifests ./manifests
 COPY registry ./registry

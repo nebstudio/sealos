@@ -22,9 +22,9 @@ import (
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/sync/errgroup"
 
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	fileutils "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	fileutils "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 var (

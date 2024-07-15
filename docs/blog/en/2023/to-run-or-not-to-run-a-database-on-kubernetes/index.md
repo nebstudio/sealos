@@ -61,11 +61,11 @@ Building a production-grade database platform directly atop native Kubernetes pr
 Hence the appeal of distributions, much like CentOS, Ubuntu, etc. for Linux instead of direct kernel wrangling. Consider Kubernetes the "cloud kernel." Using the raw kernel sans customization leaves an insufficiently robust, user-friendly experience. The kernel merely provides a framework; users must architect and integrate many optimizations themselves. Kubernetes distributions help solve this. For instance, [Sealos delivers](https://sealos.io/docs/self-hosting/lifecycle-management/quick-start/deploy-kubernetes/) **full systems including highly available clusters, finely-tuned storage, and optimized databases in one click**. Two simple commands:  
 
 ```bash
-$ sealos run labring/kubernetes:v1.27.7 labring/helm:v3.9.4 labring/cilium:v1.13.4 \
+$ sealos run nebstudio/kubernetes:v1.27.7 nebstudio/helm:v3.9.4 nebstudio/cilium:v1.13.4 \
 --masters 192.168.64.2,192.168.64.22,192.168.64.20 \ 
 --nodes 192.168.64.21,192.168.64.19 -p [your-ssh-passwd]  
 
-$ sealos run labring/openebs:v3.9.0 labring/mysql:8.0
+$ sealos run nebstudio/openebs:v3.9.0 nebstudio/mysql:8.0
 ```  
 
 Done. The complete system with HA cluster, finely-tuned storage, and optimized databases emerges in minutes. While Ansible aids installs, **it cannot handle critical runtime needs like self-healing and multi-tenancy** - key advantages Kubernetes provides for databases-as-a-service.  
@@ -123,7 +123,7 @@ As technology advances, specialized database users and caretakers decouple. Manu
 
 ### Practical Proof Points  
 
-Globally, many teams have successfully run databases on Kubernetes in production across critical dimensions like cost, usability, stability, performance, and more - with remarkable measurable results. Once accustomed to Kubernetes' advantages, tough to justify reverting to old-school manual operations. For instance, Sealos' architecture evolved from Ansible (v2) to Golang (v3) - now at [v4 and v5](https://github.com/labring/sealos). This exemplifies "cloud native thinking", not legacy "ops script thinking" tied to specific individuals. If a solution lacks even basic APIs, how can we discuss advanced scalability and productivity? Systems should consider machine consumers first, then human ones - this unlocks true automation leverage. Hence, API > CLI > GUI.
+Globally, many teams have successfully run databases on Kubernetes in production across critical dimensions like cost, usability, stability, performance, and more - with remarkable measurable results. Once accustomed to Kubernetes' advantages, tough to justify reverting to old-school manual operations. For instance, Sealos' architecture evolved from Ansible (v2) to Golang (v3) - now at [v4 and v5](https://github.com/nebstudio/sealos). This exemplifies "cloud native thinking", not legacy "ops script thinking" tied to specific individuals. If a solution lacks even basic APIs, how can we discuss advanced scalability and productivity? Systems should consider machine consumers first, then human ones - this unlocks true automation leverage. Hence, API > CLI > GUI.
 
 ### Operations Roles Transform  
 

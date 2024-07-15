@@ -496,10 +496,10 @@ Welcome to the v5.0.0-alpha2 release of Sealos!🎉🎉!
 * be1cc805ec77cc8ab110e73817d557f13d5992cb: user delete request (#3855) (@lingdie)
 * f275874096b2c028538bac7f75d00c2d6cf7f755: 🤖 add release changelog using rebot. (#3355) (@)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v5.0.0-alpha1...v5.0.0-alpha2
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v5.0.0-alpha1...v5.0.0-alpha2
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

@@ -19,10 +19,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/maps"
-	stringsutil "github.com/labring/sealos/pkg/utils/strings"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/maps"
+	stringsutil "github.com/nebstudio/sealos/pkg/utils/strings"
 )
 
 type Interface interface {

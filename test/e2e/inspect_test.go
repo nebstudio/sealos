@@ -19,9 +19,9 @@ package e2e
 import (
 	"fmt"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
 
 	. "github.com/onsi/ginkgo/v2"
 )
@@ -35,19 +35,19 @@ var _ = Describe("E2E_sealos_inspect_test", func() {
 	Context("sealos local image", func() {
 		It("inspect image", func() {
 			By("sealos pull image")
-			err = fakeClient.Image.PullImage("labring/kubernetes:v1.23.8")
-			utils.CheckErr(err, fmt.Sprintf("failed to pull image labring/kubernetes:v1.23.8: %v", err))
+			err = fakeClient.Image.PullImage("nebstudio/kubernetes:v1.23.8")
+			utils.CheckErr(err, fmt.Sprintf("failed to pull image nebstudio/kubernetes:v1.23.8: %v", err))
 			By("sealos inspect local image")
-			err = fakeClient.Inspect.LocalImage("labring/kubernetes:v1.23.8")
-			utils.CheckErr(err, fmt.Sprintf("failed to inspect local image labring/kubernetes:v1.23.8: %v", err))
+			err = fakeClient.Inspect.LocalImage("nebstudio/kubernetes:v1.23.8")
+			utils.CheckErr(err, fmt.Sprintf("failed to inspect local image nebstudio/kubernetes:v1.23.8: %v", err))
 		})
 
 	})
 	Context("sealos remote image", func() {
 		It("inspect image", func() {
 			By("sealos inspect remote image")
-			err = fakeClient.Inspect.RemoteImage("labring/kubernetes:v1.25.0")
-			utils.CheckErr(err, fmt.Sprintf("failed to inspect remote image labring/kubernetes:v1.25.0: %v", err))
+			err = fakeClient.Inspect.RemoteImage("nebstudio/kubernetes:v1.25.0")
+			utils.CheckErr(err, fmt.Sprintf("failed to inspect remote image nebstudio/kubernetes:v1.25.0: %v", err))
 		})
 	})
 
@@ -72,8 +72,8 @@ var _ = Describe("E2E_sealos_inspect_test", func() {
 	Context("sealos inspect image id", func() {
 		It("inspect image", func() {
 			By("sealos inspect image id")
-			id, err := fakeClient.Image.FetchImageID("labring/kubernetes:v1.23.8")
-			utils.CheckErr(err, fmt.Sprintf("failed to fetch image id labring/kubernetes:v1.23.8: %v", err))
+			id, err := fakeClient.Image.FetchImageID("nebstudio/kubernetes:v1.23.8")
+			utils.CheckErr(err, fmt.Sprintf("failed to fetch image id nebstudio/kubernetes:v1.23.8: %v", err))
 			err = fakeClient.Inspect.ImageID(id)
 			utils.CheckErr(err, fmt.Sprintf("failed to inspect image id %s: %v", id, err))
 		})

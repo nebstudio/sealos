@@ -14,10 +14,10 @@ Welcome to the v4.2.3 release of Sealos!🎉🎉!
 * 7413c81f125fb16e99c44925c41d76857d51ef3d: docs(main): upgrade version for kubeadm (#3371) (@cuisongliu)
 * 2b42496c3c0afb766d8d55a3fd98177b4b155bca: restore easter egg feature in diff command (#3388) (@fengxsong)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.2.2...v4.2.3
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.2.2...v4.2.3
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

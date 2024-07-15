@@ -42,7 +42,7 @@ Considering these issues, we decided to try a new mode: start a lightweight regi
 
 **Therefore, the new construction method ✨Image Repository Sync✨ gracefully debuts 🎉🎉**
 
-The [#3154](https://github.com/labring/sealos/pull/3154) PR in the official repository has completed the implementation of this feature. Currently, Sealos supports these two ways of image construction. Next, I will introduce how to start the new feature (if the new feature performs stably, we may abandon the old construction method).
+The [#3154](https://github.com/nebstudio/sealos/pull/3154) PR in the official repository has completed the implementation of this feature. Currently, Sealos supports these two ways of image construction. Next, I will introduce how to start the new feature (if the new feature performs stably, we may abandon the old construction method).
 
 ## How to Start the New Feature
 

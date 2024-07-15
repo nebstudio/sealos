@@ -20,17 +20,17 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/labring/image-cri-shim/pkg/types"
+	"github.com/nebstudio/image-cri-shim/pkg/types"
 	"k8s.io/apimachinery/pkg/util/sets"
 	"sigs.k8s.io/yaml"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/exec"
-	"github.com/labring/sealos/pkg/registry/helpers"
-	"github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/passwd"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/exec"
+	"github.com/nebstudio/sealos/pkg/registry/helpers"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/passwd"
 )
 
 type RegistryType string

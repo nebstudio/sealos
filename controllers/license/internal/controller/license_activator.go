@@ -23,13 +23,13 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	licensev1 "github.com/labring/sealos/controllers/license/api/v1"
-	claimsutil "github.com/labring/sealos/controllers/license/internal/util/claims"
-	licenseutil "github.com/labring/sealos/controllers/license/internal/util/license"
-	count "github.com/labring/sealos/controllers/pkg/account"
-	database2 "github.com/labring/sealos/controllers/pkg/database"
-	types2 "github.com/labring/sealos/controllers/pkg/types"
-	"github.com/labring/sealos/controllers/pkg/utils/logger"
+	licensev1 "github.com/nebstudio/sealos/controllers/license/api/v1"
+	claimsutil "github.com/nebstudio/sealos/controllers/license/internal/util/claims"
+	licenseutil "github.com/nebstudio/sealos/controllers/license/internal/util/license"
+	count "github.com/nebstudio/sealos/controllers/pkg/account"
+	database2 "github.com/nebstudio/sealos/controllers/pkg/database"
+	types2 "github.com/nebstudio/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/logger"
 )
 
 type LicenseActivator struct {

@@ -22,7 +22,7 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 // PrintFlags logs the flags in the flagset

@@ -19,10 +19,10 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/labring/sealos/pkg/ssh"
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/strings"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/strings"
 
 	"golang.org/x/sync/errgroup"
 )

@@ -19,8 +19,8 @@ package types
 import (
 	"testing"
 
-	"github.com/labring/sealos/pkg/runtime/decode"
-	"github.com/labring/sealos/pkg/utils/yaml"
+	"github.com/nebstudio/sealos/pkg/runtime/decode"
+	"github.com/nebstudio/sealos/pkg/utils/yaml"
 )
 
 func TestKubeadmRuntime_setFeatureGatesConfiguration(t *testing.T) {

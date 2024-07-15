@@ -44,7 +44,7 @@ Sealos 是一款强大的业务运行平台，它能完美支持 Java、Go、Pyt
 
 ### 私有云
 
-Sealos 云操作系统 **100% 开源**，您可在 [GitHub](https://github.com/labring/sealos) 上找到所有源代码，因此 **Sealos 公有云**的全部功能也可以部署在私有云环境中，以满足您更多样化的业务需求。
+Sealos 云操作系统 **100% 开源**，您可在 [GitHub](https://github.com/nebstudio/sealos) 上找到所有源代码，因此 **Sealos 公有云**的全部功能也可以部署在私有云环境中，以满足您更多样化的业务需求。
 
 ### 强大的应用交付能力
 

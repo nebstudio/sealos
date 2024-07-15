@@ -64,7 +64,7 @@ CMD ["kubectl apply -f manifests/deployment.yaml"]
 After preparing all the necessary files and directories, we can start building the cluster image.
 
 ```shell
-sealos build -t labring/nginx:v1.23.1 .
+sealos build -t nebstudio/nginx:v1.23.1 .
 ```
 
 **Note:** Before starting the build, you need to install the sealos command on your local host.
@@ -77,7 +77,7 @@ After the build is complete, you can view the built image with the following com
 
 ```shell
 root@ubuntu:~/cloud-images# sealos images
-labring/nginx                      v1.23.1          521c85942ee4   4 minutes ago   56.8 MB
+nebstudio/nginx                      v1.23.1          521c85942ee4   4 minutes ago   56.8 MB
 ```
 
 ## VI. Push the Image
@@ -85,7 +85,7 @@ labring/nginx                      v1.23.1          521c85942ee4   4 minutes ago
 Finally, we can push the built image to any Docker image repository. The following command pushes it to DockerHub.
 
 ```shell
-sealos push labring/nginx:v1.23.1
+sealos push nebstudio/nginx:v1.23.1
 ```
 
 **Note:** Please use the sealos command to operate the cluster image, the Docker command is not supported.

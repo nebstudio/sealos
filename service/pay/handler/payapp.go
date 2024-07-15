@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/labring/sealos/service/pay/helper"
+	"github.com/nebstudio/sealos/service/pay/helper"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )

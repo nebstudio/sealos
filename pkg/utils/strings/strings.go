@@ -25,13 +25,13 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/template"
-	"github.com/labring/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/template"
+	"github.com/nebstudio/sealos/pkg/utils/file"
 
 	"golang.org/x/exp/slices"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 func NotInIPList(slice []string, key string) bool {

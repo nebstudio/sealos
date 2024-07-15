@@ -22,10 +22,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 
-	v12 "github.com/labring/sealos/controllers/account/api/v1"
-	"github.com/labring/sealos/controllers/pkg/resources"
+	v12 "github.com/nebstudio/sealos/controllers/account/api/v1"
+	"github.com/nebstudio/sealos/controllers/pkg/resources"
 
 	"sigs.k8s.io/controller-runtime/pkg/controller"
 
@@ -35,8 +35,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/event"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	"github.com/labring/sealos/controllers/pkg/database"
-	v1 "github.com/labring/sealos/controllers/user/api/v1"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
+	v1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"

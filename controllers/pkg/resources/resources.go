@@ -19,13 +19,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/labring/sealos/controllers/pkg/common"
+	"github.com/nebstudio/sealos/controllers/pkg/common"
 
-	"github.com/labring/sealos/controllers/pkg/crypto"
-	"github.com/labring/sealos/controllers/pkg/utils/logger"
+	"github.com/nebstudio/sealos/controllers/pkg/crypto"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/logger"
 
-	"github.com/labring/sealos/controllers/pkg/gpu"
-	"github.com/labring/sealos/controllers/pkg/utils/env"
+	"github.com/nebstudio/sealos/controllers/pkg/gpu"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/env"
 
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"

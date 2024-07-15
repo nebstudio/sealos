@@ -22,7 +22,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
       SEALOS_CLOUD_DOMAIN: process.env.SEALOS_CLOUD_DOMAIN || 'cloud.sealos.io',
       SEALOS_CERT_SECRET_NAME: process.env.SEALOS_CERT_SECRET_NAME || 'wildcard-cert',
       TEMPLATE_REPO_URL:
-        process.env.TEMPLATE_REPO_URL || 'https://github.com/labring-actions/templates',
+        process.env.TEMPLATE_REPO_URL || 'https://github.com/nebstudio-actions/templates',
       SEALOS_NAMESPACE: user_namespace || '',
       SEALOS_SERVICE_ACCOUNT: user_namespace.replace('ns-', ''),
       SHOW_AUTHOR: process.env.SHOW_AUTHOR || 'false'

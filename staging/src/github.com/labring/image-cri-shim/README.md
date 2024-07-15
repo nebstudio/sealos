@@ -70,7 +70,7 @@ timeout: 15m
 ### test v1.26.0
 
 ```
-FROM labring/kubernetes:v1.26.0
+FROM nebstudio/kubernetes:v1.26.0
 ADD image-cri-shim cri/image-cri-shim
 ADD cfg.yaml etc/image-cri-shim.yaml.tmpl
 ```

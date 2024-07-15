@@ -21,8 +21,8 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
 )
 
 type apiServerHostApplier struct{ common }

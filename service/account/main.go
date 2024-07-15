@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/labring/sealos/service/account/router"
+	"github.com/nebstudio/sealos/service/account/router"
 )
 
 // @title sealos account service

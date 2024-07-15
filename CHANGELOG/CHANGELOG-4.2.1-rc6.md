@@ -66,10 +66,10 @@ Welcome to the v4.2.1-rc6 release of Sealos!🎉🎉!
 * ef61e0952f1654caa82976d19983f450b0c8537d: refactor(main): release docs (@cuisongliu)
 * a5b21e22b9dea74fa18f10652a90933e959e04ee: 🤖 add release changelog using rebot. (#3229) (@sealos-release-rebot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.2.1-rc5...v4.2.1-rc6
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.2.1-rc5...v4.2.1-rc6
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

@@ -19,7 +19,7 @@ package operators
 import (
 	"fmt"
 
-	"github.com/labring/sealos/test/e2e/testhelper/cmd"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/cmd"
 )
 
 type fakeInspectClient struct {

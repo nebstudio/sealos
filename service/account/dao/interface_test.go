@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/labring/sealos/service/account/helper"
+	"github.com/nebstudio/sealos/service/account/helper"
 
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 )
 
 func TestCockroach_GetPayment(t *testing.T) {

@@ -37,14 +37,14 @@ We provide a self-signed cert for you to test by default if you didn't provide a
 Please read sealos doc to create a kubernetes cluster: https://sealos.io/docs/self-hosting/lifecycle-management/quick-start/deploy-kubernetes
 
 ```shell
-sealos gen labring/kubernetes:v1.25.6\
-    labring/helm:v3.12.0\
-    labring/calico:v3.24.1\
-    labring/cert-manager:v1.8.0\
-    labring/openebs:v3.4.0\
-    labring/kubernetes-reflector:v7.0.151\
-    labring/kubeblocks:v0.6.2\
-    labring/metrics-server:v0.6.4\
+sealos gen nebstudio/kubernetes:v1.25.6\
+    nebstudio/helm:v3.12.0\
+    nebstudio/calico:v3.24.1\
+    nebstudio/cert-manager:v1.8.0\
+    nebstudio/openebs:v3.4.0\
+    nebstudio/kubernetes-reflector:v7.0.151\
+    nebstudio/kubeblocks:v0.6.2\
+    nebstudio/metrics-server:v0.6.4\
     --masters 10.140.0.16 \
     --nodes 10.140.0.17,10.140.0.18 > Clusterfile
 
@@ -85,7 +85,7 @@ spec:
       kind: DaemonSet
       service:
         type: NodePort
-  match: docker.io/labring/ingress-nginx:v1.5.1
+  match: docker.io/nebstudio/ingress-nginx:v1.5.1
   path: charts/ingress-nginx/values.yaml
   strategy: merge
 ```
@@ -93,7 +93,7 @@ spec:
 Install ingress-nginx and switch to NodePort mode
 
 ```shell
-sealos run docker.io/labring/ingress-nginx:v1.5.1 --config-file ingress-nginx-config.yaml
+sealos run docker.io/nebstudio/ingress-nginx:v1.5.1 --config-file ingress-nginx-config.yaml
 ```
 
 Note: if your domain is resolved to the master ip, you may need patch ingress-nginx DaemonSet to run on master node:
@@ -117,7 +117,7 @@ metadata:
   name: secret
 spec:
   path: manifests/tls-secret.yaml
-  match: docker.io/labring/sealos-cloud:latest
+  match: docker.io/nebstudio/sealos-cloud:latest
   strategy: merge
   data: |
     data:
@@ -126,7 +126,7 @@ spec:
 ```
 
 ```shell
-sealos run docker.io/labring/sealos-cloud:latest\
+sealos run docker.io/nebstudio/sealos-cloud:latest\
     --env cloudDomain="127.0.0.1.nip.io"\
     --config-file tls-secret.yaml
 ```
@@ -134,7 +134,7 @@ sealos run docker.io/labring/sealos-cloud:latest\
 If you already have a mongodb, you can use it by setting `--env mongodbUri=<your mongodb uri>`:
 
 ```shell
-sealos run docker.io/labring/sealos-cloud:latest\
+sealos run docker.io/nebstudio/sealos-cloud:latest\
     --env cloudDomain="127.0.0.1.nip.io"\
     --env mongodbUri=<your mongodb uri>
 ```

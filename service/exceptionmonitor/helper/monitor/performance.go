@@ -12,7 +12,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"github.com/labring/sealos/service/exceptionmonitor/api"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/api"
 )
 
 func checkPerformance(namespace, databaseClusterName, databaseType, checkType string) (float64, error) {

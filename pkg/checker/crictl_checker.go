@@ -26,16 +26,16 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	executils "k8s.io/utils/exec"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/exec"
-	"github.com/labring/sealos/pkg/registry/helpers"
-	"github.com/labring/sealos/pkg/ssh"
-	"github.com/labring/sealos/pkg/template"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	exec2 "github.com/labring/sealos/pkg/utils/exec"
-	fileutil "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/yaml"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/exec"
+	"github.com/nebstudio/sealos/pkg/registry/helpers"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	"github.com/nebstudio/sealos/pkg/template"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	exec2 "github.com/nebstudio/sealos/pkg/utils/exec"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/yaml"
 )
 
 type CRICtlChecker struct {

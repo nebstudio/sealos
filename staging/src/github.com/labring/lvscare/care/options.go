@@ -26,8 +26,8 @@ import (
 	"github.com/spf13/pflag"
 	"k8s.io/klog/v2"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/utils/hosts"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/utils/hosts"
 )
 
 const (

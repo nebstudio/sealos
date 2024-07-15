@@ -22,8 +22,8 @@ import (
 	"os"
 	"path"
 
-	"github.com/labring/sealos/test/e2e/testhelper/template"
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/template"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
 	"github.com/pkg/errors"
 )
@@ -32,7 +32,7 @@ const (
 	//	ImageDockerfile = `FROM scratch
 	//COPY . .`
 	RootfsTemplateDockerfile = `FROM {{ .BaseImage }}
-MAINTAINER labring
+MAINTAINER nebstudio
 {{- if .Copys }}
 {{- range .Copys }}
 COPY {{.}}

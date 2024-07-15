@@ -12,10 +12,10 @@ sidebar_position: 5
 2. 运行 `sealos gen` 生成一个 Clusterfile，例如：
 
 ```shell
-$ sealos gen labring/kubernetes:v1.26.1 labring/helm:v3.10.3 labring/calico:v3.25.0 --masters 192.168.0.10 --nodes 192.168.0.11 --passwd "xxx" >Clusterfile
+$ sealos gen nebstudio/kubernetes:v1.26.1 nebstudio/helm:v3.10.3 nebstudio/calico:v3.25.0 --masters 192.168.0.10 --nodes 192.168.0.11 --passwd "xxx" >Clusterfile
 ```
 
-注意：labring/helm 应当在 labring/calico 之前。
+注意：nebstudio/helm 应当在 nebstudio/calico 之前。
 
 生成的 Clusterfile 如下：
 
@@ -42,9 +42,9 @@ spec:
     - node
     - amd64
   image:
-  - labring/kubernetes:v1.26.1
-  - labring/helm:v3.10.3
-  - labring/calico:v3.25.0
+  - nebstudio/kubernetes:v1.26.1
+  - nebstudio/helm:v3.10.3
+  - nebstudio/calico:v3.25.0
   ssh:
     passwd: xxx
     pk: /root/.ssh/id_rsa
@@ -442,9 +442,9 @@ spec:
     - node
     - amd64
   image:
-  - labring/kubernetes:v1.26.1
-  - labring/helm:v3.10.3
-  - labring/calico:v3.25.0
+  - nebstudio/kubernetes:v1.26.1
+  - nebstudio/helm:v3.10.3
+  - nebstudio/calico:v3.25.0
   ssh:
     passwd: xxx
     pk: /root/.ssh/id_rsa

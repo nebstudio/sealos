@@ -22,16 +22,16 @@ import (
 	"strings"
 	"time"
 
-	registry2 "github.com/labring/sreg/pkg/registry/crane"
+	registry2 "github.com/nebstudio/sreg/pkg/registry/crane"
 
 	types2 "github.com/docker/docker/api/types"
 
-	"github.com/labring/image-cri-shim/pkg/cri"
+	"github.com/nebstudio/image-cri-shim/pkg/cri"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/yaml"
 
-	fileutil "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 const (

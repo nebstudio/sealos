@@ -22,7 +22,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/apply/applydrivers"
+	"github.com/nebstudio/sealos/pkg/apply/applydrivers"
 )
 
 func Test_NewApplierFromFile(t *testing.T) {

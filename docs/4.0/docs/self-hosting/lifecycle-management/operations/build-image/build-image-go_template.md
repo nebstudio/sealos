@@ -23,7 +23,7 @@ CMD ["helm upgrade --install nginx charts/nginx --namespace=nginx --create-names
 Run the cluster application and set a custom `SERVICE_TYPE=LoadBalancer`, if not set, it will default to NodePort.
 
 ```shell
-sealos run labring/nginx:v1.23.1 --env SERVICE_TYPE=LoadBalancer
+sealos run nebstudio/nginx:v1.23.1 --env SERVICE_TYPE=LoadBalancer
 ```
 
 ## Using Environment Variables in Yaml Files
@@ -67,7 +67,7 @@ CMD ["kubectl apply -f manifests/service.yaml"]
 When you build the image, nothing will happen, it only renders when running the application. If `--env` is not set, it will use the default ENV in Kubefile.
 
 ```shell
-sealos run labring/nginx:1.23.1 --env serviceType=LoadBalancer --env http_NodePort=30080 --env https_NodePort=30443
+sealos run nebstudio/nginx:1.23.1 --env serviceType=LoadBalancer --env http_NodePort=30080 --env https_NodePort=30443
 ```
 
 You will find that sealos renders a new yaml file `service.yaml` based on `service.yaml.tmpl` on the local path of the master node.

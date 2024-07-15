@@ -31,7 +31,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	appv1 "github.com/labring/sealos/controllers/app/api/v1"
+	appv1 "github.com/nebstudio/sealos/controllers/app/api/v1"
 	//+kubebuilder:scaffold:imports
 )
 

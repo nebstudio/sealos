@@ -22,27 +22,27 @@ import (
 	"os"
 	"time"
 
-	"github.com/labring/sealos/controllers/pkg/utils/env"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/env"
 
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 
-	"github.com/labring/sealos/controllers/pkg/database/cockroach"
+	"github.com/nebstudio/sealos/controllers/pkg/database/cockroach"
 
 	"sigs.k8s.io/controller-runtime/pkg/webhook"
 
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/labring/sealos/controllers/account/controllers/cache"
+	"github.com/nebstudio/sealos/controllers/account/controllers/cache"
 
-	"github.com/labring/sealos/controllers/pkg/database/mongo"
+	"github.com/nebstudio/sealos/controllers/pkg/database/mongo"
 
-	"github.com/labring/sealos/controllers/pkg/resources"
+	"github.com/nebstudio/sealos/controllers/pkg/resources"
 
-	"github.com/labring/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
 
-	notificationv1 "github.com/labring/sealos/controllers/pkg/notification/api/v1"
-	rate "github.com/labring/sealos/controllers/pkg/utils/rate"
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
+	notificationv1 "github.com/nebstudio/sealos/controllers/pkg/notification/api/v1"
+	rate "github.com/nebstudio/sealos/controllers/pkg/utils/rate"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
@@ -53,8 +53,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
-	"github.com/labring/sealos/controllers/account/controllers"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
+	"github.com/nebstudio/sealos/controllers/account/controllers"
 	//+kubebuilder:scaffold:imports
 )
 

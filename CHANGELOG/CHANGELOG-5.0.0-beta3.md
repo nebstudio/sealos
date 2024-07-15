@@ -14,10 +14,10 @@ Welcome to the v5.0.0-beta3 release of Sealos!🎉🎉!
 * e0838da2d9d54fa9dfb7474dcae227483981dd5c: fix svg compatibility problem (#4250) (@zjy365)
 * e0b72430e2dffc28b15775fd5bb56440b88eb7df: 🤖 add release changelog using rebot. (#4239) (@sealos-release-robot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v5.0.0-beta2...v5.0.0-beta3
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v5.0.0-beta2...v5.0.0-beta3
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

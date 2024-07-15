@@ -75,7 +75,7 @@ CMD ["helm upgrade --install nginx charts/nginx --namespace=nginx --create-names
 Now everything is ready, and you can start building the cluster image.
 
 ```shell
-sealos build -t labring/nginx:v1.23.2 .
+sealos build -t nebstudio/nginx:v1.23.2 .
 ```
 
 **Note:** You should first install the sealos command to your local host.
@@ -83,7 +83,7 @@ sealos build -t labring/nginx:v1.23.2 .
 You can view the build log.
 
 ```shell
-root@ubuntu:~/cloud-images# sealos build -t labring/nginx:v1.23.2 .
+root@ubuntu:~/cloud-images# sealos build -t nebstudio/nginx:v1.23.2 .
 ...
 ```
 
@@ -112,13 +112,13 @@ Check the built image locally. Now all dependent deployment manifests and image 
 
 ```shell
 root@ubuntu:~/cloud-images# sealos images
-labring/nginx                      v1.23.2          521c85942ee4   4 minutes ago   56.8 MB
+nebstudio/nginx                      v1.23.2          521c85942ee4   4 minutes ago   56.8 MB
 ```
 
 You can push the image to any Docker image repository. The following command pushes it to Docker Hub.
 
 ```shell
-sealos push labring/nginx:v1.23.2
+sealos push nebstudio/nginx:v1.23.2
 ```
 
 **Note:** Please use the sealos command to operate the cluster
@@ -138,7 +138,7 @@ sealos login registry.cn-hangzhou.aliyuncs.com -u xxx -p xxx
 Then, you can run the cluster image in your cluster.
 
 ```shell
-sealos run labring/nginx:v1.23.2
+sealos run nebstudio/nginx:v1.23.2
 ```
 
 The helm binary command will be installed on the master node of your Kubernetes cluster.

@@ -14,7 +14,7 @@
 
 package main
 
-import "github.com/labring/sealos/cmd/image-cri-shim/cmd"
+import "github.com/nebstudio/sealos/cmd/image-cri-shim/cmd"
 
 func main() {
 	cmd.Execute()

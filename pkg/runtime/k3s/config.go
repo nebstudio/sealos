@@ -25,11 +25,11 @@ import (
 	"github.com/imdario/mergo"
 	netutils "k8s.io/utils/net"
 
-	"github.com/labring/sealos/pkg/constants"
-	fileutils "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/iputils"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/yaml"
+	"github.com/nebstudio/sealos/pkg/constants"
+	fileutils "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/yaml"
 )
 
 var defaultMergeOpts = []func(*mergo.Config){

@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/labring/sealos/controllers/pkg/resources"
+	"github.com/nebstudio/sealos/controllers/pkg/resources"
 
 	"github.com/dustin/go-humanize"
 	"sigs.k8s.io/yaml"
@@ -30,7 +30,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
 )
 
 func TestMongoDB_QueryBillingRecords(t *testing.T) {

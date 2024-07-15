@@ -22,20 +22,20 @@ import (
 	"os"
 	"time"
 
-	"github.com/labring/sealos/controllers/pkg/database/mongo"
+	"github.com/nebstudio/sealos/controllers/pkg/database/mongo"
 
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 
 	"github.com/go-logr/logr"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	"github.com/labring/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
 )
 
 // NamespaceBillingHistoryReconciler reconciles a NamespaceBillingHistory object

@@ -20,16 +20,16 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/labring/sealos/pkg/bootstrap"
-	"github.com/labring/sealos/pkg/buildah"
-	"github.com/labring/sealos/pkg/clusterfile"
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/filesystem/rootfs"
-	"github.com/labring/sealos/pkg/runtime/factory"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	fileutil "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/strings"
+	"github.com/nebstudio/sealos/pkg/bootstrap"
+	"github.com/nebstudio/sealos/pkg/buildah"
+	"github.com/nebstudio/sealos/pkg/clusterfile"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/filesystem/rootfs"
+	"github.com/nebstudio/sealos/pkg/runtime/factory"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/strings"
 )
 
 var ForceDelete bool

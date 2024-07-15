@@ -49,8 +49,8 @@ Sealos Boot is the core component of Sealos, mainly responsible for the lifecycl
 #### Binary Installation
 
 ```shell
-    curl -sfL  https://raw.githubusercontent.com/labring/sealos/v4.2.1-rc3/scripts/install.sh \
-    | sh -s v4.2.1-rc3 labring/sealos
+    curl -sfL  https://raw.githubusercontent.com/nebstudio/sealos/v4.2.1-rc3/scripts/install.sh \
+    | sh -s v4.2.1-rc3 nebstudio/sealos
 ```
 
 
@@ -68,7 +68,7 @@ Sealos provides two Docker containers: sealos and lvscare, as well as two binary
 
 ```shell
 # Create a cluster
-sealos run labring/kubernetes:v1.25.0 labring/helm:v3.8.2 labring/calico:v3.24.1 \
+sealos run nebstudio/kubernetes:v1.25.0 nebstudio/helm:v3.8.2 nebstudio/calico:v3.24.1 \
     --masters 192.168.64.2,192.168.64.22,192.168.64.20 \
     --nodes 192.168.64.21,192.168.64.19 \
     --passwd your-own-ssh-passwd
@@ -84,9 +84,9 @@ sealos run labring/kubernetes:v1.25.0 labring/helm:v3.8.2 labring/calico:v3.24.1
 * 8438a3fd3eacc97cca798d310e9e657270448eb7: fix ci error (#3128) (@bxy4543)
 * ac62c85585d024d7204a489117da4ad6b1a2d04b: update release error (#3132) (@cuisongliu)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.2.1-rc2...v4.2.1-rc3
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.2.1-rc2...v4.2.1-rc3
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 ## Roadmap
 
@@ -102,4 +102,4 @@ We are very proud to introduce the two major functional modules of Sealos Cloud 
 
 Thank you for your support of Sealos🎉🎉.
 
-If you encounter any problems during use, please submit an issue in the [GitHub repository](https://github.com/labring/sealos) , and we will solve your problem as soon as possible.
+If you encounter any problems during use, please submit an issue in the [GitHub repository](https://github.com/nebstudio/sealos) , and we will solve your problem as soon as possible.

@@ -24,13 +24,13 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/labring/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/rand"
-	"github.com/labring/sealos/pkg/utils/yaml"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/rand"
+	"github.com/nebstudio/sealos/pkg/utils/yaml"
 )
 
 func (k *K3s) initMaster0() error {

@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/labring/sealos/service/pay/helper"
-	"github.com/labring/sealos/service/pay/method"
+	"github.com/nebstudio/sealos/service/pay/helper"
+	"github.com/nebstudio/sealos/service/pay/method"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 

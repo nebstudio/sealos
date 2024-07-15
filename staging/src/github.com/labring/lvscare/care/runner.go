@@ -23,7 +23,7 @@ import (
 	"github.com/spf13/cobra"
 	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 var LVS = &runner{

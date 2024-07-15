@@ -25,10 +25,10 @@ Welcome to the v5.0.0-beta2 release of Sealos!🎉🎉!
 * b2fb15a9d623912b8439fc247b2f51252a999c7d: fix user avator && url (#4218) (@zjy365)
 * 5a2db108ee5f60fe559f453eb9afe86ba0b65d51: 🤖 add release changelog using rebot. (#4213) (@sealos-release-robot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v5.0.0-beta1...v5.0.0-beta2
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v5.0.0-beta1...v5.0.0-beta2
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

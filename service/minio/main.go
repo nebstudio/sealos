@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	minioserver "github.com/labring/sealos/service/minio/server"
-	"github.com/labring/sealos/service/pkg/server"
+	minioserver "github.com/nebstudio/sealos/service/minio/server"
+	"github.com/nebstudio/sealos/service/pkg/server"
 )
 
 func main() {

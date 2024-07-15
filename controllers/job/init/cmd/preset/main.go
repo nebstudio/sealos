@@ -21,9 +21,9 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/labring/sealos/controllers/job/init/internal/util/controller"
-	"github.com/labring/sealos/controllers/job/init/internal/util/database"
-	"github.com/labring/sealos/controllers/pkg/utils/logger"
+	"github.com/nebstudio/sealos/controllers/job/init/internal/util/controller"
+	"github.com/nebstudio/sealos/controllers/job/init/internal/util/database"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/logger"
 )
 
 func main() {

@@ -19,17 +19,17 @@ package e2e
 import (
 	"fmt"
 
-	"github.com/labring/sealos/test/e2e/testdata/kubeadm"
+	"github.com/nebstudio/sealos/test/e2e/testdata/kubeadm"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
 
 	. "github.com/onsi/ginkgo/v2"
 
-	"github.com/labring/sealos/test/e2e/testhelper/config"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/config"
 
-	"github.com/labring/sealos/test/e2e/suites/checkers"
+	"github.com/nebstudio/sealos/test/e2e/suites/checkers"
 )
 
 var _ = Describe("E2E_sealos_apply_test", func() {
@@ -82,7 +82,7 @@ networking:
 `
 			dFile := config.RootfsDockerfile{
 				KubeadmYaml: kubeadmVar,
-				BaseImage:   "labring/kubernetes:v1.25.0",
+				BaseImage:   "nebstudio/kubernetes:v1.25.0",
 			}
 			var tmpdir string
 			tmpdir, err = dFile.Write()
@@ -96,7 +96,7 @@ networking:
 			By("generate Clusterfile")
 			clusterfileConfig := config.Clusterfile{
 				BinData:  kubeadm.PackageName + "/custome-containerd-svc.yaml",
-				Replaces: map[string]string{"127.0.0.1": utils.GetLocalIpv4(), "labring/kubernetes:v1.25.0": "apply-hack-containerd:kubeadm-network"},
+				Replaces: map[string]string{"127.0.0.1": utils.GetLocalIpv4(), "nebstudio/kubernetes:v1.25.0": "apply-hack-containerd:kubeadm-network"},
 			}
 			applyfile, err := clusterfileConfig.Write()
 			utils.CheckErr(err, fmt.Sprintf("failed to write file %s: %v", applyfile, err))

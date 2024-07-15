@@ -23,11 +23,11 @@ import (
 
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/labring/sealos/controllers/pkg/database"
-	"github.com/labring/sealos/controllers/pkg/database/cockroach"
-	"github.com/labring/sealos/controllers/pkg/database/mongo"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/database/cockroach"
+	"github.com/nebstudio/sealos/controllers/pkg/database/mongo"
 
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 )
 
 //func Test_giveGift(t *testing.T) {

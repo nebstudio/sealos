@@ -22,7 +22,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/labring/sealos/pkg/image"
+	"github.com/nebstudio/sealos/pkg/image"
 
 	"github.com/containers/buildah/pkg/parse"
 
@@ -32,8 +32,8 @@ import (
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/rand"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/rand"
 )
 
 func newMergeCommand() *cobra.Command {

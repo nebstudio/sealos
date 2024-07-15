@@ -17,7 +17,7 @@ package buildah
 import (
 	"github.com/containers/common/libimage"
 
-	"github.com/labring/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/file"
 )
 
 func PreloadIfTarFile(images []string, transport string) ([]string, error) {

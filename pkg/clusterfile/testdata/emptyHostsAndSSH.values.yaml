@@ -13,6 +13,6 @@
 # limitations under the License.
 
 images:
-  - hub.sealos.cn/labring/kubernetes:v1.25.6
-  - hub.sealos.cn/labring/helm:v3.11.0
-  - hub.sealos.cn/labring/flannel:v0.21.4
+  - hub.sealos.cn/nebstudio/kubernetes:v1.25.6
+  - hub.sealos.cn/nebstudio/helm:v3.11.0
+  - hub.sealos.cn/nebstudio/flannel:v0.21.4

@@ -20,11 +20,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/labring/sealos/pkg/exec"
-	"github.com/labring/sealos/pkg/ssh"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/confirm"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/exec"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/confirm"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 type HostChecker struct {

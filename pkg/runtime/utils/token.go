@@ -32,12 +32,12 @@ import (
 	"k8s.io/client-go/util/cert"
 	v1 "k8s.io/kubernetes/cmd/kubeadm/app/apis/bootstraptoken/v1"
 
-	"github.com/labring/sealos/pkg/runtime/kubernetes/types"
-	"github.com/labring/sealos/pkg/utils/exec"
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/rand"
-	"github.com/labring/sealos/pkg/utils/yaml"
+	"github.com/nebstudio/sealos/pkg/runtime/kubernetes/types"
+	"github.com/nebstudio/sealos/pkg/utils/exec"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/rand"
+	"github.com/nebstudio/sealos/pkg/utils/yaml"
 )
 
 const defaultAdminConf = "/etc/kubernetes/admin.conf"

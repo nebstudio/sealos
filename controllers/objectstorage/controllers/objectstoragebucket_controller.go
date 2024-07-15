@@ -30,9 +30,9 @@ import (
 	"github.com/minio/madmin-go/v3"
 	"github.com/minio/minio-go/v7"
 
-	"github.com/labring/sealos/controllers/pkg/utils/env"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/env"
 
-	objectstoragev1 "github/labring/sealos/controllers/objectstorage/api/v1"
+	objectstoragev1 "github/nebstudio/sealos/controllers/objectstorage/api/v1"
 
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"

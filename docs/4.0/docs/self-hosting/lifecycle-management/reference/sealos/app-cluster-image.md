@@ -4,7 +4,7 @@ sidebar_position: 11
 
 # Application Cluster Image Usage Guide
 
-Sealos provides a repository called [cluster-image](https://github.com/labring-actions/cluster-image) on GitHub for building and publishing application images for Kubernetes clusters. These images can be created by submitting code to this repository and can be published to `docker.io/labring/` as official application images. It supports building Docker container images as well as cluster images for applications.
+Sealos provides a repository called [cluster-image](https://github.com/nebstudio-actions/cluster-image) on GitHub for building and publishing application images for Kubernetes clusters. These images can be created by submitting code to this repository and can be published to `docker.io/nebstudio/` as official application images. It supports building Docker container images as well as cluster images for applications.
 
 ## Types of Images
 

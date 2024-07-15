@@ -43,7 +43,7 @@ spec:
           - sh
           - -c
           - chmod -R 777 /data/templates/.git && cp -r -a /data/templates/. /template-data/
-          image: ghcr.io/labring-actions/sealos-template-init:latest
+          image: ghcr.io/nebstudio-actions/sealos-template-init:latest
           imagePullPolicy: Always
           name: template-frontend-init
           volumeMounts:
@@ -78,7 +78,7 @@ spec:
               value: "main"
             - name: SHOW_AUTHOR
               value: "false"
-          image: ghcr.io/labring/sealos-template-frontend:latest
+          image: ghcr.io/nebstudio/sealos-template-frontend:latest
           imagePullPolicy: Always
           volumeMounts:
             - name: template-frontend-volume

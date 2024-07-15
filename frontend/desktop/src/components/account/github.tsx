@@ -5,7 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 export default function GithubComponent(props: FlexProps) {
   // const { data } = useQuery(
   //   ['getGithubStar'],
-  //   () => fetch('https://api.github.com/repos/labring/sealos').then((res) => res.json()),
+  //   () => fetch('https://api.github.com/repos/nebstudio/sealos').then((res) => res.json()),
   //   {
   //     staleTime: 24 * 60 * 60 * 1000
   //   }
@@ -23,7 +23,7 @@ export default function GithubComponent(props: FlexProps) {
       cursor={'pointer'}
       fontWeight={500}
       {...props}
-      onClick={() => window.open('https://github.com/labring/sealos')}
+      onClick={() => window.open('https://github.com/nebstudio/sealos')}
     >
       <Icon
         xmlns="http://www.w3.org/2000/svg"

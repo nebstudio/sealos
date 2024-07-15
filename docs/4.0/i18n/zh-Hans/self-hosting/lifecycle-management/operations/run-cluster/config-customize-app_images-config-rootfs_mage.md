@@ -52,8 +52,8 @@ metadata:
 spec:
   ...
   image:
-  - labring/kubernetes:v1.23.8
-  - labring/calico:v3.24.1
+  - nebstudio/kubernetes:v1.23.8
+  - nebstudio/calico:v3.24.1
   - node-local-dns:1.3.2
 ---
 apiVersion: kubeadm.k8s.io/v1beta3
@@ -218,7 +218,7 @@ metadata:
 spec:
   strategy: override
   # only applied to rootfs
-  match: labring/kubernetes:v1.23.8
+  match: nebstudio/kubernetes:v1.23.8
   path: etc/config.toml
   data: |
     version = 2

@@ -20,7 +20,7 @@ cloud_version="latest"
 #key_path=
 #single=y/n
 image_registry=${image_registry:-"docker.io"}
-image_repository=${image_repository:-"labring"}
+image_repository=${image_repository:-"nebstudio"}
 kubernetes_version=${kubernetes_version:-"1.27.11"}
 cilium_version=${cilium_version:-"1.14.8"}
 cert_manager_version=${cert_manager_version:-"1.14.6"}
@@ -69,7 +69,7 @@ PROMPTS_EN=(
 
 Options:
   --image-registry                  # Image repository address (default: docker.io)
-  --image-repository                # Image repository name (default: labring)
+  --image-repository                # Image repository name (default: nebstudio)
   --kubernetes-version              # Kubernetes version (default: 1.27.11)
   --cilium-version                  # Cilium version (default: 1.14.8)
   --cert-manager-version            # Cert Manager version (default: 1.14.6)
@@ -130,7 +130,7 @@ PROMPTS_CN=(
 
 Options:
   --image-registry                # 镜像仓库地址 (默认: docker.io)
-  --image-repository              # 镜像仓库名称 (默认: labring)
+  --image-repository              # 镜像仓库名称 (默认: nebstudio)
   --kubernetes-version            # Kubernetes版本 (默认: 1.27.11)
   --cilium-version                # Cilium版本 (默认: 1.14.8)
   --cert-manager-version          # Cert Manager版本 (默认: 1.14.6)
@@ -231,9 +231,9 @@ init() {
         get_prompt "install_sealos"
         read -p " " installChoice
         if [[ "${installChoice,,}" == "y" ]]; then
-          local install_url="https://raw.githubusercontent.com/labring/sealos/main/scripts/install.sh"
+          local install_url="https://raw.githubusercontent.com/nebstudio/sealos/main/scripts/install.sh"
           [ -z "$proxy_prefix" ] || install_url="${proxy_prefix%/}/$install_url"
-          curl -sfL "$install_url" | PROXY_PREFIX=$proxy_prefix sh -s "${SEALOS_VERSION}" labring/sealos
+          curl -sfL "$install_url" | PROXY_PREFIX=$proxy_prefix sh -s "${SEALOS_VERSION}" nebstudio/sealos
         else
             echo "Please install sealos CLI to proceed."
             exit 1

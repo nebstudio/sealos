@@ -1,7 +1,7 @@
 blank_issues_enabled: true
 contact_links:
   - name: Ask a question (GitHub Discussions)
-    url: https://github.com/labring/sealos/discussions
+    url: https://github.com/nebstudio/sealos/discussions
     about: |
       Please do not submit "a bug report" for asking a question.
       In most cases, GitHub Discussions is the best place to ask a question.

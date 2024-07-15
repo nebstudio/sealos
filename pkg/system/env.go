@@ -25,7 +25,7 @@ import (
 	"github.com/containers/buildah"
 	"github.com/containers/storage/pkg/homedir"
 
-	"github.com/labring/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/constants"
 )
 
 type envSystemConfig struct{}

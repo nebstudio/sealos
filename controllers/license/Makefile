@@ -1,6 +1,6 @@
 
 # Image URL to use all building/pushing image targets
-IMG ?= ghcr.io/labring/sealos-license-controller:latest
+IMG ?= ghcr.io/nebstudio/sealos-license-controller:latest
 TARGETARCH ?= amd64
 GOARCH ?= amd64
 
@@ -65,8 +65,8 @@ test: manifests generate fmt vet envtest ## Run tests.
 ##@ Build
 
 .PHONY: build
-CONTROLLER_PKG=github.com/labring/sealos/controllers/pkg
-CONTROLLER_LICENSE=github.com/labring/sealos/controllers/license/internal
+CONTROLLER_PKG=github.com/nebstudio/sealos/controllers/pkg
+CONTROLLER_LICENSE=github.com/nebstudio/sealos/controllers/license/internal
 build: manifests generate fmt vet ## Build manager binary.
 	LD_FLAGS="-s -w"; \
 	[ -n "$(CRYPTOKEY)" ] && LD_FLAGS+=" -X ${CONTROLLER_PKG}/crypto.encryptionKey=${CRYPTOKEY} -X ${CONTROLLER_PKG}/database.cryptoKey=${CRYPTOKEY}"; \

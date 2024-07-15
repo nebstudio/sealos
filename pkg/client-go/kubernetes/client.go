@@ -17,7 +17,7 @@ package kubernetes
 import (
 	"path/filepath"
 
-	fileutil "github.com/labring/sealos/pkg/utils/file"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
 
 	"k8s.io/client-go/discovery"
 	"k8s.io/client-go/dynamic"

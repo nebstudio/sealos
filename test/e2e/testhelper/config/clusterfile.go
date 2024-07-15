@@ -20,15 +20,15 @@ import (
 	"os"
 	"strings"
 
-	"github.com/labring/sealos/test/e2e/testdata/kubeadm"
+	"github.com/nebstudio/sealos/test/e2e/testdata/kubeadm"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
 	"github.com/pkg/errors"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/util/yaml"
 
-	"github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 type Clusterfile struct {

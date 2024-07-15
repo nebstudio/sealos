@@ -12,10 +12,10 @@ Welcome to the v4.3.0 release of Sealos!🎉🎉!
 * 9259b2d21bf6507d9ced75a15e47b0742b72c28c: feature(main): add commitor for release (#3487) (@cuisongliu)
 * 3a07652bcf09c002a449018fbdc5147d18e31993: refactor: cri_server multiple versions of AuthConfig (#3507) (@muicoder)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v4.3.0-rc1...v4.3.0
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v4.3.0-rc1...v4.3.0
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

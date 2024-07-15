@@ -19,7 +19,7 @@ ginkgo --help
 Test the image-cri-shim component that pulls up the cluster through sealos
 
 ```shell
-sealos run labring/kubernetes:v1.25.0
+sealos run nebstudio/kubernetes:v1.25.0
 ginkgo -v --forces="image-cri-shim test" e2e
 ```
 

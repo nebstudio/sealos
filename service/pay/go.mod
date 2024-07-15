@@ -1,10 +1,10 @@
-module github.com/labring/sealos/service/pay
+module github.com/nebstudio/sealos/service/pay
 
 go 1.20
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/labring/sealos/controllers/pkg v0.0.0-20231106094935-88ef18f0124f
+	github.com/nebstudio/sealos/controllers/pkg v0.0.0-20231106094935-88ef18f0124f
 	github.com/matoous/go-nanoid/v2 v2.0.0
 	github.com/stripe/stripe-go/v74 v74.30.0
 	go.mongodb.org/mongo-driver v1.12.1
@@ -50,6 +50,6 @@ require (
 )
 
 replace (
-	github.com/labring/sealos/controllers/pkg => ../../controllers/pkg
-	github.com/labring/sealos/service/pay => ../pay
+	github.com/nebstudio/sealos/controllers/pkg => ../../controllers/pkg
+	github.com/nebstudio/sealos/service/pay => ../pay
 )

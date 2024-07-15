@@ -46,31 +46,31 @@ sealos run <image> --masters [arg] --nodes [arg] [Options]
 
 1. 创建集群到您的裸机服务器，指定 IP 列表：
 ```
-sealos run labring/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
+sealos run nebstudio/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
 	--nodes 192.168.0.5,192.168.0.6,192.168.0.7 --passwd 'xxx'
 ```
 
 2. 多镜像运行：
 ```
-sealos run labring/kubernetes:v1.24.0 labring/helm:v3.11.3  calico:v3.24.6 \
+sealos run nebstudio/kubernetes:v1.24.0 nebstudio/helm:v3.11.3  calico:v3.24.6 \
     --masters 192.168.64.2,192.168.64.22,192.168.64.20 --nodes 192.168.64.21,192.168.64.19
 ```
 
 3. 指定服务器的 InfraSSH 端口:
 ```
-sealos run labring/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
+sealos run nebstudio/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
 	--nodes 192.168.0.5,192.168.0.6,192.168.0.7 --port 24 --passwd 'xxx'
 ```
 
 4. 自定义 VIP Kubernetes 集群:
 ```
-sealos run -e defaultVIP=10.103.97.2 labring/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
+sealos run -e defaultVIP=10.103.97.2 nebstudio/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
 	--nodes 192.168.0.5,192.168.0.6,192.168.0.7 --passwd 'xxx'
 ```
 
 5. 创建单节点 Kubernetes 集群:
 ```
-sealos run labring/kubernetes:v1.24.0 
+sealos run nebstudio/kubernetes:v1.24.0 
 ```
 
 6. 使用自定义环境变量创建集群:

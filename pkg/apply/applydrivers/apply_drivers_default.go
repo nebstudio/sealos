@@ -25,17 +25,17 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/labring/sealos/pkg/apply/processor"
-	"github.com/labring/sealos/pkg/clusterfile"
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/exec"
-	"github.com/labring/sealos/pkg/ssh"
-	"github.com/labring/sealos/pkg/system"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/confirm"
-	"github.com/labring/sealos/pkg/utils/iputils"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/yaml"
+	"github.com/nebstudio/sealos/pkg/apply/processor"
+	"github.com/nebstudio/sealos/pkg/clusterfile"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/exec"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	"github.com/nebstudio/sealos/pkg/system"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/confirm"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/yaml"
 )
 
 func NewDefaultApplier(ctx context.Context, cluster *v2.Cluster, cf clusterfile.Interface, images []string) (Interface, error) {

@@ -24,8 +24,8 @@ import (
 
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"
 
-	"github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/maps"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/maps"
 )
 
 func escapeDollarSign(s string, cmd bool) string {
@@ -85,7 +85,7 @@ func MergeDockerfileFromImages(imageObjList []map[string]v1.Image) (string, erro
 	t := template.New("")
 	t, err := t.Parse(
 		`FROM scratch
-MAINTAINER labring
+MAINTAINER nebstudio
 {{- if .Labels }}
 LABEL {{ .Labels }}
 {{- end }}

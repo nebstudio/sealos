@@ -25,8 +25,8 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/labring/sealos/pkg/client-go/kubernetes"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/client-go/kubernetes"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 func (k *KubeadmRuntime) runPipelines(phase string, pipelines ...func() error) error {

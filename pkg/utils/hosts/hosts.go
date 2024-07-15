@@ -23,9 +23,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
-	stringsutils "github.com/labring/sealos/pkg/utils/strings"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	stringsutils "github.com/nebstudio/sealos/pkg/utils/strings"
 
 	"github.com/emirpasic/gods/maps/linkedhashmap"
 )

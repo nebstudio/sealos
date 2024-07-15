@@ -30,7 +30,7 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	licensev1 "github.com/labring/sealos/controllers/license/api/v1"
+	licensev1 "github.com/nebstudio/sealos/controllers/license/api/v1"
 	//+kubebuilder:scaffold:imports
 )
 

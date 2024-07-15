@@ -26,5 +26,5 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
 - name: controller
-  newName: ghcr.io/labring/sealos-db-adminer-controller
+  newName: ghcr.io/nebstudio/sealos-db-adminer-controller
   newTag: dev

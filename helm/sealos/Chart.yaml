@@ -17,8 +17,8 @@ keywords:
   - sealos
 
 maintainers:
-  - name: labring
-    url: https://github.com/labring
+  - name: nebstudio
+    url: https://github.com/nebstudio
 
 name: sealos
 version: 0.1.0

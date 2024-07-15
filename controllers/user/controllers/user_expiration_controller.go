@@ -1,5 +1,5 @@
 /*
-Copyright 2022 labring.
+Copyright 2022 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import (
 	"context"
 	"errors"
 
-	utilcontroller "github.com/labring/operator-sdk/controller"
+	utilcontroller "github.com/nebstudio/operator-sdk/controller"
 
 	"github.com/go-logr/logr"
 	"k8s.io/apimachinery/pkg/runtime"
@@ -29,7 +29,7 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 )
 
 // UserExpirationReconciler reconciles a Secret object

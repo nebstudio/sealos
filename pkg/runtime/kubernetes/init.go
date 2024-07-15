@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/labring/sealos/pkg/cert"
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/cert"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 func (k *KubeadmRuntime) InitKubeadmConfigToMaster0() error {

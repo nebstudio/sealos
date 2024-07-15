@@ -75,7 +75,7 @@ CMD ["helm upgrade --install nginx charts/nginx --namespace=nginx --create-names
 现在一切准备就绪，你可以开始构建集群镜像。
 
 ```shell
-sealos build -t labring/nginx:v1.23.2 .
+sealos build -t nebstudio/nginx:v1.23.2 .
 ```
 
 **注意：** 你应该首先将 sealos 命令安装到本地主机。
@@ -83,7 +83,7 @@ sealos build -t labring/nginx:v1.23.2 .
 你可以查看构建日志。
 
 ```shell
-root@ubuntu:~/cloud-images# sealos build -t labring/nginx:v1.23.2 .
+root@ubuntu:~/cloud-images# sealos build -t nebstudio/nginx:v1.23.2 .
 2022-11-06T15:58:33 info lookup in path charts
 2022-11-06T15:58:33 info sub chart is nginx
 2022-11-06T15:58:33 warn if you access private registry,you must be 'sealos login' or 'buildah login'
@@ -97,14 +97,14 @@ Status: images save success
 STEP 1/3: FROM scratch
 STEP 2/3: COPY . .
 STEP 3/3: CMD ["helm upgrade --install nginx charts/nginx --namespace=nginx --create-namespace --set service.type=NodePort"]
-COMMIT labring/nginx:v1.23.2
+COMMIT nebstudio/nginx:v1.23.2
 Getting image source signatures
 Copying blob 9f5a861e0f8d done  
 Copying config 1b89695273 done  
 Writing manifest to image destination
 Storing signatures
 --> 1b896952734
-Successfully tagged localhost/labring/nginx:v1.23.2
+Successfully tagged localhost/nebstudio/nginx:v1.23.2
 1b8969527343939d60859469708e5420758f7419a421304f81b5132669982de7
 2022-11-06T15:58:44 info 
       ___           ___           ___           ___       ___           ___
@@ -120,7 +120,7 @@ Successfully tagged localhost/labring/nginx:v1.23.2
      \/__/         \/__/         \/__/         \/__/     \/__/         \/__/
 
                   Website :https://www.sealos.io/
-                  Address :github.com/labring/sealos
+                  Address :github.com/nebstudio/sealos
 ```
 
 sealos 将自动从 charts 目录中提取镜像，将其拉取到本地并存储在 registry 目录中。
@@ -150,13 +150,13 @@ sealos 将自动从 charts 目录中提取镜像，将其拉取到本地并存�
 root@ubuntu:~/cloud-images#
 
  sealos images
-labring/nginx                      v1.23.2          521c85942ee4   4 minutes ago   56.8 MB
+nebstudio/nginx                      v1.23.2          521c85942ee4   4 minutes ago   56.8 MB
 ```
 
 你可以将镜像推送到任何 Docker 镜像仓库，下面的命令将其推送到 Docker Hub。
 
 ```shell
-sealos push labring/nginx:v1.23.2
+sealos push nebstudio/nginx:v1.23.2
 ```
 
 **注意：** 请使用 sealos 命令操作集群镜像，不支持 Docker 命令。
@@ -174,7 +174,7 @@ sealos login registry.cn-hangzhou.aliyuncs.com -u xxx -p xxx
 然后你可以在你的集群中运行集群镜像。
 
 ```shell
-sealos run labring/nginx:v1.23.2
+sealos run nebstudio/nginx:v1.23.2
 ```
 
 helm 二进制命令将安装到你的 Kubernetes 集群的主节点上。

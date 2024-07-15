@@ -18,16 +18,16 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/labring/sealos/pkg/runtime"
+	"github.com/nebstudio/sealos/pkg/runtime"
 
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/apply/processor"
-	"github.com/labring/sealos/pkg/clusterfile"
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/runtime/factory"
-	fileutils "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/apply/processor"
+	"github.com/nebstudio/sealos/pkg/clusterfile"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/runtime/factory"
+	fileutils "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 func newCertCmd() *cobra.Command {

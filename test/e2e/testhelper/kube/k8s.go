@@ -24,7 +24,7 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/labring/sealos/pkg/client-go/kubernetes"
+	"github.com/nebstudio/sealos/pkg/client-go/kubernetes"
 )
 
 type K8s interface {

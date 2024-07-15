@@ -88,7 +88,7 @@ spec:
           - name: TLS_ENABLED
             value: "1"
           - name: IMAGE
-            value: "docker.io/labring4docker/adminer:v4.8.1"
+            value: "docker.io/nebstudio4docker/adminer:v4.8.1"
           - name: SECRET_NAME
             value: "wildcard-cloud-sealos-io-cert"
           - name: SECRET_NAMESPACE

@@ -1,5 +1,5 @@
 /*
-Copyright 2022 labring.
+Copyright 2022 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -25,11 +25,11 @@ import (
 
 	"golang.org/x/exp/rand"
 
-	utilcontroller "github.com/labring/operator-sdk/controller"
-	"github.com/labring/operator-sdk/hash"
+	utilcontroller "github.com/nebstudio/operator-sdk/controller"
+	"github.com/nebstudio/operator-sdk/hash"
 
-	"github.com/labring/sealos/controllers/user/controllers/helper/config"
-	"github.com/labring/sealos/controllers/user/controllers/helper/kubeconfig"
+	"github.com/nebstudio/sealos/controllers/user/controllers/helper/config"
+	"github.com/nebstudio/sealos/controllers/user/controllers/helper/kubeconfig"
 
 	"sigs.k8s.io/controller-runtime/pkg/builder"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
@@ -56,8 +56,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
-	"github.com/labring/sealos/controllers/user/controllers/helper"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
+	"github.com/nebstudio/sealos/controllers/user/controllers/helper"
 )
 
 var userAnnotationCreatorKey = userv1.UserAnnotationCreatorKey

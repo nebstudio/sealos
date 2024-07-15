@@ -33,10 +33,10 @@ Sealos offers features like cluster scaling, backup and recovery, and cluster re
 Running a Kubernetes cluster with Sealos is straightforward. Just follow these steps:
 
 ```bash
-$ curl -sfL  https://raw.githubusercontent.com/labring/sealos/v4.3.0/scripts/install.sh \
-    | sh -s v4.3.0 labring/sealos
+$ curl -sfL  https://raw.githubusercontent.com/nebstudio/sealos/v4.3.0/scripts/install.sh \
+    | sh -s v4.3.0 nebstudio/sealos
 # Create a cluster
-$ sealos run labring/kubernetes:v1.25.0-4.2.0 labring/helm:v3.8.2 labring/calico:v3.24.1 \
+$ sealos run nebstudio/kubernetes:v1.25.0-4.2.0 nebstudio/helm:v3.8.2 nebstudio/calico:v3.24.1 \
      --masters 192.168.64.2,192.168.64.22,192.168.64.20 \
      --nodes 192.168.64.21,192.168.64.19 -p [your-ssh-passwd]
 ```
@@ -49,13 +49,13 @@ With the `sealos run` command, you can run various distributed applications on t
 
 ```shell
 # MySQL cluster
-$ sealos run labring/mysql-operator:8.0.23-14.1
+$ sealos run nebstudio/mysql-operator:8.0.23-14.1
 
 # Clickhouse cluster
-$ sealos run labring/clickhouse:0.18.4
+$ sealos run nebstudio/clickhouse:0.18.4
 
 # Redis cluster
-$ sealos run labring/redis-operator:3.1.4
+$ sealos run nebstudio/redis-operator:3.1.4
 ```
 
 ## Customizing the Cluster

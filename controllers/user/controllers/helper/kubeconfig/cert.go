@@ -30,7 +30,7 @@ import (
 	"net"
 	"time"
 
-	confighelper "github.com/labring/sealos/controllers/user/controllers/helper/config"
+	confighelper "github.com/nebstudio/sealos/controllers/user/controllers/helper/config"
 
 	"sigs.k8s.io/controller-runtime/pkg/client"
 

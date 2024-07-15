@@ -1,4 +1,4 @@
-module github.com/labring/sealos/controllers/node
+module github.com/nebstudio/sealos/controllers/node
 
 go 1.20
 

@@ -23,14 +23,14 @@ import (
 	"golang.org/x/exp/slices"
 	"k8s.io/apimachinery/pkg/util/sets"
 
-	"github.com/labring/sealos/pkg/apply/applydrivers"
-	"github.com/labring/sealos/pkg/clusterfile"
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/exec"
-	"github.com/labring/sealos/pkg/ssh"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	fileutil "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/apply/applydrivers"
+	"github.com/nebstudio/sealos/pkg/clusterfile"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/exec"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
 )
 
 // NewScaleApplierFromArgs will filter ip list from command parameters.

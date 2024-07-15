@@ -22,12 +22,12 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/labring/image-cri-shim/pkg/shim"
-	"github.com/labring/image-cri-shim/pkg/types"
+	"github.com/nebstudio/image-cri-shim/pkg/shim"
+	"github.com/nebstudio/image-cri-shim/pkg/types"
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/version"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/version"
 )
 
 var cfg *types.Config

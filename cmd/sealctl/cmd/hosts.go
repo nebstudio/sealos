@@ -21,9 +21,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/utils/hosts"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/utils/hosts"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 var hostsPath string

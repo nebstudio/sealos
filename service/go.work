@@ -10,6 +10,6 @@ use (
 )
 
 replace (
-	github.com/labring/sealos/controllers/account => ../controllers/account
-	github.com/labring/sealos/controllers/user => ../controllers/user
+	github.com/nebstudio/sealos/controllers/account => ../controllers/account
+	github.com/nebstudio/sealos/controllers/user => ../controllers/user
 )

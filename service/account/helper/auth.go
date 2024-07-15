@@ -5,9 +5,9 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/labring/sealos/controllers/pkg/utils/logger"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/logger"
 
-	auth2 "github.com/labring/sealos/service/pkg/auth"
+	auth2 "github.com/nebstudio/sealos/service/pkg/auth"
 )
 
 func AuthenticateWithBind(c *gin.Context) error {

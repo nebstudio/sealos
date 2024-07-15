@@ -24,7 +24,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	v1 "github.com/labring/sealos/controllers/account/api/v1"
+	v1 "github.com/nebstudio/sealos/controllers/account/api/v1"
 
 	"github.com/go-logr/logr"
 	"sigs.k8s.io/controller-runtime/pkg/controller"

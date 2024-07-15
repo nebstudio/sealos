@@ -1,13 +1,13 @@
-module github.com/labring/sealos/service
+module github.com/nebstudio/sealos/service
 
 go 1.20
 
 replace (
-	github.com/labring/sealos/service => ../service
-	github.com/labring/sealos/service/account => ../service/account
-	github.com/labring/sealos/service/database => ../service/database
-	github.com/labring/sealos/service/exceptionmonitor => ../service/exceptionmonitor
-	github.com/labring/sealos/service/pkg => ../pkg
+	github.com/nebstudio/sealos/service => ../service
+	github.com/nebstudio/sealos/service/account => ../service/account
+	github.com/nebstudio/sealos/service/database => ../service/database
+	github.com/nebstudio/sealos/service/exceptionmonitor => ../service/exceptionmonitor
+	github.com/nebstudio/sealos/service/pkg => ../pkg
 )
 
 require (

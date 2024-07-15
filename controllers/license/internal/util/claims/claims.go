@@ -18,7 +18,7 @@ import (
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/mitchellh/mapstructure"
 
-	v1 "github.com/labring/sealos/controllers/license/api/v1"
+	v1 "github.com/nebstudio/sealos/controllers/license/api/v1"
 )
 
 // Claims is the data structure of license claims

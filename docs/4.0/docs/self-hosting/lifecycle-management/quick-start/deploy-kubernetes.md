@@ -18,17 +18,17 @@ Here are some basic installation requirements:
 - The `sealos run` command must be run on the **first master node** of the Kubernetes cluster. **Installation on nodes outside the cluster is not currently supported**.
 - It is recommended to use a clean OS to create the cluster. **Do not install Docker manually!**
 - Supports most Linux distributions like Ubuntu, CentOS, Rocky Linux.
-- Compatible with all Kubernetes versions available on [Docker Hub](https://hub.docker.com/r/labring/kubernetes/tags).
+- Compatible with all Kubernetes versions available on [Docker Hub](https://hub.docker.com/r/nebstudio/kubernetes/tags).
 - Supports Containerd as the container runtime.
 - When installing on public clouds, use **private IP** addresses.
 
 ## View Available Cluster Images   
 
-All Sealos cluster images are hosted in the [cluster-image-docs](https://github.com/labring-actions/cluster-image-docs) repository.   
+All Sealos cluster images are hosted in the [cluster-image-docs](https://github.com/nebstudio-actions/cluster-image-docs) repository.   
 
-You can browse all Sealos images on Docker Hub here: [https://hub.docker.com/u/labring](https://hub.docker.com/u/labring).  
+You can browse all Sealos images on Docker Hub here: [https://hub.docker.com/u/nebstudio](https://hub.docker.com/u/nebstudio).  
 
-Use [Registry Explorer](https://explore.ggcr.dev/) to view all versions of the Kubernetes cluster images by entering `labring/kubernetes` and clicking "Submit Query":  
+Use [Registry Explorer](https://explore.ggcr.dev/) to view all versions of the Kubernetes cluster images by entering `nebstudio/kubernetes` and clicking "Submit Query":  
 
 ![](images/registry-explorer.png)
 
@@ -44,18 +44,18 @@ Kubernetes cluster stability improves with higher minor version numbers. For exa
 
 ```shell
 # sealos version must >= v4.1.0
-$ sealos run labring/kubernetes:v1.27.7 labring/helm:v3.9.4 labring/cilium:v1.13.4 --single  
+$ sealos run nebstudio/kubernetes:v1.27.7 nebstudio/helm:v3.9.4 nebstudio/cilium:v1.13.4 --single  
 ```
 
 ## Install Kubernetes Cluster  
 
 ```shell  
-$ sealos run labring/kubernetes:v1.27.7 labring/helm:v3.9.4 labring/cilium:v1.13.4 \  
+$ sealos run nebstudio/kubernetes:v1.27.7 nebstudio/helm:v3.9.4 nebstudio/cilium:v1.13.4 \  
 --masters 192.168.64.2,192.168.64.22,192.168.64.20 \
 --nodes 192.168.64.21,192.168.64.19 -p [your-ssh-passwd]
 ```
 
-Note: labring/helm must come before labring/cilium.   
+Note: nebstudio/helm must come before nebstudio/cilium.   
 
 Parameter descriptions:   
 
@@ -64,18 +64,18 @@ Parameter descriptions:
 | --masters | 192.168.0.2 | List of master node IP addresses |   
 | --nodes | 192.168.0.3 | List of worker node IP addresses |  
 | --ssh-passwd | [your-ssh-passwd] | SSH password |  
-| kubernetes | labring/kubernetes:v1.25.0 | Kubernetes cluster image |   
+| kubernetes | nebstudio/kubernetes:v1.25.0 | Kubernetes cluster image |   
 
 Running the above commands directly on clean servers will install a highly available Kubernetes cluster without any extra steps.  
 
 ## Install Various Distributed Apps
 
 ```shell  
-sealos run labring/helm:v3.9.4 # Install Helm   
+sealos run nebstudio/helm:v3.9.4 # Install Helm   
 
-sealos run labring/openebs:v3.9.0 # Install OpenEBS   
+sealos run nebstudio/openebs:v3.9.0 # Install OpenEBS   
 
-sealos run labring/minio-operator:v4.5.5 labring/ingress-nginx:4.1.0
+sealos run nebstudio/minio-operator:v4.5.5 nebstudio/ingress-nginx:4.1.0
 ```  
 
 This provides highly available apps like Minio without worrying about dependencies.
@@ -121,9 +121,9 @@ For offline environments, first import the images - subsequent steps are identic
 First, export images from an online environment:    
 
 ```shell   
-$ sealos pull registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.27.7    
+$ sealos pull registry.cn-shanghai.aliyuncs.com/nebstudio/kubernetes:v1.27.7    
 
-$ sealos save -o kubernetes.tar registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.27.7  
+$ sealos save -o kubernetes.tar registry.cn-shanghai.aliyuncs.com/nebstudio/kubernetes:v1.27.7  
 ```  
 
 ### Import and Install  
@@ -139,7 +139,7 @@ The rest of the installation process is identical to online installation:
 ```shell   
 $ sealos images # Verify import succeeded   
 
-$ sealos run registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.27.7 # Single node  
+$ sealos run registry.cn-shanghai.aliyuncs.com/nebstudio/kubernetes:v1.27.7 # Single node  
 ```  
 
 ### Quick Cluster Install  
@@ -158,11 +158,11 @@ It's advised to use Containerd as the container runtime interface (CRI) in Kuber
 
 | Kubernetes Version | Required Sealos Version | CRI Version | Cluster Image Version      |
 | ------------------ | ----------------------- | ----------- |----------------------------|
-| `<1.25`            | `>=v4.0.0`              | v1alpha2    | labring/kubernetes:v1.24.0 |
-| `>=1.25`           | `>=v4.1.0`              | v1alpha2    | labring/kubernetes:v1.25.0 |
-| `>=1.26`           | `>=v4.1.4-rc3`          | v1          | labring/kubernetes:v1.26.0 |
-| `>=1.27`           | `>=v4.2.0-alpha3`       | v1          | labring/kubernetes:v1.27.0 |
-| `>=1.28`           | `>=v5.0.0`              | v1          | labring/kubernetes:v1.28.0 |
+| `<1.25`            | `>=v4.0.0`              | v1alpha2    | nebstudio/kubernetes:v1.24.0 |
+| `>=1.25`           | `>=v4.1.0`              | v1alpha2    | nebstudio/kubernetes:v1.25.0 |
+| `>=1.26`           | `>=v4.1.4-rc3`          | v1          | nebstudio/kubernetes:v1.26.0 |
+| `>=1.27`           | `>=v4.2.0-alpha3`       | v1          | nebstudio/kubernetes:v1.27.0 |
+| `>=1.28`           | `>=v5.0.0`              | v1          | nebstudio/kubernetes:v1.28.0 |
 
 The choice of Sealos and CRI versions is dependent on the Kubernetes version in question. For instance, Kubernetes v1.26.0 would require Sealos v4.1.4-rc3 or newer, along with the v1 CRI version.
 
@@ -172,11 +172,11 @@ Alternatively, Docker can also be used as the container runtime. The following t
 
 | Kubernetes Version | Required Sealos Version | CRI Version | Cluster Image Version             |
 |--------------------|-------------------------| ----------- |-----------------------------------|
-| `<1.25`            | `>=v4.0.0`              | v1alpha2    | labring/kubernetes-docker:v1.24.0 |
-| `>=1.25`           | `>=v4.1.0`              | v1alpha2    | labring/kubernetes-docker:v1.25.0 |
-| `>=1.26`           | `>=v4.1.4-rc3`          | v1          | labring/kubernetes-docker:v1.26.0 |
-| `>=1.27`           | `>=v4.2.0-alpha3`       | v1          | labring/kubernetes-docker:v1.27.0 |
-| `>=1.28`           | `>=v5.0.0`              | v1          | labring/kubernetes-docker:v1.28.0 |
+| `<1.25`            | `>=v4.0.0`              | v1alpha2    | nebstudio/kubernetes-docker:v1.24.0 |
+| `>=1.25`           | `>=v4.1.0`              | v1alpha2    | nebstudio/kubernetes-docker:v1.25.0 |
+| `>=1.26`           | `>=v4.1.4-rc3`          | v1          | nebstudio/kubernetes-docker:v1.26.0 |
+| `>=1.27`           | `>=v4.2.0-alpha3`       | v1          | nebstudio/kubernetes-docker:v1.27.0 |
+| `>=1.28`           | `>=v5.0.0`              | v1          | nebstudio/kubernetes-docker:v1.28.0 |
 
 As with the Containerd setup, the appropriate Sealos and CRI versions must be matched with the specific version of Kubernetes being used. For a Kubernetes v1.26.0 setup, this means selecting Sealos v4.1.4-rc3 or later, and a v1 CRI version.
 
@@ -184,8 +184,8 @@ As with the Containerd setup, the appropriate Sealos and CRI versions must be ma
 
 | k3s Version | Required Sealos Version | Cluster Image Version |
 |-------------|-------------------------|-----------------------|
-| `>=1.24`    | `>=v5.0.0`              | labring/k3s:v1.24.0   |
+| `>=1.24`    | `>=v5.0.0`              | nebstudio/k3s:v1.24.0   |
 
 ## Summary
 
-You can choose from a variety of image types and versions to suit your individual needs and preferences. Don't forget to consult the [CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) to stay informed about the latest updates and bug fixes for each version.
+You can choose from a variety of image types and versions to suit your individual needs and preferences. Don't forget to consult the [CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) to stay informed about the latest updates and bug fixes for each version.

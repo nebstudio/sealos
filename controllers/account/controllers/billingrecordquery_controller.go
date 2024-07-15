@@ -23,14 +23,14 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/labring/sealos/controllers/pkg/database/mongo"
+	"github.com/nebstudio/sealos/controllers/pkg/database/mongo"
 
 	"github.com/go-logr/logr"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
-	"github.com/labring/sealos/controllers/pkg/database"
-	"github.com/labring/sealos/controllers/pkg/resources"
-	"github.com/labring/sealos/controllers/pkg/utils/env"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/resources"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/env"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"

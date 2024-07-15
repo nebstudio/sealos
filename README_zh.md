@@ -12,13 +12,13 @@
 
 <div align="center">
 
-[![Open in Dev Container](https://img.shields.io/static/v1?label=Dev%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/github/labring/sealos)
-[![Build Status](https://github.com/labring/sealos/actions/workflows/release.yml/badge.svg)](https://github.com/labring/sealos/actions)
-[![](https://img.shields.io/docker/pulls/labring/kubernetes)](https://hub.docker.com/r/labring/kubernetes)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flabring%2Fsealos.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Flabring%2Fsealos?ref=badge_shield)
-[![codecov](https://codecov.io/gh/labring/sealos/branch/main/graph/badge.svg?token=e41ZDcj06N)](https://codecov.io/gh/labring/sealos)
+[![Open in Dev Container](https://img.shields.io/static/v1?label=Dev%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/github/nebstudio/sealos)
+[![Build Status](https://github.com/nebstudio/sealos/actions/workflows/release.yml/badge.svg)](https://github.com/nebstudio/sealos/actions)
+[![](https://img.shields.io/docker/pulls/nebstudio/kubernetes)](https://hub.docker.com/r/nebstudio/kubernetes)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnebstudio%2Fsealos.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnebstudio%2Fsealos?ref=badge_shield)
+[![codecov](https://codecov.io/gh/nebstudio/sealos/branch/main/graph/badge.svg?token=e41ZDcj06N)](https://codecov.io/gh/nebstudio/sealos)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fpostwoman.io&logo=Postwoman)](https://sealos.run)
-[![OSCS Status](https://www.oscs1024.com/platform/badge/labring/sealos.svg?size=small)](https://www.oscs1024.com/repo/labring/sealos?ref=badge_small)
+[![OSCS Status](https://www.oscs1024.com/platform/badge/nebstudio/sealos.svg?size=small)](https://www.oscs1024.com/repo/nebstudio/sealos?ref=badge_small)
 
 <br />
 
@@ -26,12 +26,12 @@
 
 </div>
 
-https://github.com/labring/sealos/assets/82700206/b1f8a25a-55cf-4d15-a47b-38cf7d507134
+https://github.com/nebstudio/sealos/assets/82700206/b1f8a25a-55cf-4d15-a47b-38cf7d507134
 
 <p align="center">
   <a href="https://sealos.run/docs/Intro">文档</a> |
   <a href="./README.md">English</a> | 
-  <a href="https://github.com/orgs/labring/projects/4/views/9">发展规划</a>
+  <a href="https://github.com/orgs/nebstudio/projects/4/views/9">发展规划</a>
 </p>
 
 Sealos 是一款以 Kubernetes 为内核的**云操作系统发行版**。它以云原生的方式，抛弃了传统的云计算架构，转向以 Kubernetes 为云内核的新架构，使企业能够**像使用个人电脑一样**简单地使用云。
@@ -87,15 +87,15 @@ Sealos 是一款以 Kubernetes 为内核的**云操作系统发行版**。它以
 
 - 🐦 在 [Twitter](https://twitter.com/sealosio) 上关注我们。
 
-- 🐞 请将任何 Sealos 的 Bug、问题和需求提交到 [GitHub Issue](https://github.com/labring/sealos/issues/new/choose)。
+- 🐞 请将任何 Sealos 的 Bug、问题和需求提交到 [GitHub Issue](https://github.com/nebstudio/sealos/issues/new/choose)。
 
 ## 🚧 发展规划
 
-Sealos 维护了一个[公开的发展路线图](https://github.com/orgs/labring/projects/4/views/9)，为项目的主要优先事项、不同功能和项目的成熟度，以及如何影响项目方向提供了高级视图。
+Sealos 维护了一个[公开的发展路线图](https://github.com/orgs/nebstudio/projects/4/views/9)，为项目的主要优先事项、不同功能和项目的成熟度，以及如何影响项目方向提供了高级视图。
 
 ## 👩‍💻 贡献与开发
 
-翻阅[现有的 Issue](https://github.com/labring/sealos/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 和 [Pull Requests](https://github.com/labring/sealos/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)，看看您是否能提供帮助。如果您想要新增需求或报告 Bug，请使用我们提供的模板[创建一个 GitHub Issue](https://github.com/labring/sealos/issues/new/choose)。
+翻阅[现有的 Issue](https://github.com/nebstudio/sealos/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 和 [Pull Requests](https://github.com/nebstudio/sealos/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)，看看您是否能提供帮助。如果您想要新增需求或报告 Bug，请使用我们提供的模板[创建一个 GitHub Issue](https://github.com/nebstudio/sealos/issues/new/choose)。
 
 📖 [查看贡献指南 →](./CONTRIBUTING.md)
 
@@ -103,9 +103,9 @@ Sealos 维护了一个[公开的发展路线图](https://github.com/orgs/labring
 
 ## 🔗 链接
 
-- [Laf](https://github.com/labring/laf) 是 Sealos 上的一款函数计算应用，让写代码像写博客一样简单，随时随地发布上线。
+- [Laf](https://github.com/nebstudio/laf) 是 Sealos 上的一款函数计算应用，让写代码像写博客一样简单，随时随地发布上线。
 - [Buildah](https://github.com/containers/buildah) 在 Sealos 4.0 中，我们广泛地利用了 Buildah 的能力，以确保集群镜像与 OCI 标准兼容。
 
 <!-- ## License -->
 
-<!-- [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flabring%2Fsealos.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flabring%2Fsealos?ref=badge_large) -->
+<!-- [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnebstudio%2Fsealos.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnebstudio%2Fsealos?ref=badge_large) -->

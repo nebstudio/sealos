@@ -9,8 +9,8 @@ import (
 	"syscall"
 
 	"github.com/gin-gonic/gin"
-	"github.com/labring/sealos/service/pay/api"
-	"github.com/labring/sealos/service/pay/helper"
+	"github.com/nebstudio/sealos/service/pay/api"
+	"github.com/nebstudio/sealos/service/pay/helper"
 )
 
 func RegisterPayRouter() {

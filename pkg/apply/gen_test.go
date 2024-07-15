@@ -21,7 +21,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/buildah"
+	"github.com/nebstudio/sealos/pkg/buildah"
 )
 
 func TestNewClusterFromGenArgs(t *testing.T) {
@@ -37,7 +37,7 @@ func TestNewClusterFromGenArgs(t *testing.T) {
 		{
 			name: "default",
 			args: args{
-				imageName: []string{"docker.io/labring/kubernetes:v1.25.3"},
+				imageName: []string{"docker.io/nebstudio/kubernetes:v1.25.3"},
 				args: &RunArgs{
 					Cluster: &Cluster{
 						Masters:     "172.16.1.35",
@@ -55,7 +55,7 @@ func TestNewClusterFromGenArgs(t *testing.T) {
 		{
 			name: "Success_EmptyHostsAndSSH",
 			args: args{
-				imageName: []string{"docker.io/labring/kubernetes:v1.25.3"},
+				imageName: []string{"docker.io/nebstudio/kubernetes:v1.25.3"},
 				args: &RunArgs{
 					Cluster: &Cluster{
 						Masters:     "",
@@ -95,7 +95,7 @@ func Test_genImageInfo(t *testing.T) {
 	}{
 		{
 			name: "default",
-			args: args{imageName: []string{"docker.io/labring/kubernetes:v1.25.3"}},
+			args: args{imageName: []string{"docker.io/nebstudio/kubernetes:v1.25.3"}},
 		},
 	}
 	for _, tt := range tests {

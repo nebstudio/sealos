@@ -18,7 +18,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 )
 
 type TestConfig struct {

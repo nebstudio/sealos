@@ -23,9 +23,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/apply/applydrivers"
-	"github.com/labring/sealos/pkg/clusterfile"
-	"github.com/labring/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/apply/applydrivers"
+	"github.com/nebstudio/sealos/pkg/clusterfile"
+	"github.com/nebstudio/sealos/pkg/constants"
 )
 
 func NewApplierFromFile(cmd *cobra.Command, path string, args *Args) (applydrivers.Interface, error) {

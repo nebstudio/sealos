@@ -21,7 +21,7 @@ package main
 //	"path"
 //	"runtime"
 //
-//	"github.com/labring/sealos/controllers/pkg/pay"
+//	"github.com/nebstudio/sealos/controllers/pkg/pay"
 //
 //	"github.com/gin-gonic/gin"
 //)

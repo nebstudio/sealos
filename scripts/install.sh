@@ -18,7 +18,7 @@ set -o noglob
 
 # Usage:
 #   curl ... | ENV_VAR=... sh -
-#   curl -sfL  https://raw.githubusercontent.com/labring/sealos/main/scripts/install.sh  |  sh -s v4.1.8-alpha2 labring/sealos
+#   curl -sfL  https://raw.githubusercontent.com/nebstudio/sealos/main/scripts/install.sh  |  sh -s v4.1.8-alpha2 nebstudio/sealos
 #
 FILE_NAME=sealos
 BIN_DIR=/usr/bin
@@ -110,8 +110,8 @@ get_release_version() {
     info "Using ${VERSION} as release"
     OWN_REPO=$2
     if [ -z "$OWN_REPO" ]; then
-        warn "OWN_REPO is empty, using default repo: labring/sealos"
-        OWN_REPO=labring/sealos
+        warn "OWN_REPO is empty, using default repo: nebstudio/sealos"
+        OWN_REPO=nebstudio/sealos
     fi
     info "Using ${OWN_REPO} as your repo"
 }

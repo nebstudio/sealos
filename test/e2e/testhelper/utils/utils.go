@@ -28,15 +28,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/labring/sealos/test/e2e/testhelper/consts"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/consts"
 
 	utilyaml "k8s.io/apimachinery/pkg/util/yaml"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 
 	"github.com/onsi/ginkgo/v2"
 
-	"github.com/labring/sealos/pkg/utils/exec"
+	"github.com/nebstudio/sealos/pkg/utils/exec"
 
 	"github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"

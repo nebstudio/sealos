@@ -51,7 +51,7 @@ AFFiNE 的私有化部署依赖 PostgreSQL 和 Redis 数据库，部署起来比
 
 直接打开这个链接：
 
-[![](https://cdn.jsdelivr.net/gh/labring-actions/templates@main/Deploy-on-Sealos.svg)](https://bja.sealos.run/?openapp=system-template%3FtemplateName%3Daffine)
+[![](https://cdn.jsdelivr.net/gh/nebstudio-actions/templates@main/Deploy-on-Sealos.svg)](https://bja.sealos.run/?openapp=system-template%3FtemplateName%3Daffine)
 
 接下来你只需要设置一下管理员的邮箱（AFFINE_ADMIN_EMAIL）和密码（AFFINE_ADMIN_PASSWORD），然后点击右上角的「去 Sealos 部署」。
 

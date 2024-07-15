@@ -22,10 +22,10 @@ import (
 	k8sV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/yaml"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/runtime/decode"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	yaml2 "github.com/labring/sealos/pkg/utils/yaml"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/runtime/decode"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	yaml2 "github.com/nebstudio/sealos/pkg/utils/yaml"
 )
 
 var ErrClusterNotExist = fmt.Errorf("no cluster exist")

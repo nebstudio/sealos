@@ -35,7 +35,7 @@ func Test_realImpl_InspectImage(t *testing.T) {
 		{
 			name: "local-0",
 			args: args{
-				name: "docker.io/labring/kubernetes:v1.25.3",
+				name: "docker.io/nebstudio/kubernetes:v1.25.3",
 				opts: nil,
 			},
 			wantErr: false,
@@ -43,7 +43,7 @@ func Test_realImpl_InspectImage(t *testing.T) {
 		{
 			name: "local-1",
 			args: args{
-				name: "containers-storage:docker.io/labring/kubernetes:v1.25.3",
+				name: "containers-storage:docker.io/nebstudio/kubernetes:v1.25.3",
 				opts: nil,
 			},
 			wantErr: false,
@@ -59,7 +59,7 @@ func Test_realImpl_InspectImage(t *testing.T) {
 		{
 			name: "remote-0",
 			args: args{
-				name: "docker://docker.io/labring/kubernetes:v1.25.3",
+				name: "docker://docker.io/nebstudio/kubernetes:v1.25.3",
 				opts: nil,
 			},
 			wantErr: false,
@@ -67,7 +67,7 @@ func Test_realImpl_InspectImage(t *testing.T) {
 		{
 			name: "remote-1",
 			args: args{
-				name: "docker.io/labring/kubernetes:v1.25.3",
+				name: "docker.io/nebstudio/kubernetes:v1.25.3",
 				opts: []string{"docker"},
 			},
 			wantErr: false,
@@ -75,7 +75,7 @@ func Test_realImpl_InspectImage(t *testing.T) {
 		{
 			name: "remote-0-new",
 			args: args{
-				name: "docker://docker.io/labring/kubernetes:v1.25.4",
+				name: "docker://docker.io/nebstudio/kubernetes:v1.25.4",
 				opts: nil,
 			},
 			wantErr: false,
@@ -83,7 +83,7 @@ func Test_realImpl_InspectImage(t *testing.T) {
 		{
 			name: "remote-1-new",
 			args: args{
-				name: "docker.io/labring/kubernetes:v1.25.4",
+				name: "docker.io/nebstudio/kubernetes:v1.25.4",
 				opts: []string{"docker"},
 			},
 			wantErr: false,

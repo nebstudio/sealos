@@ -1,4 +1,4 @@
-module github.com/labring/sealos/webhook/admission
+module github.com/nebstudio/sealos/webhook/admission
 
 go 1.20
 

@@ -45,7 +45,7 @@ func TestDockerfile_Write(t *testing.T) {
 		{
 			name: "yaml",
 			fields: fields{
-				BaseImage:   "docker.io/labring/kubernetes:v1.18.4",
+				BaseImage:   "docker.io/nebstudio/kubernetes:v1.18.4",
 				KubeadmYaml: "testyaml",
 			},
 			wantErr: false,
@@ -53,7 +53,7 @@ func TestDockerfile_Write(t *testing.T) {
 		{
 			name: "copy",
 			fields: fields{
-				BaseImage: "docker.io/labring/kubernetes:v1.18.4",
+				BaseImage: "docker.io/nebstudio/kubernetes:v1.18.4",
 				Copys:     []string{"/tmp/sealctl /opt/"},
 			},
 			wantErr: false,

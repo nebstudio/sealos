@@ -22,7 +22,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/utils/initsystem"
+	"github.com/nebstudio/sealos/pkg/utils/initsystem"
 )
 
 var (

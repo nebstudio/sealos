@@ -66,7 +66,7 @@ const HomeHeader = ({ isPc }: { isPc: boolean }) => {
     const getStars = async () => {
       try {
         const { stargazers_count } = await (
-          await fetch('https://api.github.com/repos/labring/sealos')
+          await fetch('https://api.github.com/repos/nebstudio/sealos')
         ).json();
         setStars(isNaN(stargazers_count) ? 11 * 1000 : stargazers_count);
       } catch (error) {}
@@ -94,7 +94,7 @@ const HomeHeader = ({ isPc }: { isPc: boolean }) => {
             <span className="sealos-title">Sealos</span>
           </div>
           <div className="right">
-            <Link className="git-icon" to="https://github.com/labring/sealos">
+            <Link className="git-icon" to="https://github.com/nebstudio/sealos">
               <GithubIcon width={'20px'} height={'20px'} color="#fff" />
               <span className="git-stars">{Math.floor(stars / 1000)}k</span>
             </Link>
@@ -129,7 +129,7 @@ const HomeHeader = ({ isPc }: { isPc: boolean }) => {
         </div>
 
         <div className="right">
-          <Link className="git-icon" to="https://github.com/labring/sealos">
+          <Link className="git-icon" to="https://github.com/nebstudio/sealos">
             <GithubIcon width={'20px'} height={'20px'} color="#fff" />
             <span className="git-stars">{Math.floor(stars / 1000)}k</span>
           </Link>

@@ -57,7 +57,7 @@ spec:
             - name: KEEPALIVED
               value: {{ .keepalived }}
           # do not modify this image, it is used for CI/CD
-          image: ghcr.io/labring/sealos-terminal-frontend:latest
+          image: ghcr.io/nebstudio/sealos-terminal-frontend:latest
           imagePullPolicy: Always
           volumeMounts:
             - name: terminal-frontend-volume

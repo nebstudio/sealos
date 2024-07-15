@@ -15,13 +15,13 @@
 package bootstrap
 
 import (
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/env"
-	"github.com/labring/sealos/pkg/exec"
-	"github.com/labring/sealos/pkg/ssh"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/maps"
-	stringsutil "github.com/labring/sealos/pkg/utils/strings"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/env"
+	"github.com/nebstudio/sealos/pkg/exec"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/maps"
+	stringsutil "github.com/nebstudio/sealos/pkg/utils/strings"
 )
 
 type Context interface {

@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/labring/sealos/service/exceptionmonitor/api"
-	"github.com/labring/sealos/service/exceptionmonitor/helper/notification"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/api"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/helper/notification"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	metav1unstructured "k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime/schema"

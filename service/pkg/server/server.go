@@ -8,10 +8,10 @@ import (
 	"net/url"
 	"text/template"
 
-	"github.com/labring/sealos/service/pkg/auth"
+	"github.com/nebstudio/sealos/service/pkg/auth"
 
-	"github.com/labring/sealos/service/pkg/api"
-	"github.com/labring/sealos/service/pkg/request"
+	"github.com/nebstudio/sealos/service/pkg/api"
+	"github.com/nebstudio/sealos/service/pkg/request"
 )
 
 type PromServer struct {

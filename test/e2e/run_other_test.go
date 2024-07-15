@@ -19,13 +19,13 @@ package e2e
 import (
 	"fmt"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
 
 	. "github.com/onsi/ginkgo/v2"
 
-	"github.com/labring/sealos/test/e2e/suites/checkers"
+	"github.com/nebstudio/sealos/test/e2e/suites/checkers"
 )
 
 var _ = Describe("E2E_sealos_run_other_test", func() {
@@ -41,16 +41,16 @@ var _ = Describe("E2E_sealos_run_other_test", func() {
 			utils.CheckErr(err, fmt.Sprintf("failed to reset cluster for earch cluster: %v", err))
 		})
 		It("sealos run single by containerd on load tar", func() {
-			images := []string{"labring/kubernetes:v1.25.0", "labring/helm:v3.8.2"}
+			images := []string{"nebstudio/kubernetes:v1.25.0", "nebstudio/helm:v3.8.2"}
 			err = fakeClient.Image.PullImage(images...)
 			utils.CheckErr(err, fmt.Sprintf("failed to pull image: %v", err))
-			err = fakeClient.Image.SaveImage("labring/kubernetes:v1.25.0", "/tmp/kube.tar")
+			err = fakeClient.Image.SaveImage("nebstudio/kubernetes:v1.25.0", "/tmp/kube.tar")
 			utils.CheckErr(err, fmt.Sprintf("failed to save image: %v", err))
 			err = fakeClient.Cluster.Run("/tmp/kube.tar")
 			utils.CheckErr(err, fmt.Sprintf("failed to Run new cluster for single using tar: %v", err))
-			err = fakeClient.Cluster.Run("labring/helm:v3.8.2")
+			err = fakeClient.Cluster.Run("nebstudio/helm:v3.8.2")
 			utils.CheckErr(err, fmt.Sprintf("failed to running image for helm: %v", err))
-			newImages := []string{"docker.io/labring/kubernetes:v1.25.0", "labring/helm:v3.8.2"}
+			newImages := []string{"docker.io/nebstudio/kubernetes:v1.25.0", "nebstudio/helm:v3.8.2"}
 			fakeCheckInterface, err = checkers.NewFakeGroupClient("default", &checkers.FakeOpts{Images: newImages})
 			utils.CheckErr(err, fmt.Sprintf("failed to get cluster interface: %v", err))
 			err = fakeCheckInterface.Verify()
@@ -58,10 +58,10 @@ var _ = Describe("E2E_sealos_run_other_test", func() {
 		})
 
 		It("sealos run single by containerd on short name", func() {
-			images := []string{"labring/kubernetes:v1.25.0"}
+			images := []string{"nebstudio/kubernetes:v1.25.0"}
 			err = fakeClient.Image.PullImage(images...)
 			utils.CheckErr(err, fmt.Sprintf("failed to pull image: %v", err))
-			err = fakeClient.Image.TagImage("labring/kubernetes:v1.25.0", "k8s:dev")
+			err = fakeClient.Image.TagImage("nebstudio/kubernetes:v1.25.0", "k8s:dev")
 			utils.CheckErr(err, fmt.Sprintf("failed to tag image: %v", err))
 			err = fakeClient.Cluster.Run("k8s:dev")
 			utils.CheckErr(err, fmt.Sprintf("failed to Run new cluster for single using short name: %v", err))

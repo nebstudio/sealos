@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/labring/sealos/service/pkg/server"
+	"github.com/nebstudio/sealos/service/pkg/server"
 )
 
 type MinioServer struct {

@@ -22,8 +22,8 @@ import (
 
 	"github.com/go-logr/logr"
 
-	v1 "github.com/labring/sealos/controllers/pkg/notification/api/v1"
-	"github.com/labring/sealos/controllers/pkg/utils/logger"
+	v1 "github.com/nebstudio/sealos/controllers/pkg/notification/api/v1"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/logger"
 
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

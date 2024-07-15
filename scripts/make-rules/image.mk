@@ -18,7 +18,7 @@
 DOCKER := docker
 DOCKER_SUPPORTED_API_VERSION ?= 1.40
 
-REGISTRY_PREFIX ?= ghcr.io/labring
+REGISTRY_PREFIX ?= ghcr.io/nebstudio
 IMAGES ?= lvscare
 IMAGE_PLAT ?= $(subst $(SPACE),$(COMMA),$(subst _,/,$(PLATFORMS)))
 

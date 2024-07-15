@@ -9,17 +9,17 @@ import (
 
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
-	"github.com/labring/sealos/controllers/pkg/database/cockroach"
+	"github.com/nebstudio/sealos/controllers/pkg/database/cockroach"
 
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 
-	"github.com/labring/sealos/service/account/common"
+	"github.com/nebstudio/sealos/service/account/common"
 
-	"github.com/labring/sealos/controllers/pkg/resources"
+	"github.com/nebstudio/sealos/controllers/pkg/resources"
 
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/labring/sealos/service/account/helper"
+	"github.com/nebstudio/sealos/service/account/helper"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )

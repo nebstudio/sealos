@@ -1,5 +1,5 @@
 /*
-Copyright 2022 labring.
+Copyright 2022 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import (
 	"os"
 	"time"
 
-	utilcontroller "github.com/labring/operator-sdk/controller"
+	utilcontroller "github.com/nebstudio/operator-sdk/controller"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
@@ -35,9 +35,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	configpkg "github.com/labring/sealos/controllers/pkg/config"
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
-	"github.com/labring/sealos/controllers/user/controllers"
+	configpkg "github.com/nebstudio/sealos/controllers/pkg/config"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
+	"github.com/nebstudio/sealos/controllers/user/controllers"
 	//+kubebuilder:scaffold:imports
 )
 

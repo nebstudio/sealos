@@ -1,4 +1,4 @@
-IMG ?= ghcr.io/labring/sealos-minio-service:latest
+IMG ?= ghcr.io/nebstudio/sealos-minio-service:latest
 
 # Get the currently used golang install path (in GOPATH/bin, unless GOBIN is set)
 ifeq (,$(shell go env GOBIN))

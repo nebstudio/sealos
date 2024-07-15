@@ -84,13 +84,13 @@ kubectl apply -k ./manifests/mayastor/
 现在一切都准备好了，你可以开始构建集群镜像。
 
 ```shell
-sealos build -t labring/openebs-mayastor:v1.0.4 .
+sealos build -t nebstudio/openebs-mayastor:v1.0.4 .
 ```
 
 当你运行集群镜像时，sealos 将在主节点上运行 mayastor.sh 脚本，但 sealos exec 的 shell 命令将在所有节点上运行，最后，sealos 将在主节点上安装 openebs maystor 存储。
 
 ```
-sealos run labring/openebs-mayastor:v1.0.4
+sealos run nebstudio/openebs-mayastor:v1.0.4
 ```
 
 ## sealos scp 示例
@@ -117,11 +117,11 @@ bandwidth  bridge  dhcp  firewall  host-device  host-local  ipvlan  loopback  ma
 现在一切都准备好了，你可以开始构建集群镜像。
 
 ```shell
-sealos build -t labring/flannel:v0.19.0 .
+sealos build -t nebstudio/flannel:v0.19.0 .
 ```
 
 当你运行集群镜像时，sealos 将会将 opt bin 文件复制到所有节点，然后在主节点上安装 flannel。
 
 ```
-sealos run labring/flannel:v0.19.0
+sealos run nebstudio/flannel:v0.19.0
 ```

@@ -23,7 +23,7 @@ sidebar_position: 1
 ```
 
 ```dockerfile
-FROM labring/kubernetes:v1.24.0
+FROM nebstudio/kubernetes:v1.24.0
 COPY cni ./cni
 COPY images ./images
 COPY registry ./registry
@@ -36,7 +36,7 @@ CalicoImageList 中的镜像列表将被拉取到本地，然后使用 `kubectl 
 
 镜像列表目前支持:
 - docker.io/calico/cni:v3.20.0 这种远程的镜像
-- containers-storage:docker.io/labring/coredns:v0.0.1 这种本地的OCI容器镜像
+- containers-storage:docker.io/nebstudio/coredns:v0.0.1 这种本地的OCI容器镜像
 - docker-daemon:docker.io/library/nginx:latest 这种本地的docker容器镜像
 
 

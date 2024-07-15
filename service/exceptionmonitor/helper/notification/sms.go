@@ -9,10 +9,10 @@ import (
 
 	"github.com/alibabacloud-go/dysmsapi-20170525/v3/client"
 	"github.com/alibabacloud-go/tea/tea"
-	"github.com/labring/sealos/controllers/account/controllers/utils"
-	pkgtypes "github.com/labring/sealos/controllers/pkg/types"
-	"github.com/labring/sealos/service/exceptionmonitor/api"
-	"github.com/labring/sealos/service/exceptionmonitor/dao"
+	"github.com/nebstudio/sealos/controllers/account/controllers/utils"
+	pkgtypes "github.com/nebstudio/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/api"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/dao"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

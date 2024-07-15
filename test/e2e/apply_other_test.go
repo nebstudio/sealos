@@ -19,18 +19,18 @@ package e2e
 import (
 	"fmt"
 
-	"github.com/labring/sealos/test/e2e/testdata/kubeadm"
+	"github.com/nebstudio/sealos/test/e2e/testdata/kubeadm"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
 
-	"github.com/labring/sealos/test/e2e/testhelper/config"
-	"github.com/labring/sealos/test/e2e/testhelper/etcd"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/config"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/etcd"
 
 	. "github.com/onsi/ginkgo/v2"
 
-	"github.com/labring/sealos/test/e2e/suites/checkers"
+	"github.com/nebstudio/sealos/test/e2e/suites/checkers"
 )
 
 var _ = Describe("E2E_sealos_apply_other_test", func() {

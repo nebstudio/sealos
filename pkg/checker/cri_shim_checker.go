@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/labring/image-cri-shim/pkg/types"
+	"github.com/nebstudio/image-cri-shim/pkg/types"
 
-	"github.com/labring/sreg/pkg/buildimage"
+	"github.com/nebstudio/sreg/pkg/buildimage"
 
-	"github.com/labring/sealos/pkg/template"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/template"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 type CRIShimChecker struct {

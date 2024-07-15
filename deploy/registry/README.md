@@ -49,7 +49,7 @@ with at least svc(s) below:
 
 1. At least one storage Provider, here we use aliyun OSS and CDN. Or, you can use openebs.
     * `AliOSS`: read [this](https://distribution.github.io/distribution/storage-drivers/)
-    * `openebs` : `sealos run labring/openebs:v1.9.0`
+    * `openebs` : `sealos run nebstudio/openebs:v1.9.0`
 
 2. One Domain name with admin access
     * `ACMEDNS`, `Akamai`, `AzureDNS`, `CloudFlare`, `Google`, `Route53`, `DigitalOcean`, `RFC2136`
@@ -73,7 +73,7 @@ with at least svc(s) below:
 3. Edit `auth`, use your own auth server.
 
 4. The image: [`registry:2`](https://hub.docker.com/_/registry) does not support `AliCDN`, if you need use image:
-   `ghcr.dockerproxy.com/labring/registry:main` which is build
+   `ghcr.dockerproxy.com/nebstudio/registry:main` which is build
    from [distribution](https://github.com/distribution/distribution)
 
 ### Troublesome and Tips

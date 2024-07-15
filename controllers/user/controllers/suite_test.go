@@ -1,5 +1,5 @@
 /*
-Copyright 2022 labring.
+Copyright 2022 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/labring/sealos/controllers/user/controllers/helper/kubeconfig"
+	"github.com/nebstudio/sealos/controllers/user/controllers/helper/kubeconfig"
 
 	csrv1 "k8s.io/api/certificates/v1"
 	"k8s.io/client-go/kubernetes/scheme"
@@ -33,7 +33,7 @@ import (
 
 	"k8s.io/client-go/tools/clientcmd"
 
-	v1 "github.com/labring/sealos/controllers/user/api/v1"
+	v1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

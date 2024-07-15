@@ -24,7 +24,7 @@ import (
 
 	"k8s.io/kubernetes/pkg/util/ipvs"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 type Proxier interface {

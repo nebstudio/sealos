@@ -30,7 +30,7 @@ import (
 	"net"
 	"time"
 
-	config2 "github.com/labring/sealos/controllers/user/controllers/helper/config"
+	config2 "github.com/nebstudio/sealos/controllers/user/controllers/helper/config"
 
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/util/retry"

@@ -1,4 +1,4 @@
-module github.com/labring/sealos
+module github.com/nebstudio/sealos
 
 go 1.20
 
@@ -19,9 +19,9 @@ require (
 	github.com/emirpasic/gods v1.18.1
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/imdario/mergo v0.3.16
-	github.com/labring/image-cri-shim v0.0.0
-	github.com/labring/lvscare v0.0.0
-	github.com/labring/sreg v0.1.6
+	github.com/nebstudio/image-cri-shim v0.0.0
+	github.com/nebstudio/lvscare v0.0.0
+	github.com/nebstudio/sreg v0.1.6
 	github.com/manifoldco/promptui v0.9.0
 	github.com/modood/table v0.0.0-20220527013332-8d47e76dad33
 	github.com/opencontainers/go-digest v1.0.1-0.20220411205349-bde1400a84be
@@ -298,7 +298,7 @@ replace (
 )
 
 replace (
-	github.com/labring/image-cri-shim => ./staging/src/github.com/labring/image-cri-shim
-	github.com/labring/lvscare => ./staging/src/github.com/labring/lvscare
-	github.com/labring/sealos => ./
+	github.com/nebstudio/image-cri-shim => ./staging/src/github.com/nebstudio/image-cri-shim
+	github.com/nebstudio/lvscare => ./staging/src/github.com/nebstudio/lvscare
+	github.com/nebstudio/sealos => ./
 )

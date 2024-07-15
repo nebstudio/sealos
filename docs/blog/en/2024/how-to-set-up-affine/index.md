@@ -47,7 +47,7 @@ Self-hosting AFFiNE requires PostgreSQL and Redis databases, which can be comple
 
 To get started, open this link:
 
-[![](https://cdn.jsdelivr.net/gh/labring-actions/templates@main/Deploy-on-Sealos.svg)](https://bja.sealos.run/?openapp=system-template%3FtemplateName%3Daffine)
+[![](https://cdn.jsdelivr.net/gh/nebstudio-actions/templates@main/Deploy-on-Sealos.svg)](https://bja.sealos.run/?openapp=system-template%3FtemplateName%3Daffine)
 
 Set the administrator's email (AFFINE_ADMIN_EMAIL) and password (AFFINE_ADMIN_PASSWORD), then click "Go to Sealos deployment" in the upper right corner.
 

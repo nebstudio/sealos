@@ -21,10 +21,10 @@ import (
 	"golang.org/x/exp/slices"
 	"k8s.io/apimachinery/pkg/util/sets"
 
-	stringsutil "github.com/labring/sealos/pkg/utils/strings"
+	stringsutil "github.com/nebstudio/sealos/pkg/utils/strings"
 
-	"github.com/labring/sealos/pkg/utils/iputils"
-	"github.com/labring/sealos/pkg/utils/maps"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/maps"
 )
 
 func (c *Cluster) GetMasterIPList() []string {

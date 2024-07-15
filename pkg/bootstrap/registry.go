@@ -19,11 +19,11 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/sets"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/registry/helpers"
-	"github.com/labring/sealos/pkg/registry/password"
-	"github.com/labring/sealos/pkg/utils/iputils"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/registry/helpers"
+	"github.com/nebstudio/sealos/pkg/registry/password"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 type registryApplier struct {

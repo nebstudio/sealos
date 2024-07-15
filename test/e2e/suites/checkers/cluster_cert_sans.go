@@ -19,9 +19,9 @@ package checkers
 import (
 	"fmt"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
 	"k8s.io/apimachinery/pkg/util/sets"
 )

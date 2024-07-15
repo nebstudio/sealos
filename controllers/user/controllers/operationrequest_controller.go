@@ -1,5 +1,5 @@
 /*
-Copyright 2022 labring.
+Copyright 2022 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -23,10 +23,10 @@ import (
 
 	"github.com/go-logr/logr"
 
-	util "github.com/labring/operator-sdk/controller"
+	util "github.com/nebstudio/operator-sdk/controller"
 
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
-	"github.com/labring/sealos/controllers/user/controllers/helper/config"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
+	"github.com/nebstudio/sealos/controllers/user/controllers/helper/config"
 
 	v1 "k8s.io/api/core/v1"
 	rbacv1 "k8s.io/api/rbac/v1"

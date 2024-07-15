@@ -27,9 +27,9 @@ import (
 	"github.com/schollz/progressbar/v3"
 	"golang.org/x/crypto/ssh"
 
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/progress"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/progress"
 )
 
 func (c *Client) RemoteSha256Sum(host, remoteFilePath string) string {

@@ -33,10 +33,10 @@ Sealos 具有自由伸缩集群、备份恢复、释放集群等功能，即使�
 使用 Sealos 运行一个 Kubernetes 集群非常简单，只需以下步骤：
 
 ```bash
-$ curl -sfL  https://raw.githubusercontent.com/labring/sealos/v4.3.0/scripts/install.sh \
-    | sh -s v4.3.0 labring/sealos
+$ curl -sfL  https://raw.githubusercontent.com/nebstudio/sealos/v4.3.0/scripts/install.sh \
+    | sh -s v4.3.0 nebstudio/sealos
 # 创建一个集群
-$ sealos run labring/kubernetes:v1.25.0-4.2.0 labring/helm:v3.8.2 labring/calico:v3.24.1 \
+$ sealos run nebstudio/kubernetes:v1.25.0-4.2.0 nebstudio/helm:v3.8.2 nebstudio/calico:v3.24.1 \
      --masters 192.168.64.2,192.168.64.22,192.168.64.20 \
      --nodes 192.168.64.21,192.168.64.19 -p [your-ssh-passwd]
 ```
@@ -49,13 +49,13 @@ $ sealos run labring/kubernetes:v1.25.0-4.2.0 labring/helm:v3.8.2 labring/calico
 
 ```shell
 # MySQL 集群
-$ sealos run labring/mysql-operator:8.0.23-14.1
+$ sealos run nebstudio/mysql-operator:8.0.23-14.1
 
 # Clickhouse 集群
-$ sealos run labring/clickhouse:0.18.4
+$ sealos run nebstudio/clickhouse:0.18.4
 
 # Redis 集群
-$ sealos run labring/redis-operator:3.1.4
+$ sealos run nebstudio/redis-operator:3.1.4
 ```
 
 ## 自定义集群

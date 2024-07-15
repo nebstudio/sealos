@@ -35,7 +35,7 @@ metadata:
 spec:
   expireTime: 120m
   names:
-    - labring/cert-manager:v1.8.0
+    - nebstudio/cert-manager:v1.8.0
   type: detail
 ```
 
@@ -64,12 +64,12 @@ metadata:
 spec:
   expireTime: 120m
   names:
-    - labring/cert-manager:v1.8.0
+    - nebstudio/cert-manager:v1.8.0
   type: detail
 status:
   codes: 1
   datas:
-    labring/cert-manager:v1.8.0:
+    nebstudio/cert-manager:v1.8.0:
       ID: Unknown
       arch: Unknown
       description: Cloud native certificate management. X.509 certificate management
@@ -78,13 +78,13 @@ status:
       icon: https://cert-manager.io/images/cert-manager-logo-icon.svg
       keywords:
         - Storage
-      name: labring/cert-manager:v1.8.0
+      name: nebstudio/cert-manager:v1.8.0
       tags:
         - creatTime: "2022-12-27T07:37:34Z"
-          metaName: labring.cert.manager.v1.7.0
+          metaName: nebstudio.cert.manager.v1.7.0
           name: v1.7.0
         - creatTime: "2022-12-27T07:33:08Z"
-          metaName: labring.cert.manager.v1.8.0
+          metaName: nebstudio.cert.manager.v1.8.0
           name: v1.8.0
 ```
 

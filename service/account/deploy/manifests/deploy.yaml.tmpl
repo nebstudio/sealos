@@ -18,7 +18,7 @@ metadata:
   name: account-service
   namespace: account-system
   annotations:
-    originImageName: ghcr.io/labring/sealos-account-service:latest
+    originImageName: ghcr.io/nebstudio/sealos-account-service:latest
     deploy.cloud.sealos.io/minReplicas: '1'
     deploy.cloud.sealos.io/maxReplicas: '1'
   labels:
@@ -42,7 +42,7 @@ spec:
     spec:
       containers:
         - name: account-service
-          image: ghcr.io/labring/sealos-account-service:latest
+          image: ghcr.io/nebstudio/sealos-account-service:latest
           envFrom:
           - configMapRef:
               name: account-manager-env

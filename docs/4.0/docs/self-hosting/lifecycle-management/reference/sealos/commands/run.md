@@ -46,31 +46,31 @@ The `<image>` parameter is the name and version of the Docker image you want to 
 
 1. Create a cluster on your bare-metal servers, specifying the IP list:
 ```
-sealos run labring/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
+sealos run nebstudio/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
 	--nodes 192.168.0.5,192.168.0.6,192.168.0.7 --passwd 'xxx'
 ```
 
 2. Run multiple images:
 ```
-sealos run labring/kubernetes:v1.24.0 labring/helm:v3.11.3  calico:v3.24.6 \
+sealos run nebstudio/kubernetes:v1.24.0 nebstudio/helm:v3.11.3  calico:v3.24.6 \
     --masters 192.168.64.2,192.168.64.22,192.168.64.20 --nodes 192.168.64.21,192.168.64.19
 ```
 
 3. Specify the InfraSSH port of the server:
 ```
-sealos run labring/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
+sealos run nebstudio/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
 	--nodes 192.168.0.5,192.168.0.6,192.168.0.7 --port 24 --passwd 'xxx'
 ```
 
 4. Customize a VIP Kubernetes cluster:
 ```
-sealos run -e defaultVIP=10.103.97.2 labring/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
+sealos run -e defaultVIP=10.103.97.2 nebstudio/kubernetes:v1.24.0 --masters 192.168.0.2,192.168.0.3,192.168.0.4 \
 	--nodes 192.168.0.5,192.168.0.6,192.168.0.7 --passwd 'xxx'
 ```
 
 5. Create a single-node Kubernetes cluster:
 ```
-sealos run labring/kubernetes:v1.24.0 
+sealos run nebstudio/kubernetes:v1.24.0 
 ```
 
 6. Create a cluster using custom environment variables:

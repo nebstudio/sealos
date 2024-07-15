@@ -21,25 +21,25 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/labring/sealos/pkg/guest"
+	"github.com/nebstudio/sealos/pkg/guest"
 
 	"github.com/containers/buildah"
 
-	"github.com/labring/sealos/fork/golang/expansion"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/fork/golang/expansion"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
 
-	stringsutil "github.com/labring/sealos/pkg/utils/strings"
+	stringsutil "github.com/nebstudio/sealos/pkg/utils/strings"
 
 	"github.com/containers/buildah/pkg/parse"
 	"github.com/containers/storage/pkg/unshare"
-	"github.com/labring/sreg/pkg/utils/file"
+	"github.com/nebstudio/sreg/pkg/utils/file"
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/maps"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/maps"
 )
 
 type createOptions struct {

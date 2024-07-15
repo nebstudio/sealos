@@ -15,8 +15,8 @@
 # ==============================================================================
 # Build options
 
-ROOT_PACKAGE=github.com/labring/sealos
-VERSION_PACKAGE=github.com/labring/sealos/pkg/version
+ROOT_PACKAGE=github.com/nebstudio/sealos
+VERSION_PACKAGE=github.com/nebstudio/sealos/pkg/version
 
 # ==============================================================================
 # Includes

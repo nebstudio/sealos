@@ -19,7 +19,7 @@ package checkers
 import (
 	"fmt"
 
-	"github.com/labring/sealos/test/e2e/testhelper/kube"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/kube"
 )
 
 var _ FakeInterface = &fakeTaintsClient{}

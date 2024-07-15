@@ -23,7 +23,7 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 )
 
 func (m *mongoDB) GetPendingStateInstance(regionUID string) (cvmMap map[string][]types.CVMBilling, err error) {

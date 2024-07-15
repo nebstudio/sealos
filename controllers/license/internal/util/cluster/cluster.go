@@ -14,7 +14,7 @@
 
 package cluster
 
-import "github.com/labring/sealos/controllers/license/internal/util/claims"
+import "github.com/nebstudio/sealos/controllers/license/internal/util/claims"
 
 type Info struct {
 	ClusterID string

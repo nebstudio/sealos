@@ -23,21 +23,21 @@ import (
 	"strings"
 	"time"
 
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 
 	"github.com/go-logr/logr"
 
-	"github.com/labring/sealos/controllers/pkg/resources"
+	"github.com/nebstudio/sealos/controllers/pkg/resources"
 
-	"github.com/labring/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
 )
 
 // BillingInfoQueryReconciler reconciles a BillingInfoQuery object

@@ -14,7 +14,7 @@ const config = {
   favicon: "img/favicon.ico",
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "labring", // Usually your GitHub org/user name.
+  organizationName: "nebstudio", // Usually your GitHub org/user name.
   projectName: "sealos", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -37,7 +37,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: ({ versionDocsDirPath, docPath, locale }) =>
-            "https://github.com/labring/sealos/tree/main/docs/4.0/" +
+            "https://github.com/nebstudio/sealos/tree/main/docs/4.0/" +
             (locale === "en" ? `${versionDocsDirPath}` : `i18n/${locale}`) +
             `/${docPath}`,
           editLocalizedFiles: false,
@@ -48,7 +48,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/labring/sealos/tree/main/docs",
+          editUrl: "https://github.com/nebstudio/sealos/tree/main/docs",
           editLocalizedFiles: true,
         },
         theme: {
@@ -151,7 +151,7 @@ const config = {
           position: "right",
         },
         {
-          href: "https://github.com/labring/sealos",
+          href: "https://github.com/nebstudio/sealos",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
@@ -166,15 +166,15 @@ const config = {
           items: [
             {
               label: "Laf",
-              to: "https://github.com/labring/laf",
+              to: "https://github.com/nebstudio/laf",
             },
             {
               label: "Sealfs",
-              to: "https://github.com/labring/sealfs",
+              to: "https://github.com/nebstudio/sealfs",
             },
             {
               label: "FastGPT",
-              to: "https://github.com/labring/FastGPT",
+              to: "https://github.com/nebstudio/FastGPT",
             }
           ]
         },
@@ -183,7 +183,7 @@ const config = {
           items: [
             {
               label: "Contribute",
-              to: "https://github.com/labring/sealos/blob/main/CONTRIBUTING.md",
+              to: "https://github.com/nebstudio/sealos/blob/main/CONTRIBUTING.md",
             }, {
 
               label: "Documentation",
@@ -200,7 +200,7 @@ const config = {
             },
             {
               label: "Feedback",
-              to: "https://github.com/labring/sealos/issues",
+              to: "https://github.com/nebstudio/sealos/issues",
             },
             {
               label: "Company",

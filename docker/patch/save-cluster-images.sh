@@ -7,7 +7,7 @@ SEALOS=sudo sealos
 SEALOS_VERSION=4.1.7
 
 # download sealos
-wget https://github.com/labring/sealos/releases/download/v${SEALOS_VERSION}/sealos_${SEALOS_VERSION}_linux_amd64.tar.gz
+wget https://github.com/nebstudio/sealos/releases/download/v${SEALOS_VERSION}/sealos_${SEALOS_VERSION}_linux_amd64.tar.gz
 tar -zxf sealos_${SEALOS_VERSION}_linux_amd64.tar.gz sealos
 chmod +x sealos && sudo mv sealos /usr/bin/sealos
 

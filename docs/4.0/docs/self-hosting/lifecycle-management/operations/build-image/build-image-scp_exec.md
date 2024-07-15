@@ -84,13 +84,13 @@ Now, the charts directory is as follows:
 Now everything is ready, you can start building the cluster image.
 
 ```shell
-sealos build -t labring/openebs-mayastor:v1.0.4 .
+sealos build -t nebstudio/openebs-mayastor:v1.0.4 .
 ```
 
 When you run the cluster image, sealos will run the mayastor.sh script on the master node, but the shell command of sealos exec will run on all nodes. Finally, sealos will install openebs maystor storage on the master node.
 
 ```
-sealos run labring/openebs-mayastor:v1.0.4
+sealos run nebstudio/openebs-mayastor:v1.0.4
 ```
 
 ## sealos scp Example
@@ -119,11 +119,11 @@ bandwidth  bridge  dhcp  firewall  host-device  host-local  ipvlan  loopback  ma
 Now everything is ready, you can start building the cluster image.
 
 ```shell
-sealos build -t labring/flannel:v0.19.0 .
+sealos build -t nebstudio/flannel:v0.19.0 .
 ```
 
 When you run the cluster image, sealos will copy the opt bin file to all nodes, then install flannel on the master node.
 
 ```
-sealos run labring/flannel:v0.19.0
+sealos run nebstudio/flannel:v0.19.0
 ```

@@ -1,12 +1,12 @@
-module github.com/labring/image-cri-shim
+module github.com/nebstudio/image-cri-shim
 
 go 1.20
 
 require (
 	github.com/docker/docker v24.0.2+incompatible
 	github.com/google/go-containerregistry v0.15.2
-	github.com/labring/sealos v0.0.0
-	github.com/labring/sreg v0.1.6
+	github.com/nebstudio/sealos v0.0.0
+	github.com/nebstudio/sreg v0.1.6
 	github.com/pelletier/go-toml v1.9.5
 	google.golang.org/grpc v1.50.1
 	k8s.io/apimachinery v0.27.4
@@ -62,4 +62,4 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
 )
 
-replace github.com/labring/sealos => ../../../../../
+replace github.com/nebstudio/sealos => ../../../../../

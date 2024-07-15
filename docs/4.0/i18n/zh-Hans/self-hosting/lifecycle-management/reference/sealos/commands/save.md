@@ -18,10 +18,10 @@ sealos save -o outputFilename imageName
 
 ## 示例
 
-例如，你可以使用以下命令将名为 `labring/kubernetes:latest` 的镜像保存到一个名为 `kubernetes.tar` 的归档文件中：
+例如，你可以使用以下命令将名为 `nebstudio/kubernetes:latest` 的镜像保存到一个名为 `kubernetes.tar` 的归档文件中：
 
 ```bash
-sealos save -o kubernetes.tar labring/kubernetes:v1.24.0
+sealos save -o kubernetes.tar nebstudio/kubernetes:v1.24.0
 ```
 
 ## 可选参数
@@ -29,11 +29,11 @@ sealos save -o kubernetes.tar labring/kubernetes:v1.24.0
 -  `--format`: 这个参数用于指定保存镜像的传输方式。目前可用的选项有 `oci-archive` 和 `docker-archive`、`oci-dir`,`docker-dir`。默认值是 `oci-archive`。
 - `-m`:  这个参数可以同时保存多个镜像，但是仅限于`docker-archive`格式。
 
-例如，你可以使用以下命令将名为 `labring/kubernetes:latest` 的镜像以 `docker-archive` 的方式保存到一个名为 `kubernetes.tar` 的归档文件中：
+例如，你可以使用以下命令将名为 `nebstudio/kubernetes:latest` 的镜像以 `docker-archive` 的方式保存到一个名为 `kubernetes.tar` 的归档文件中：
 
 ```bash
-sealos save -o kubernetes.tar --format docker-archive labring/kubernetes:v1.24.0
-sealos save -o kubernetes.tar -m --format docker-archive labring/kubernetes:v1.24.0 labring/helm:v3.5.0
+sealos save -o kubernetes.tar --format docker-archive nebstudio/kubernetes:v1.24.0
+sealos save -o kubernetes.tar -m --format docker-archive nebstudio/kubernetes:v1.24.0 nebstudio/helm:v3.5.0
 ```
 
 以上就是 `sealos save` 命令的使用指南，希望对你有所帮助。如果你在使用过程中遇到任何问题，欢迎向我们提问。

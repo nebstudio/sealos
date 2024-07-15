@@ -27,7 +27,7 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/labring/sealos/controllers/pkg/utils/env"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/env"
 
 	"golang.org/x/sync/semaphore"
 
@@ -35,21 +35,21 @@ import (
 
 	"k8s.io/apimachinery/pkg/labels"
 
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 
-	"github.com/labring/sealos/controllers/user/controllers/helper/config"
+	"github.com/nebstudio/sealos/controllers/user/controllers/helper/config"
 
 	"github.com/minio/minio-go/v7"
 
-	objstorage "github.com/labring/sealos/controllers/pkg/objectstorage"
+	objstorage "github.com/nebstudio/sealos/controllers/pkg/objectstorage"
 
 	"github.com/go-logr/logr"
 
-	"github.com/labring/sealos/controllers/pkg/database"
-	"github.com/labring/sealos/controllers/pkg/gpu"
-	"github.com/labring/sealos/controllers/pkg/resources"
-	"github.com/labring/sealos/controllers/pkg/utils/logger"
-	"github.com/labring/sealos/controllers/pkg/utils/retry"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/gpu"
+	"github.com/nebstudio/sealos/controllers/pkg/resources"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/logger"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/retry"
 
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"

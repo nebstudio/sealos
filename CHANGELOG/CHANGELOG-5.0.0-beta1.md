@@ -33,10 +33,10 @@ Welcome to the v5.0.0-beta1 release of Sealos!🎉🎉!
 * 5878953036c4516e833c7016c42caeff25fb3905: update price (#4212) (@bxy4543)
 * 8e7207f80872a47f2ea921d63b9737eff80c1118: 🤖 add release changelog using rebot. (#4171) (@sealos-release-robot)
 
-**Full Changelog**: https://github.com/labring/sealos/compare/v5.0.0-alpha2...v5.0.0-beta1
+**Full Changelog**: https://github.com/nebstudio/sealos/compare/v5.0.0-alpha2...v5.0.0-beta1
 
-See [the CHANGELOG](https://github.com/labring/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
+See [the CHANGELOG](https://github.com/nebstudio/sealos/blob/main/CHANGELOG/CHANGELOG.md) for more details.
 
 Your patronage towards Sealos is greatly appreciated 🎉🎉.
 
-If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/labring/sealos), we're committed to resolving your problem as soon as possible.
+If you encounter any problems during its usage, please create an issue in the [GitHub repository](https://github.com/nebstudio/sealos), we're committed to resolving your problem as soon as possible.

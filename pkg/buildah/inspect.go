@@ -40,7 +40,7 @@ import (
 	"github.com/spf13/pflag"
 	"golang.org/x/term"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 const (

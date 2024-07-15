@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"os"
 
-	launchpadServer "github.com/labring/sealos/service/launchpad/server"
+	launchpadServer "github.com/nebstudio/sealos/service/launchpad/server"
 )
 
 type RestartableServer struct {

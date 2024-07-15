@@ -21,14 +21,14 @@ import (
 	"helm.sh/helm/v3/pkg/cli/values"
 	"helm.sh/helm/v3/pkg/getter"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/runtime/decode"
-	"github.com/labring/sealos/pkg/runtime/k3s"
-	"github.com/labring/sealos/pkg/runtime/kubernetes/types"
-	"github.com/labring/sealos/pkg/template"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	fileutil "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/runtime/decode"
+	"github.com/nebstudio/sealos/pkg/runtime/k3s"
+	"github.com/nebstudio/sealos/pkg/runtime/kubernetes/types"
+	"github.com/nebstudio/sealos/pkg/template"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 var ErrClusterFileNotExists = errors.New("the cluster file is not exist")

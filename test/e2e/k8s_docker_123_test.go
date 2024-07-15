@@ -19,8 +19,8 @@ package e2e
 import (
 	"fmt"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
 	. "github.com/onsi/ginkgo/v2"
 )
@@ -34,7 +34,7 @@ var _ = Describe("E2E_sealos_runtime_version_docker_123_test", func() {
 
 	Context("sealos run for many version", func() {
 		It("sealos apply single by docker v1.23.0", func() {
-			images := []string{"labring/kubernetes-docker:v1.23.0"}
+			images := []string{"nebstudio/kubernetes-docker:v1.23.0"}
 			defer func() {
 				err = fakeClient.Cluster.Reset()
 				utils.CheckErr(err, fmt.Sprintf("failed to reset cluster run: %v", err))

@@ -1,11 +1,11 @@
-module github.com/labring/sealos/controllers/resources
+module github.com/nebstudio/sealos/controllers/resources
 
 go 1.20
 
 require (
 	github.com/dinoallo/sealos-networkmanager-protoapi v0.0.0-20230928031328-cf9649d6af49
 	github.com/go-logr/logr v1.2.4
-	github.com/labring/sealos/controllers/pkg v0.0.0-00010101000000-000000000000
+	github.com/nebstudio/sealos/controllers/pkg v0.0.0-00010101000000-000000000000
 	github.com/minio/minio-go/v7 v7.0.63
 	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/gomega v1.27.8
@@ -47,8 +47,8 @@ require (
 	github.com/klauspost/compress v1.16.7 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.5 // indirect
 	github.com/klauspost/pgzip v1.2.6 // indirect
-	github.com/labring/sealos/controllers/account v0.0.0 // indirect
-	github.com/labring/sealos/controllers/user v0.0.0 // indirect
+	github.com/nebstudio/sealos/controllers/account v0.0.0 // indirect
+	github.com/nebstudio/sealos/controllers/user v0.0.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/matoous/go-nanoid/v2 v2.0.0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
@@ -107,7 +107,7 @@ require (
 )
 
 replace (
-	github.com/labring/sealos/controllers/account => ../account
-	github.com/labring/sealos/controllers/pkg => ../pkg
-	github.com/labring/sealos/controllers/user => ../user
+	github.com/nebstudio/sealos/controllers/account => ../account
+	github.com/nebstudio/sealos/controllers/pkg => ../pkg
+	github.com/nebstudio/sealos/controllers/user => ../user
 )

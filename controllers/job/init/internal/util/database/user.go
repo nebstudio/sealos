@@ -21,17 +21,17 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/labring/sealos/controllers/pkg/utils/retry"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/retry"
 
-	"github.com/labring/sealos/controllers/job/init/internal/util/common"
+	"github.com/nebstudio/sealos/controllers/job/init/internal/util/common"
 
 	gonanoid "github.com/matoous/go-nanoid/v2"
 
-	"github.com/labring/sealos/controllers/pkg/database"
-	"github.com/labring/sealos/controllers/pkg/utils/logger"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/logger"
 
-	"github.com/labring/sealos/controllers/pkg/database/cockroach"
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/database/cockroach"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 )
 
 func PresetAdminUser() error {

@@ -51,7 +51,7 @@ desktop:
   aliSmsTemplateCode: ""
 
   ## sealos desktop image
-  ## ref: https://github.com/labring/sealos/pkgs/container/sealos-desktop-frontend/
+  ## ref: https://github.com/nebstudio/sealos/pkgs/container/sealos-desktop-frontend/
   ## @param desktop.image.registry desktop image registry
   ## @param desktop.image.repository desktop image repository
   ## @param desktop.image.tag desktop image tag (immutable tags are recommended)
@@ -62,7 +62,7 @@ desktop:
   ##
   image:
     registry: ghcr.io
-    repository: labring/sealos-desktop-frontend
+    repository: nebstudio/sealos-desktop-frontend
     tag: latest
     digest: ""
     pullPolicy: IfNotPresent

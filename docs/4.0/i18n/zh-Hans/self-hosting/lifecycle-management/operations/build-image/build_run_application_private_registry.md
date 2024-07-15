@@ -142,14 +142,14 @@ sealos build -f Dockerfile -t docker.io/luanshaotong/osm:v0.1.1 .
 ## 测试部署
 
 ```shell
-sealos run labring/kubernetes:v1.25.0 labring/helm:v3.8.2 labring/calico:v3.24.1  --masters 172.31.37.111
+sealos run nebstudio/kubernetes:v1.25.0 nebstudio/helm:v3.8.2 nebstudio/calico:v3.24.1  --masters 172.31.37.111
 kubectl taint no node-role.kubernetes.io/master:NoSchedule-
 kubectl taint no node-role.kubernetes.io/control-plane:NoSchedule-
-sealos run labring/ingress-nginx:4.1.0
+sealos run nebstudio/ingress-nginx:4.1.0
 sealos run docker.io/luanshaotong/osm:v0.1.1
 ```
 
-注意：labring/helm 应当在 labring/calico 之前。
+注意：nebstudio/helm 应当在 nebstudio/calico 之前。
 如果每一步的应用安装顺利，即可，否则可能需要调试并清理集群重新安装。
 
 ## 其他问题

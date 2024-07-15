@@ -26,7 +26,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 func IsURL(u string) (*url.URL, bool) {

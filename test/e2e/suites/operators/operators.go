@@ -17,8 +17,8 @@ limitations under the License.
 package operators
 
 import (
-	"github.com/labring/sealos/test/e2e/testhelper/cmd"
-	"github.com/labring/sealos/test/e2e/testhelper/settings"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/cmd"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/settings"
 )
 
 type FakeClient struct {

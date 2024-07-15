@@ -20,13 +20,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/labring/sealos/test/e2e/testhelper/cmd"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/cmd"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
 
-	"github.com/labring/sealos/test/e2e/suites/checkers"
+	"github.com/nebstudio/sealos/test/e2e/suites/checkers"
 
 	. "github.com/onsi/ginkgo/v2"
 )
@@ -40,7 +40,7 @@ var _ = Describe("E2E_sealos_cert_test", func() {
 	fakeClient = operators.NewFakeClient("")
 	cmd.SetDebug()
 	BeforeEach(func() {
-		images := []string{"labring/kubernetes:v1.25.0", "labring/helm:v3.8.2", "labring/calico:v3.24.1"}
+		images := []string{"nebstudio/kubernetes:v1.25.0", "nebstudio/helm:v3.8.2", "nebstudio/calico:v3.24.1"}
 		err = fakeClient.Cluster.Run(images...)
 		utils.CheckErr(err, fmt.Sprintf("failed to Run new cluster for single: %v", err))
 	})

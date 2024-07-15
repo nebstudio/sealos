@@ -84,7 +84,7 @@ spec:
         runAsUser: 0
       containers:
         - name: docker-registry # nosemgrep
-          image: ghcr.dockerproxy.com/labring/registry:main
+          image: ghcr.dockerproxy.com/nebstudio/registry:main
           imagePullPolicy: Always
           ports:
             - containerPort: 5000

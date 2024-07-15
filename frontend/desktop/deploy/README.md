@@ -1,7 +1,7 @@
 ### How to build image
 
 ```shell
-sealos build -t docker.io/labring/sealos-cloud-desktop:latest -f Kubefile .
+sealos build -t docker.io/nebstudio/sealos-cloud-desktop:latest -f Kubefile .
 ```
 
 ### Env
@@ -85,6 +85,6 @@ spec:
 sealos run \
     --env cloudDomain="127.0.0.1.nip.io" \
     --env wildcardCertSecretName="wildcard-cert" \
-    docker.io/labring/sealos-cloud-desktop:latest \
+    docker.io/nebstudio/sealos-cloud-desktop:latest \
     --config-file desktop-config.yaml 
 ```

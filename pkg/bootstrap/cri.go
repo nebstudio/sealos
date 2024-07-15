@@ -16,7 +16,7 @@ limitations under the License.
 
 package bootstrap
 
-import "github.com/labring/sealos/pkg/utils/logger"
+import "github.com/nebstudio/sealos/pkg/utils/logger"
 
 type defaultCRIInitializer struct{ common }
 

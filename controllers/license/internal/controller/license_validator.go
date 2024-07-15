@@ -23,10 +23,10 @@ import (
 	"k8s.io/apimachinery/pkg/api/resource"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	licensev1 "github.com/labring/sealos/controllers/license/api/v1"
-	"github.com/labring/sealos/controllers/license/internal/util/claims"
-	"github.com/labring/sealos/controllers/license/internal/util/cluster"
-	licenseutil "github.com/labring/sealos/controllers/license/internal/util/license"
+	licensev1 "github.com/nebstudio/sealos/controllers/license/api/v1"
+	"github.com/nebstudio/sealos/controllers/license/internal/util/claims"
+	"github.com/nebstudio/sealos/controllers/license/internal/util/cluster"
+	licenseutil "github.com/nebstudio/sealos/controllers/license/internal/util/license"
 )
 
 type LicenseValidator struct {

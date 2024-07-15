@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

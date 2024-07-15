@@ -6,7 +6,7 @@ domain: sealos.io
 layout:
 - go.kubebuilder.io/v4
 projectName: license
-repo: github.com/labring/sealos/controllers/license
+repo: github.com/nebstudio/sealos/controllers/license
 resources:
 - api:
     crdVersion: v1
@@ -15,6 +15,6 @@ resources:
   domain: sealos.io
   group: license
   kind: License
-  path: github.com/labring/sealos/controllers/license/api/v1
+  path: github.com/nebstudio/sealos/controllers/license/api/v1
   version: v1
 version: "3"

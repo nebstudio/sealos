@@ -551,8 +551,8 @@ github.com/klauspost/pgzip v1.2.6 h1:8RXeL5crjEUFnR2/Sn6GJNWtSQ3Dk8pq4CL3jvdDyjU
 github.com/klauspost/pgzip v1.2.6/go.mod h1:Ch1tH69qFZu15pkjo5kYi6mth2Zzwzt50oCQKQE9RUs=
 github.com/kr/pretty v0.2.0/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
 github.com/kr/pty v1.1.1 h1:VkoXIwSboBpnk99O/KFauAEILuNHv5DVFKZMBN/gUgw=
-github.com/labring/operator-sdk v1.0.1 h1:JS+j9nF0lihkPJnMYJBZrH7Kfp/dKB2cnbBRMfkmE+g=
-github.com/labring/operator-sdk v1.0.1/go.mod h1:velfQ6SyrLXBeAShetQyR7q1zJNd8vGO6jjzbKcofj8=
+github.com/nebstudio/operator-sdk v1.0.1 h1:JS+j9nF0lihkPJnMYJBZrH7Kfp/dKB2cnbBRMfkmE+g=
+github.com/nebstudio/operator-sdk v1.0.1/go.mod h1:velfQ6SyrLXBeAShetQyR7q1zJNd8vGO6jjzbKcofj8=
 github.com/lufia/plan9stats v0.0.0-20230110061619-bbe2e5e100de h1:V53FWzU6KAZVi1tPp5UIsMoUWJ2/PNwYIDXnu7QuBCE=
 github.com/lufia/plan9stats v0.0.0-20230110061619-bbe2e5e100de/go.mod h1:JKx41uQRwqlTZabZc+kILPrO/3jlKnQ2Z8b7YiVw5cE=
 github.com/lyft/protoc-gen-star/v2 v2.0.1 h1:keaAo8hRuAT0O3DfJ/wM3rufbAjGeJ1lAtWZHDjKGB0=

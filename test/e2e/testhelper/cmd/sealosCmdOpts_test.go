@@ -18,9 +18,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 
-	"github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 func TestAddOptions_Args(t *testing.T) {

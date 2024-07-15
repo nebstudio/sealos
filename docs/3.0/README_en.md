@@ -1,8 +1,8 @@
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/labring/sealos)
-[![Build Status](https://github.com/labring/sealos/actions/workflows/release.yml/badge.svg)](https://github.com/labring/sealos/actions)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/nebstudio/sealos)
+[![Build Status](https://github.com/nebstudio/sealos/actions/workflows/release.yml/badge.svg)](https://github.com/nebstudio/sealos/actions)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fpostwoman.io&logo=Postwoman)](https://sealyun.com)
-[![Go Report Card](https://goreportcard.com/badge/github.com/labring/sealos)](https://goreportcard.com/report/github.com/labring/sealos)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nebstudio/sealos)](https://goreportcard.com/report/github.com/nebstudio/sealos)
 [![Chat on Telegram](https://img.shields.io/badge/chat-Telegram-blueviolet?logo=Telegram)](https://t.me/gsealyun)
 ---
 **Document: _[Official document](https://www.sealyun.com/instructions), [中文文档](/README.md), [Blog](https://fuckcloudnative.io)_**
@@ -14,7 +14,7 @@ Build a kubernetes HA cluster for a production environment.
 
 ![](docs/images/arch.png)
 * Each node will be configured with an ipvs proxy for masters LB, so we needn't haproxy or keepalived any more.
-* Then run a [lvscare](https://github.com/labring/lvscare) as a staic pod to check apiserver is aviliable. `/etc/kubernetes/manifests/sealyun-lvscare.yaml`
+* Then run a [lvscare](https://github.com/nebstudio/lvscare) as a staic pod to check apiserver is aviliable. `/etc/kubernetes/manifests/sealyun-lvscare.yaml`
 * If any master is down, lvscare will remove the ipvs realserver, when master recover it will add it back.
 * Sealos will send package and apply install commands, so we needn't ansible.
 

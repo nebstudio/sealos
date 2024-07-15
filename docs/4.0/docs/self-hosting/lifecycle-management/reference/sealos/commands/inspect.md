@@ -70,7 +70,7 @@ Here are some common examples of the `sealos inspect` command:
 
 Here are some common parameters for the `sealos inspect` command:
 
-- `-f, --format`: Display output results in Go template format. **Template structure code [InspectOutput](https://github.com/labring/sealos/blob/f8a17787822714c5fdf21f2a75cc86fadb88adfa/pkg/buildah/inspect.go#L189)**
+- `-f, --format`: Display output results in Go template format. **Template structure code [InspectOutput](https://github.com/nebstudio/sealos/blob/f8a17787822714c5fdf21f2a75cc86fadb88adfa/pkg/buildah/inspect.go#L189)**
 
 - `-t, --type`: Specify the type to view, which can be a container (`container`) or an image (`image`).
 

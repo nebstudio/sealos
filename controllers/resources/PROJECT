@@ -2,7 +2,7 @@ domain: sealos.io
 layout:
 - go.kubebuilder.io/v3
 projectName: resources
-repo: github.com/labring/sealos
+repo: github.com/nebstudio/sealos
 resources:
 - controller: true
   domain: sealos.io

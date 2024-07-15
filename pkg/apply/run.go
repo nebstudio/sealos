@@ -24,17 +24,17 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/exp/slices"
 
-	"github.com/labring/sealos/pkg/apply/applydrivers"
-	"github.com/labring/sealos/pkg/apply/processor"
-	"github.com/labring/sealos/pkg/clusterfile"
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/exec"
-	"github.com/labring/sealos/pkg/ssh"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/iputils"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/maps"
-	stringsutil "github.com/labring/sealos/pkg/utils/strings"
+	"github.com/nebstudio/sealos/pkg/apply/applydrivers"
+	"github.com/nebstudio/sealos/pkg/apply/processor"
+	"github.com/nebstudio/sealos/pkg/clusterfile"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/exec"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/maps"
+	stringsutil "github.com/nebstudio/sealos/pkg/utils/strings"
 )
 
 type ClusterArgs struct {

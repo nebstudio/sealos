@@ -21,7 +21,7 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 const (

@@ -8,21 +8,21 @@ CLOUD_VERSION=${CLOUD_VERSION:-"latest"}
 mkdir -p output/tars
 
 images=(
-  docker.io/labring/sealos-cloud:$CLOUD_VERSION
-  docker.io/labring/kubernetes:v1.27.11
-  docker.io/labring/helm:v3.14.1
-  docker.io/labring/cilium:v1.14.8
-  docker.io/labring/cert-manager:v1.14.6
-  docker.io/labring/openebs:v3.10.0
-  docker.io/labring/victoria-metrics-k8s-stack:v1.96.0
-  docker.io/labring/ingress-nginx:v1.9.4
-  docker.io/labring/kubeblocks:v0.8.2
-  docker.io/labring/kubeblocks-redis:v0.8.2
-  docker.io/labring/kubeblocks-mongodb:v0.8.2
-  docker.io/labring/kubeblocks-postgresql:v0.8.2
-  docker.io/labring/kubeblocks-apecloud-mysql:v0.8.2
-  docker.io/labring/cockroach:v2.12.0
-  docker.io/labring/metrics-server:v0.6.4
+  docker.io/nebstudio/sealos-cloud:$CLOUD_VERSION
+  docker.io/nebstudio/kubernetes:v1.27.11
+  docker.io/nebstudio/helm:v3.14.1
+  docker.io/nebstudio/cilium:v1.14.8
+  docker.io/nebstudio/cert-manager:v1.14.6
+  docker.io/nebstudio/openebs:v3.10.0
+  docker.io/nebstudio/victoria-metrics-k8s-stack:v1.96.0
+  docker.io/nebstudio/ingress-nginx:v1.9.4
+  docker.io/nebstudio/kubeblocks:v0.8.2
+  docker.io/nebstudio/kubeblocks-redis:v0.8.2
+  docker.io/nebstudio/kubeblocks-mongodb:v0.8.2
+  docker.io/nebstudio/kubeblocks-postgresql:v0.8.2
+  docker.io/nebstudio/kubeblocks-apecloud-mysql:v0.8.2
+  docker.io/nebstudio/cockroach:v2.12.0
+  docker.io/nebstudio/metrics-server:v0.6.4
 )
 
 for image in "${images[@]}"; do
@@ -39,7 +39,7 @@ mkdir -p output/cli
 
 VERSION="v5.0.0"
 
-wget https://github.com/labring/sealos/releases/download/${VERSION}/sealos_${VERSION#v}_linux_${ARCH}.tar.gz \
+wget https://github.com/nebstudio/sealos/releases/download/${VERSION}/sealos_${VERSION#v}_linux_${ARCH}.tar.gz \
    && tar zxvf sealos_${VERSION#v}_linux_${ARCH}.tar.gz sealos && chmod +x sealos && mv sealos output/cli
 
 # get and save install scripts
@@ -63,7 +63,7 @@ done
 
 '  > output/scripts/load-images.sh
 
-curl -sfL https://raw.githubusercontent.com/labring/sealos/${CLOUD_VERSION}/scripts/cloud/install.sh -o output/scripts/install.sh
+curl -sfL https://raw.githubusercontent.com/nebstudio/sealos/${CLOUD_VERSION}/scripts/cloud/install.sh -o output/scripts/install.sh
 
 # tar output to a tar.gz
 mv output sealos-cloud

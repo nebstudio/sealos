@@ -1,4 +1,4 @@
-module github.com/labring/sealos/controllers/pkg
+module github.com/nebstudio/sealos/controllers/pkg
 
 go 1.20
 
@@ -12,8 +12,8 @@ replace (
 )
 
 replace (
-	github.com/labring/sealos/controllers/account => ../account
-	github.com/labring/sealos/controllers/user => ../user
+	github.com/nebstudio/sealos/controllers/account => ../account
+	github.com/nebstudio/sealos/controllers/user => ../user
 )
 
 require (
@@ -23,7 +23,7 @@ require (
 	github.com/go-logr/logr v1.2.4
 	github.com/golang-jwt/jwt/v4 v4.5.0
 	github.com/google/uuid v1.6.0
-	github.com/labring/sealos/controllers/account v0.0.0-00010101000000-000000000000
+	github.com/nebstudio/sealos/controllers/account v0.0.0-00010101000000-000000000000
 	github.com/matoous/go-nanoid/v2 v2.0.0
 	github.com/minio/minio-go/v7 v7.0.64
 	github.com/prometheus/client_golang v1.15.1
@@ -76,7 +76,7 @@ require (
 	github.com/klauspost/compress v1.17.7 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.5 // indirect
 	github.com/klauspost/pgzip v1.2.6 // indirect
-	github.com/labring/sealos/controllers/user v0.0.0 // indirect
+	github.com/nebstudio/sealos/controllers/user v0.0.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/minio/md5-simd v1.1.2 // indirect

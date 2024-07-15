@@ -25,7 +25,7 @@ import (
 
 	"github.com/minio/madmin-go/v3"
 
-	v1 "github.com/labring/sealos/controllers/account/api/v1"
+	v1 "github.com/nebstudio/sealos/controllers/account/api/v1"
 
 	"sigs.k8s.io/controller-runtime/pkg/event"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
@@ -35,7 +35,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/resource"
 	"k8s.io/apimachinery/pkg/watch"
 
-	objectstoragev1 "github/labring/sealos/controllers/objectstorage/api/v1"
+	objectstoragev1 "github/nebstudio/sealos/controllers/objectstorage/api/v1"
 
 	"github.com/go-logr/logr"
 	corev1 "k8s.io/api/core/v1"

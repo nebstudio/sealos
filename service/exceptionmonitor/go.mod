@@ -1,11 +1,11 @@
-module github.com/labring/sealos/service/exceptionmonitor
+module github.com/nebstudio/sealos/service/exceptionmonitor
 
 go 1.20
 
 require (
 	github.com/alibabacloud-go/dysmsapi-20170525/v3 v3.0.6
 	github.com/alibabacloud-go/tea v1.2.1
-	github.com/labring/sealos/controllers/pkg v0.0.0-00010101000000-000000000000
+	github.com/nebstudio/sealos/controllers/pkg v0.0.0-00010101000000-000000000000
 	k8s.io/apimachinery v0.30.2
 	k8s.io/client-go v0.30.2
 )
@@ -73,8 +73,8 @@ require (
 )
 
 replace (
-	github.com/labring/sealos/controllers/pkg => ../../controllers/pkg
-	github.com/labring/sealos/service/exceptionmonitor => ../exceptionmonitor
+	github.com/nebstudio/sealos/controllers/pkg => ../../controllers/pkg
+	github.com/nebstudio/sealos/service/exceptionmonitor => ../exceptionmonitor
 	k8s.io/api => k8s.io/api v0.28.4
 	k8s.io/apimachinery => k8s.io/apimachinery v0.28.4
 	k8s.io/client-go => k8s.io/client-go v0.28.4

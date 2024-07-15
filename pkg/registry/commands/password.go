@@ -21,8 +21,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/registry/password"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/registry/password"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 func NewRegistryPasswdCmd() *cobra.Command {

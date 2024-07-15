@@ -1,5 +1,5 @@
 /*
-Copyright 2022 labring.
+Copyright 2022 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -25,11 +25,11 @@ package controllers
 //
 //	gonanoid "github.com/matoous/go-nanoid/v2"
 //
-//	"github.com/labring/sealos/controllers/pkg/resources"
+//	"github.com/nebstudio/sealos/controllers/pkg/resources"
 //
-//	"github.com/labring/sealos/controllers/pkg/database"
+//	"github.com/nebstudio/sealos/controllers/pkg/database"
 //
-//	"github.com/labring/sealos/controllers/pkg/crypto"
+//	"github.com/nebstudio/sealos/controllers/pkg/crypto"
 //
 //	"sigs.k8s.io/controller-runtime/pkg/event"
 //	"sigs.k8s.io/controller-runtime/pkg/predicate"
@@ -43,8 +43,8 @@ package controllers
 //	"sigs.k8s.io/controller-runtime/pkg/client"
 //	"sigs.k8s.io/controller-runtime/pkg/log"
 //
-//	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
-//	"github.com/labring/sealos/controllers/pkg/types"
+//	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
+//	"github.com/nebstudio/sealos/controllers/pkg/types"
 //)
 //
 //type ActivityReconciler struct {

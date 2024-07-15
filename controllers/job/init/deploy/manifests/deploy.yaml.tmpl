@@ -26,7 +26,7 @@ spec:
         runAsNonRoot: true
       containers:
       - name: job-init
-        image: ghcr.io/labring/sealos-job-init-controller:latest
+        image: ghcr.io/nebstudio/sealos-job-init-controller:latest
         # get env from desktop-frontend-secret
         env:
           - name: PASSWORD_SALT

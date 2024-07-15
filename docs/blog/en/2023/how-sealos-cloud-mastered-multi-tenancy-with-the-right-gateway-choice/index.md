@@ -45,7 +45,7 @@ The disparity is pronounced, leading us to decisively set aside options based on
 
 ## APISIX
 
-[APISIX](https://github.com/apache/apisix) is a commendable project, particularly in addressing Nginx reload issues. At [Laf](https://github.com/labring/laf), we initially embraced APISIX. However, we encountered instability with its Ingress Controller, leading to frequent major disruptions and controller OOM issues. Despite our preference for APISIX, these persistent issues necessitated a switch to an alternative gateway. The APISIX community is actively working on these challenges, and we look forward to its continued improvement.
+[APISIX](https://github.com/apache/apisix) is a commendable project, particularly in addressing Nginx reload issues. At [Laf](https://github.com/nebstudio/laf), we initially embraced APISIX. However, we encountered instability with its Ingress Controller, leading to frequent major disruptions and controller OOM issues. Despite our preference for APISIX, these persistent issues necessitated a switch to an alternative gateway. The APISIX community is actively working on these challenges, and we look forward to its continued improvement.
 
 In summary, while APISIX demonstrates excellent stability, its controller still requires significant optimization and stability enhancements. The community provides robust support, but **due to our immediate operational challenges, we had to transition to a different gateway solution.**
 

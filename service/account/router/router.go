@@ -7,15 +7,15 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/labring/sealos/controllers/pkg/utils/env"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/env"
 
-	"github.com/labring/sealos/service/account/docs"
+	"github.com/nebstudio/sealos/service/account/docs"
 
-	"github.com/labring/sealos/service/account/dao"
+	"github.com/nebstudio/sealos/service/account/dao"
 
-	"github.com/labring/sealos/service/account/api"
+	"github.com/nebstudio/sealos/service/account/api"
 
-	"github.com/labring/sealos/service/account/helper"
+	"github.com/nebstudio/sealos/service/account/helper"
 
 	swaggerfiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"

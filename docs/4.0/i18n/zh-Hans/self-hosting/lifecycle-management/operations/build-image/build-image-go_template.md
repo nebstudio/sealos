@@ -23,7 +23,7 @@ CMD ["helm upgrade --install nginx charts/nginx --namespace=nginx --create-names
 运行集群应用并设置一个自定义的 `SERVICE_TYPE=LoadBalancer`，如果不设置，它将默认为 NodePort。
 
 ```shell
-sealos run labring/nginx:v1.23.1 --env SERVICE_TYPE=LoadBalancer
+sealos run nebstudio/nginx:v1.23.1 --env SERVICE_TYPE=LoadBalancer
 ```
 
 ## 在Yaml文件中使用环境变量
@@ -67,7 +67,7 @@ CMD ["kubectl apply -f manifests/service.yaml"]
 当你构建镜像时，什么都不会发生，只有在运行应用程序时，它才会渲染。如果没有设置 `--env`，它将使用 Kubefile 的默认 ENV。
 
 ```shell
-sealos run labring/nginx:1.23.1 --env serviceType=LoadBalancer --env http_NodePort=30080 --env https_NodePort=30443
+sealos run nebstudio/nginx:1.23.1 --env serviceType=LoadBalancer --env http_NodePort=30080 --env https_NodePort=30443
 ```
 
 你会发现 sealos 会在主节点的本地路径上基于 `service.yaml.tmpl` 渲染一个新的yaml文件 `service.yaml`。

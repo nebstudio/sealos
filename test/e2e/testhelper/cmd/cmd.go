@@ -20,10 +20,10 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
 
-	"github.com/labring/sealos/pkg/ssh"
-	"github.com/labring/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/ssh"
+	"github.com/nebstudio/sealos/pkg/utils/file"
 )
 
 // Interface defines the interface for executing commands

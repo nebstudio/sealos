@@ -26,10 +26,10 @@ import (
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm"
 
-	"github.com/labring/sealos/pkg/runtime/decode"
-	"github.com/labring/sealos/pkg/runtime/kubernetes/types"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/yaml"
+	"github.com/nebstudio/sealos/pkg/runtime/decode"
+	"github.com/nebstudio/sealos/pkg/runtime/kubernetes/types"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/yaml"
 )
 
 const (

@@ -1,6 +1,6 @@
 
 # Image URL to use all building/pushing image targets
-IMG ?= ghcr.io/labring/sealos-job-init-controller:latest
+IMG ?= ghcr.io/nebstudio/sealos-job-init-controller:latest
 TARGETARCH ?= amd64
 GOARCH ?= amd64
 
@@ -47,11 +47,11 @@ vet: ## Run go vet against code.
 ##@ Build
 
 .PHONY: build
-CONTROLLER_PKG=github.com/labring/sealos/controllers/pkg
-CONTROLLER_LICENSE=github.com/labring/sealos/controllers/license/internal/controller
+CONTROLLER_PKG=github.com/nebstudio/sealos/controllers/pkg
+CONTROLLER_LICENSE=github.com/nebstudio/sealos/controllers/license/internal/controller
 build: fmt vet ## Build manager binary.
 	LD_FLAGS="-s -w"; \
-	[ -n "$(CRYPTOKEY)" ] && LD_FLAGS+=" -X github.com/labring/sealos/controllers/pkg/crypto.encryptionKey=${CRYPTOKEY} -X github.com/labring/sealos/controllers/pkg/database.cryptoKey=${CRYPTOKEY}"; \
+	[ -n "$(CRYPTOKEY)" ] && LD_FLAGS+=" -X github.com/nebstudio/sealos/controllers/pkg/crypto.encryptionKey=${CRYPTOKEY} -X github.com/nebstudio/sealos/controllers/pkg/database.cryptoKey=${CRYPTOKEY}"; \
 	CGO_ENABLED=0 GOOS=linux  go build -ldflags "$${LD_FLAGS}" -trimpath -o bin/preset-${GOARCH} cmd/preset/main.go && chmod +x bin/preset-${GOARCH} && cp bin/preset-${GOARCH} bin/manager
 
 

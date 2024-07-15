@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 你可以通过运行命令来获取版本列表：
 
 ```shell
-$ curl --silent "https://api.github.com/repos/labring/sealos/releases" | jq -r '.[].tag_name'
+$ curl --silent "https://api.github.com/repos/nebstudio/sealos/releases" | jq -r '.[].tag_name'
 ```
 
 > 注意：在选择版本时，建议使用稳定版本例如 `v4.3.0`。像 `v4.3.0-rc1`、`v4.3.0-alpha1` 这样的版本是预发布版，请谨慎使用。
@@ -19,14 +19,14 @@ $ curl --silent "https://api.github.com/repos/labring/sealos/releases" | jq -r '
 设置 `VERSION` 环境变量为 latest 版本号，或者将 `VERSION` 替换为您要安装的 Sealos 版本：
 
 ```shell
-$ VERSION=`curl -s https://api.github.com/repos/labring/sealos/releases/latest | grep -oE '"tag_name": "[^"]+"' | head -n1 | cut -d'"' -f4`
+$ VERSION=`curl -s https://api.github.com/repos/nebstudio/sealos/releases/latest | grep -oE '"tag_name": "[^"]+"' | head -n1 | cut -d'"' -f4`
 ```
 
 ## 二进制自动下载
 
 ```shell
 
-$ curl -sfL https://mirror.ghproxy.com/https://raw.githubusercontent.com/labring/sealos/main/scripts/install.sh | PROXY_PREFIX=https://mirror.ghproxy.com sh -s ${VERSION} labring/sealos
+$ curl -sfL https://mirror.ghproxy.com/https://raw.githubusercontent.com/nebstudio/sealos/main/scripts/install.sh | PROXY_PREFIX=https://mirror.ghproxy.com sh -s ${VERSION} nebstudio/sealos
 
 ```
 
@@ -36,7 +36,7 @@ $ curl -sfL https://mirror.ghproxy.com/https://raw.githubusercontent.com/labring
   <TabItem value="amd64" label="amd64" default>
 
 ```shell
-$ wget https://mirror.ghproxy.com/https://github.com/labring/sealos/releases/download/${VERSION}/sealos_${VERSION#v}_linux_amd64.tar.gz \
+$ wget https://mirror.ghproxy.com/https://github.com/nebstudio/sealos/releases/download/${VERSION}/sealos_${VERSION#v}_linux_amd64.tar.gz \
   && tar zxvf sealos_${VERSION#v}_linux_amd64.tar.gz sealos && chmod +x sealos && mv sealos /usr/bin
 ```
 
@@ -44,7 +44,7 @@ $ wget https://mirror.ghproxy.com/https://github.com/labring/sealos/releases/dow
   <TabItem value="arm64" label="arm64">
 
 ```shell
-$ wget https://mirror.ghproxy.com/https://github.com/labring/sealos/releases/download/${VERSION}/sealos_${VERSION#v}_linux_arm64.tar.gz \
+$ wget https://mirror.ghproxy.com/https://github.com/nebstudio/sealos/releases/download/${VERSION}/sealos_${VERSION#v}_linux_arm64.tar.gz \
   && tar zxvf sealos_${VERSION#v}_linux_arm64.tar.gz sealos && chmod +x sealos && mv sealos /usr/bin
 ```
 
@@ -56,7 +56,7 @@ $ wget https://mirror.ghproxy.com/https://github.com/labring/sealos/releases/dow
 ### DEB 源
 
 ```shell
-$ echo "deb [trusted=yes] https://apt.fury.io/labring/ /" | sudo tee /etc/apt/sources.list.d/labring.list
+$ echo "deb [trusted=yes] https://apt.fury.io/nebstudio/ /" | sudo tee /etc/apt/sources.list.d/nebstudio.list
 $ sudo apt update
 $ sudo apt install sealos
 ```
@@ -64,10 +64,10 @@ $ sudo apt install sealos
 ### RPM 源
 
 ```shell
-$ sudo cat > /etc/yum.repos.d/labring.repo << EOF
+$ sudo cat > /etc/yum.repos.d/nebstudio.repo << EOF
 [fury]
-name=labring Yum Repo
-baseurl=https://yum.fury.io/labring/
+name=nebstudio Yum Repo
+baseurl=https://yum.fury.io/nebstudio/
 enabled=1
 gpgcheck=0
 EOF
@@ -89,7 +89,7 @@ $ sudo yum install sealos
 
 ```shell
 # git clone the repo
-$ git clone https://github.com/labring/sealos.git
+$ git clone https://github.com/nebstudio/sealos.git
 # just make it
 $ make build BINS=sealos
 ```

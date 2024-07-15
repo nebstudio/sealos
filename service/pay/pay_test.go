@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/labring/sealos/service/pay/helper"
+	"github.com/nebstudio/sealos/service/pay/helper"
 )
 
 func TestCreatePayMethod_Wechat(t *testing.T) {

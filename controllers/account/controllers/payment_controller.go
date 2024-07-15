@@ -1,5 +1,5 @@
 /*
-Copyright 2022 labring.
+Copyright 2022 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ import (
 
 	"sigs.k8s.io/controller-runtime/pkg/controller"
 
-	"github.com/labring/sealos/controllers/pkg/pay"
+	"github.com/nebstudio/sealos/controllers/pkg/pay"
 
 	"sigs.k8s.io/controller-runtime/pkg/builder"
 
@@ -34,7 +34,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
 )
 
 // PaymentReconciler reconciles a Payment object

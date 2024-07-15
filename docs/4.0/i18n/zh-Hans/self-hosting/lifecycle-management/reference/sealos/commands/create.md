@@ -11,7 +11,7 @@ sidebar_position: 6
 `sealos create` 命令用于创建集群工作目录，但不实际运行，主要用于调试或测试，它可以输出集群镜像的地址，你可以校验集群镜像内容是否与预期一致。
 
 ```bash
-sealos create docker.io/labring/kubernetes:v1.24.0
+sealos create docker.io/nebstudio/kubernetes:v1.24.0
 ```
 
 在上述命令中，`clustername` 代表你要创建的集群的名称。
@@ -35,9 +35,9 @@ sealos create docker.io/labring/kubernetes:v1.24.0
 例如，你可以使用以下命令创建一个名为 `mycluster` 的集群，但不实际运行它：
 
 ```bash
-sealos create -e registryPort=8443 docker.io/labring/kubernetes:v1.24.0
+sealos create -e registryPort=8443 docker.io/nebstudio/kubernetes:v1.24.0
 ```
 
-此命令将创建一个镜像名称为 `docker.io/labring/kubernetes:v1.24.0` 的集群工作目录，并输出集群镜像的地址。`-e registryPort=8443` 选项指定了在渲染模板文件时使用的环境变量，其中 `registryPort` 被设置为 `8443`。请注意，这个示例中集群并没有被实际运行。
+此命令将创建一个镜像名称为 `docker.io/nebstudio/kubernetes:v1.24.0` 的集群工作目录，并输出集群镜像的地址。`-e registryPort=8443` 选项指定了在渲染模板文件时使用的环境变量，其中 `registryPort` 被设置为 `8443`。请注意，这个示例中集群并没有被实际运行。
 
 以上就是 `sealos create` 命令的使用指南，希望对你有所帮助。如果你在使用过程中遇到任何问题，欢迎向我们提问。

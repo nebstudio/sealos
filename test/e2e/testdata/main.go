@@ -19,7 +19,7 @@ package main
 import (
 	"github.com/go-bindata/go-bindata"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 //go:generate go run main.go

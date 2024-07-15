@@ -24,11 +24,11 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/labring/sealos/pkg/client-go/kubernetes"
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/template"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/client-go/kubernetes"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/template"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 type ClusterChecker struct {

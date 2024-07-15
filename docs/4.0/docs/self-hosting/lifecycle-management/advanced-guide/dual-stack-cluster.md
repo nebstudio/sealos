@@ -11,10 +11,10 @@ sidebar_position: 5
 2. run`sealos gen` to generate a Clusterfile, for example:
 
 ```shell
-$ sealos gen labring/kubernetes:v1.26.1 labring/helm:v3.10.3 labring/calico:v3.25.0 --masters 192.168.0.10 --nodes 192.168.0.11 --passwd "xxx" >Clusterfile
+$ sealos gen nebstudio/kubernetes:v1.26.1 nebstudio/helm:v3.10.3 nebstudio/calico:v3.25.0 --masters 192.168.0.10 --nodes 192.168.0.11 --passwd "xxx" >Clusterfile
 ```
 
-Notice: labring/helm should be set before labring/calico.
+Notice: nebstudio/helm should be set before nebstudio/calico.
 
 The generated Clusterfile is as follows:
 
@@ -40,9 +40,9 @@ spec:
     - node
     - amd64
   image:
-  - labring/kubernetes:v1.26.1
-  - labring/helm:v3.10.3
-  - labring/calico:v3.25.0
+  - nebstudio/kubernetes:v1.26.1
+  - nebstudio/helm:v3.10.3
+  - nebstudio/calico:v3.25.0
   ssh:
     passwd: xxx
     pk: /root/.ssh/id_rsa
@@ -438,9 +438,9 @@ spec:
     - node
     - amd64
   image:
-  - labring/kubernetes:v1.26.1
-  - labring/helm:v3.10.3
-  - labring/calico:v3.25.0
+  - nebstudio/kubernetes:v1.26.1
+  - nebstudio/helm:v3.10.3
+  - nebstudio/calico:v3.25.0
   ssh:
     passwd: xxx
     pk: /root/.ssh/id_rsa

@@ -26,7 +26,7 @@ import (
 	utiliptables "k8s.io/kubernetes/pkg/util/iptables"
 	"k8s.io/utils/exec"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 type iptablesImpl struct {

@@ -1,5 +1,5 @@
 /*
-Copyright 2022 labring.
+Copyright 2022 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -42,14 +42,14 @@ import (
 
 	"github.com/go-logr/logr"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
-	"github.com/labring/sealos/controllers/pkg/database"
-	"github.com/labring/sealos/controllers/pkg/pay"
-	"github.com/labring/sealos/controllers/pkg/resources"
-	pkgtypes "github.com/labring/sealos/controllers/pkg/types"
-	"github.com/labring/sealos/controllers/pkg/utils/env"
-	"github.com/labring/sealos/controllers/pkg/utils/retry"
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
+	"github.com/nebstudio/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/pay"
+	"github.com/nebstudio/sealos/controllers/pkg/resources"
+	pkgtypes "github.com/nebstudio/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/env"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/retry"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

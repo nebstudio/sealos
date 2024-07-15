@@ -1,5 +1,5 @@
 /*
-Copyright 2023 labring.
+Copyright 2023 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -31,8 +31,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	adminerv1 "github.com/labring/sealos/controllers/db/adminer/api/v1"
-	"github.com/labring/sealos/controllers/db/adminer/controllers"
+	adminerv1 "github.com/nebstudio/sealos/controllers/db/adminer/api/v1"
+	"github.com/nebstudio/sealos/controllers/db/adminer/controllers"
 	//+kubebuilder:scaffold:imports
 )
 

@@ -21,13 +21,13 @@ import (
 	"os"
 	"path"
 
-	"github.com/labring/sealos/test/e2e/testhelper/cmd"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/cmd"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
 
-	"github.com/labring/sealos/test/e2e/testhelper/config"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/config"
 
 	. "github.com/onsi/ginkgo/v2"
 )
@@ -40,7 +40,7 @@ var _ = Describe("E2E_sealos_images_buildrun_feature_test", func() {
 			_ = os.Setenv("SEALOS_REGISTRY_SYNC_EXPERIMENTAL", "true")
 			dFile := config.RootfsDockerfile{
 				Images:    []string{"docker.io/altinity/clickhouse-operator:0.18.4", "docker.io/altinity/metrics-exporter:0.18.4"},
-				BaseImage: "labring/kubernetes:v1.25.0",
+				BaseImage: "nebstudio/kubernetes:v1.25.0",
 				Copys:     []string{"sealctl opt/"},
 			}
 			tmpdir, err := dFile.Write()
@@ -56,7 +56,7 @@ var _ = Describe("E2E_sealos_images_buildrun_feature_test", func() {
 			})
 			utils.CheckErr(err)
 
-			images := []string{"test-build-image:rootfs-sealctl", "labring/helm:v3.8.2", "labring/calico:v3.24.1"}
+			images := []string{"test-build-image:rootfs-sealctl", "nebstudio/helm:v3.8.2", "nebstudio/calico:v3.24.1"}
 			defer func() {
 				err = fakeClient.Cluster.Reset()
 				utils.CheckErr(err, fmt.Sprintf("failed to reset cluster run: %v", err))

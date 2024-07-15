@@ -6,7 +6,7 @@ sealos cloud adminer 是一个基于 kubernetes adminer 的数据库管理工具
 用户可以通过浏览器访问该服务，然后在浏览器中打开一个APP，通过APP可以直接访问 kubernetes 集群内的数据库。
 
 ## adminer 镜像自定义:
-repo地址: [cluster-image/dockerimages/adminer/v4.8.1](https://github.com/labring-actions/cluster-image/tree/main/dockerimages/adminer/v4.8.1)
+repo地址: [cluster-image/dockerimages/adminer/v4.8.1](https://github.com/nebstudio-actions/cluster-image/tree/main/dockerimages/adminer/v4.8.1)
 
 refer参考链接:
 

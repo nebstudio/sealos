@@ -19,8 +19,8 @@ package guest
 import (
 	"fmt"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 func FormalizeWorkingCommand(clusterName string, imageName string, t v1beta1.ImageType, cmd string) string {

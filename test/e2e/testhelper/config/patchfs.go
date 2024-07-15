@@ -22,10 +22,10 @@ import (
 	"os"
 	"path"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 
-	"github.com/labring/sealos/test/e2e/testhelper/template"
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/template"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
 	"github.com/pkg/errors"
 )
@@ -34,7 +34,7 @@ const (
 	//	ImageDockerfile = `FROM scratch
 	//COPY . .`
 	PatchfsTemplateDockerfile = `FROM scratch
-MAINTAINER labring
+MAINTAINER nebstudio
 LABEL sealos.io.type="patch"
 {{- if .Copys }}
 {{- range .Copys }}

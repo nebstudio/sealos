@@ -1,4 +1,4 @@
-IMG ?= ghcr.io/labring/sealos-account-service:latest
+IMG ?= ghcr.io/nebstudio/sealos-account-service:latest
 
 # Get the currently used golang install path (in GOPATH/bin, unless GOBIN is set)
 ifeq (,$(shell go env GOBIN))
@@ -44,7 +44,7 @@ clean:
 .PHONY: build
 build: ## Build service-hub binary.
 	LD_FLAGS="-s -w"; \
-	[ -n "$(CRYPTOKEY)" ] && LD_FLAGS+=" -X github.com/labring/sealos/controllers/pkg/crypto.encryptionKey=${CRYPTOKEY}"; \
+	[ -n "$(CRYPTOKEY)" ] && LD_FLAGS+=" -X github.com/nebstudio/sealos/controllers/pkg/crypto.encryptionKey=${CRYPTOKEY}"; \
 	CGO_ENABLED=0 GOOS=linux go build -ldflags "$${LD_FLAGS}" -trimpath -o bin/manager main.go
 
 .PHONY: docker-build

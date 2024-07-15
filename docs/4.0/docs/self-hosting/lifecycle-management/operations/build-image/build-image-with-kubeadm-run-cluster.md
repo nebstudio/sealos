@@ -21,7 +21,7 @@ $ mkdir -p /tmp/buildimage
 EOF
 
 $ cat > /tmp/buildimage/Kubefile <<EOF
-  FROM labring/kubernetes-docker:v1.25.0
+  FROM nebstudio/kubernetes-docker:v1.25.0
   COPY kubeadm.yml etc/
 EOF
 
@@ -55,8 +55,8 @@ spec:
         - amd64
   image:
     - hack:dev
-    - labring/helm:v3.8.2
-    - labring/calico:v3.24.1
+    - nebstudio/helm:v3.8.2
+    - nebstudio/calico:v3.24.1
   ssh:
     passwd: xxx
     pk: /root/.ssh/id_rsa

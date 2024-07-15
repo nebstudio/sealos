@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/labring/sealos/service/account/helper"
+	"github.com/nebstudio/sealos/service/account/helper"
 )
 
 func Test_Auth(t *testing.T) {

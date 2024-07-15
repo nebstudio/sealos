@@ -21,8 +21,8 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/apimachinery/pkg/util/json"
 
-	runtimeutils "github.com/labring/sealos/pkg/runtime/utils"
-	"github.com/labring/sealos/pkg/utils/logger"
+	runtimeutils "github.com/nebstudio/sealos/pkg/runtime/utils"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 func newTokenCmd() *cobra.Command {

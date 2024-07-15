@@ -1,4 +1,4 @@
-module github.com/labring/sealos/controllers/account
+module github.com/nebstudio/sealos/controllers/account
 
 go 1.20
 
@@ -11,8 +11,8 @@ require (
 	github.com/go-gomail/gomail v0.0.0-20160411212932-81ebce5c23df
 	github.com/go-logr/logr v1.2.4
 	github.com/google/uuid v1.6.0
-	github.com/labring/sealos/controllers/pkg v0.0.0-00010101000000-000000000000
-	github.com/labring/sealos/controllers/user v0.0.0
+	github.com/nebstudio/sealos/controllers/pkg v0.0.0-00010101000000-000000000000
+	github.com/nebstudio/sealos/controllers/user v0.0.0
 	github.com/matoous/go-nanoid/v2 v2.0.0
 	github.com/minio/madmin-go/v3 v3.0.35
 	github.com/onsi/ginkgo v1.16.5
@@ -147,8 +147,8 @@ require (
 )
 
 replace (
-	github.com/labring/sealos/controllers/pkg => ../pkg
-	github.com/labring/sealos/controllers/user => ../../controllers/user
+	github.com/nebstudio/sealos/controllers/pkg => ../pkg
+	github.com/nebstudio/sealos/controllers/user => ../../controllers/user
 )
 
 replace (

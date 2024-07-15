@@ -16,7 +16,7 @@ package objectstorage
 
 import (
 	"fmt"
-	objectstoragev1 "github/labring/sealos/controllers/objectstorage/api/v1"
+	objectstoragev1 "github/nebstudio/sealos/controllers/objectstorage/api/v1"
 	"os"
 	"strconv"
 	"testing"

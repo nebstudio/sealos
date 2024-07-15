@@ -17,7 +17,7 @@ To learn more about how proposal development process works, see the references:
 
 Here comes the proposal process: `create`,`discuss` or `decline`,`review`,`accept`.
 
-1. Create. The proposal author [create a brief issue](https://github.com/labring/sealos/issues/new?template=feature.md&title=Feature%3A+brief+description+of+the+feature) witch describe the proposal.\
+1. Create. The proposal author [create a brief issue](https://github.com/nebstudio/sealos/issues/new?template=feature.md&title=Feature%3A+brief+description+of+the+feature) witch describe the proposal.\
    Note: There is no need for details or designs at this point.\
    Note: If can, users can specific it is core or cloud based feature.
 
@@ -38,10 +38,10 @@ After the proposal is accepted, implementation work proceeds goes on.
 
 ### Example:
 
-1. [1527-user-controller](https://github.com/labring/sealos/issues/1527)
-2. [1660-cloud-init](https://github.com/labring/sealos/issues/1660)
-3. [1873-gateway](https://github.com/labring/sealos/issues/1873)
-4. [1902-image-app-hub](https://github.com/labring/sealos/issues/1902)
+1. [1527-user-controller](https://github.com/nebstudio/sealos/issues/1527)
+2. [1660-cloud-init](https://github.com/nebstudio/sealos/issues/1660)
+3. [1873-gateway](https://github.com/nebstudio/sealos/issues/1873)
+4. [1902-image-app-hub](https://github.com/nebstudio/sealos/issues/1902)
 
 ### Help
 

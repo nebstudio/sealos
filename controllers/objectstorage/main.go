@@ -31,8 +31,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	objectstoragev1 "github/labring/sealos/controllers/objectstorage/api/v1"
-	"github/labring/sealos/controllers/objectstorage/controllers"
+	objectstoragev1 "github/nebstudio/sealos/controllers/objectstorage/api/v1"
+	"github/nebstudio/sealos/controllers/objectstorage/controllers"
 	//+kubebuilder:scaffold:imports
 )
 

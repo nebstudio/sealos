@@ -19,7 +19,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 type clusterClient struct {

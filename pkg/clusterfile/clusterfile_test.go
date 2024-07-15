@@ -21,9 +21,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm"
 
-	"github.com/labring/sealos/pkg/runtime"
-	"github.com/labring/sealos/pkg/runtime/kubernetes/types"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/runtime"
+	"github.com/nebstudio/sealos/pkg/runtime/kubernetes/types"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 func Test_NewClusterFile(t *testing.T) {
@@ -53,8 +53,8 @@ func Test_NewClusterFile(t *testing.T) {
 					},
 					Spec: v2.ClusterSpec{
 						Image: v2.ImageList{
-							"dockerhub.tencentcloudcr.com/labring/kubernetes:v1.23.8",
-							"dockerhub.tencentcloudcr.com/labring/calico:v3.24.1",
+							"dockerhub.tencentcloudcr.com/nebstudio/kubernetes:v1.23.8",
+							"dockerhub.tencentcloudcr.com/nebstudio/calico:v3.24.1",
 						},
 						SSH: v2.SSH{
 							User:   "root",
@@ -193,8 +193,8 @@ func Test_NewClusterFileWithSingleSchedule(t *testing.T) {
 					},
 					Spec: v2.ClusterSpec{
 						Image: v2.ImageList{
-							"dockerhub.tencentcloudcr.com/labring/kubernetes:v1.23.8",
-							"dockerhub.tencentcloudcr.com/labring/calico:v3.24.1",
+							"dockerhub.tencentcloudcr.com/nebstudio/kubernetes:v1.23.8",
+							"dockerhub.tencentcloudcr.com/nebstudio/calico:v3.24.1",
 						},
 						SSH: v2.SSH{
 							User:   "root",

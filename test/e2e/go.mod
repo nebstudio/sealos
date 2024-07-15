@@ -1,10 +1,10 @@
-module github.com/labring/sealos/test/e2e
+module github.com/nebstudio/sealos/test/e2e
 
 go 1.20
 
 replace (
-	github.com/labring/image-cri-shim => ../../staging/src/github.com/labring/image-cri-shim
-	github.com/labring/sealos => ../../
+	github.com/nebstudio/image-cri-shim => ../../staging/src/github.com/nebstudio/image-cri-shim
+	github.com/nebstudio/sealos => ../../
 )
 
 replace (
@@ -30,8 +30,8 @@ require (
 	github.com/Masterminds/sprig/v3 v3.2.3
 	github.com/go-bindata/go-bindata v3.1.2+incompatible
 	github.com/google/go-containerregistry v0.15.2
-	github.com/labring/image-cri-shim v0.0.0
-	github.com/labring/sealos v0.0.0
+	github.com/nebstudio/image-cri-shim v0.0.0
+	github.com/nebstudio/sealos v0.0.0
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/onsi/ginkgo/v2 v2.10.0
 	github.com/onsi/gomega v1.27.8
@@ -82,7 +82,7 @@ require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/compress v1.16.7 // indirect
 	github.com/kr/fs v0.1.0 // indirect
-	github.com/labring/sreg v0.1.6 // indirect
+	github.com/nebstudio/sreg v0.1.6 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mattn/go-runewidth v0.0.14 // indirect
 	github.com/mitchellh/colorstring v0.0.0-20190213212951-d06e56a500db // indirect

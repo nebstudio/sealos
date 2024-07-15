@@ -1,4 +1,4 @@
-module github.com/labring/sealos/controllers/job/heartbeat
+module github.com/nebstudio/sealos/controllers/job/heartbeat
 
 go 1.20
 

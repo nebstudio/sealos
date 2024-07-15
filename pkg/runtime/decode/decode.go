@@ -33,8 +33,8 @@ import (
 	kubeletconfig "k8s.io/kubernetes/pkg/kubelet/apis/config/v1beta1"
 	proxyconfig "k8s.io/kubernetes/pkg/proxy/apis/config/v1alpha1"
 
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/logger"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 const (

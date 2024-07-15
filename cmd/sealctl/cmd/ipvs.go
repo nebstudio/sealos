@@ -17,9 +17,9 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/labring/lvscare/care"
+	"github.com/nebstudio/lvscare/care"
 
-	"github.com/labring/sealos/pkg/utils/flags"
+	"github.com/nebstudio/sealos/pkg/utils/flags"
 )
 
 func newIPVSCmd() *cobra.Command {

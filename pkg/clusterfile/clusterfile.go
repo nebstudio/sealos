@@ -18,8 +18,8 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/labring/sealos/pkg/runtime"
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/runtime"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 var ErrTypeNotFound = errors.New("no corresponding type structure was found")

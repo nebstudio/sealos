@@ -24,9 +24,9 @@ import (
 	"github.com/containers/storage/pkg/archive"
 	"github.com/opencontainers/go-digest"
 
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/flags"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/flags"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 type Archive interface {

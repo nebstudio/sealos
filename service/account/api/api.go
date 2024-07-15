@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/labring/sealos/controllers/pkg/database/cockroach"
+	"github.com/nebstudio/sealos/controllers/pkg/database/cockroach"
 
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 
-	"github.com/labring/sealos/service/account/common"
+	"github.com/nebstudio/sealos/service/account/common"
 
-	"github.com/labring/sealos/service/account/dao"
+	"github.com/nebstudio/sealos/service/account/dao"
 
 	"github.com/gin-gonic/gin"
-	"github.com/labring/sealos/service/account/helper"
+	"github.com/nebstudio/sealos/service/account/helper"
 )
 
 var _ = helper.NamespaceBillingHistoryReq{}

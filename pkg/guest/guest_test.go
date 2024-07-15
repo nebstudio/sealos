@@ -21,9 +21,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/labring/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/constants"
 
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 func TestDefault_getGuestCmd(t *testing.T) {

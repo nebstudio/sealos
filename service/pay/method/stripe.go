@@ -6,11 +6,11 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/labring/sealos/controllers/pkg/pay"
+	"github.com/nebstudio/sealos/controllers/pkg/pay"
 
 	"github.com/gin-gonic/gin"
-	"github.com/labring/sealos/service/pay/handler"
-	"github.com/labring/sealos/service/pay/helper"
+	"github.com/nebstudio/sealos/service/pay/handler"
+	"github.com/nebstudio/sealos/service/pay/helper"
 	"github.com/stripe/stripe-go/v74"
 	"go.mongodb.org/mongo-driver/mongo"
 )

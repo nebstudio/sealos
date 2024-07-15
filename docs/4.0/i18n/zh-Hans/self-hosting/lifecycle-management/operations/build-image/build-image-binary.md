@@ -56,7 +56,7 @@ CMD ["cp opt/helm /usr/bin/"]
 现在，一切准备就绪，你可以开始构建集群镜像了：
 
 ```shell
-sealos build -t labring/helm:v3.10.1 .
+sealos build -t nebstudio/helm:v3.10.1 .
 ```
 
 **注意：** 首先你需要在本地主机上安装 `sealos` 命令。
@@ -64,7 +64,7 @@ sealos build -t labring/helm:v3.10.1 .
 你可以查看构建日志来了解构建过程。
 
 ```shell
-root@ubuntu:~/cluster-images# sealos build -t labring/helm:v3.10.1 .
+root@ubuntu:~/cluster-images# sealos build -t nebstudio/helm:v3.10.1 .
 ...
 ```
 
@@ -72,7 +72,7 @@ root@ubuntu:~/cluster-images# sealos build -t labring/helm:v3.10.1 .
 
 ```shell
 root@ubuntu:~/cluster-images# sealos images
-labring/helm                      v3.10.1          19ed4a24f0fe   3 minutes ago       45.1 MB
+nebstudio/helm                      v3.10.1          19ed4a24f0fe   3 minutes ago       45.1 MB
 ```
 
 ## 推送镜像
@@ -80,7 +80,7 @@ labring/helm                      v3.10.1          19ed4a24f0fe   3 minutes ago 
 你可以将镜像推送至任何 Docker 镜像仓库，下面的命令将镜像推送到 dockerhub：
 
 ```shell
-sealos push labring/helm:v3.10.1
+sealos push nebstudio/helm:v3.10.1
 ```
 
 **注意：** 请使用 `sealos` 命令来操作集群镜像，不支持 Docker 命令。

@@ -20,9 +20,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/labring/sealos/test/e2e/testdata/kubeadm"
+	"github.com/nebstudio/sealos/test/e2e/testdata/kubeadm"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 )
 
 func TestClusterfile_Write(t *testing.T) {

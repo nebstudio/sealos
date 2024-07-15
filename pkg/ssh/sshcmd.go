@@ -26,7 +26,7 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 func (c *Client) Ping(host string) error {
@@ -43,7 +43,7 @@ func (c *Client) wrapCommands(cmds ...string) string {
 		return cmdJoined
 	}
 
-	// Escape single quotes in cmd, fix https://github.com/labring/sealos/issues/4424
+	// Escape single quotes in cmd, fix https://github.com/nebstudio/sealos/issues/4424
 	// e.g. echo 'hello world' -> `sudo -E /bin/bash -c 'echo "hello world"'`
 	cmdEscaped := strings.ReplaceAll(cmdJoined, `'`, `"`)
 	return fmt.Sprintf("sudo -E /bin/bash -c '%s'", cmdEscaped)

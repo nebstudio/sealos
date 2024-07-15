@@ -1,18 +1,18 @@
-module github.com/labring/sealos/service/account
+module github.com/nebstudio/sealos/service/account
 
 go 1.20
 
 replace (
-	github.com/labring/sealos/controllers/pkg => ../../controllers/pkg/
-	github.com/labring/sealos/service => ../../service
-	github.com/labring/sealos/service/account => ../account
+	github.com/nebstudio/sealos/controllers/pkg => ../../controllers/pkg/
+	github.com/nebstudio/sealos/service => ../../service
+	github.com/nebstudio/sealos/service/account => ../account
 )
 
 require (
 	github.com/dustin/go-humanize v1.0.1
 	github.com/gin-gonic/gin v1.9.1
-	github.com/labring/sealos/controllers/pkg v0.0.0-00010101000000-000000000000
-	github.com/labring/sealos/service v0.0.0-00010101000000-000000000000
+	github.com/nebstudio/sealos/controllers/pkg v0.0.0-00010101000000-000000000000
+	github.com/nebstudio/sealos/service v0.0.0-00010101000000-000000000000
 	github.com/swaggo/files v1.0.1
 	github.com/swaggo/gin-swagger v1.6.0
 	github.com/swaggo/swag v1.16.2

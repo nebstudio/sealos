@@ -3,10 +3,10 @@ package main
 import (
 	"log"
 
-	"github.com/labring/sealos/service/exceptionmonitor/api"
-	"github.com/labring/sealos/service/exceptionmonitor/dao"
-	"github.com/labring/sealos/service/exceptionmonitor/helper/client"
-	"github.com/labring/sealos/service/exceptionmonitor/helper/monitor"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/api"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/dao"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/helper/client"
+	"github.com/nebstudio/sealos/service/exceptionmonitor/helper/monitor"
 )
 
 func main() {

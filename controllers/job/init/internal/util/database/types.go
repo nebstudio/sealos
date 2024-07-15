@@ -15,7 +15,7 @@
 package database
 
 import (
-	"github.com/labring/sealos/controllers/pkg/utils/env"
+	"github.com/nebstudio/sealos/controllers/pkg/utils/env"
 )
 
 const (

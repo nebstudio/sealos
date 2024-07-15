@@ -1,5 +1,5 @@
 /*
-Copyright 2022 labring.
+Copyright 2022 nebstudio.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import (
 	networkingv1 "k8s.io/api/networking/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	terminalv1 "github.com/labring/sealos/controllers/terminal/api/v1"
+	terminalv1 "github.com/nebstudio/sealos/controllers/terminal/api/v1"
 )
 
 const (

@@ -1,6 +1,6 @@
 
 # Image URL to use all building/pushing image targets
-IMG ?= ghcr.io/labring/sealos-resources-controller:latest
+IMG ?= ghcr.io/nebstudio/sealos-resources-controller:latest
 # ENVTEST_K8S_VERSION refers to the version of kubebuilder assets to be downloaded by envtest binary.
 ENVTEST_K8S_VERSION = 1.23
 
@@ -64,7 +64,7 @@ test: manifests generate fmt vet envtest ## Run tests.
 .PHONY: build
 build: ## Build manager binary.
 	LD_FLAGS="-s -w"; \
-	[ -n "$(CRYPTOKEY)" ] && LD_FLAGS+=" -X github.com/labring/sealos/controllers/pkg/crypto.encryptionKey=${CRYPTOKEY} -X github.com/labring/sealos/controllers/pkg/database.cryptoKey=${CRYPTOKEY}"; \
+	[ -n "$(CRYPTOKEY)" ] && LD_FLAGS+=" -X github.com/nebstudio/sealos/controllers/pkg/crypto.encryptionKey=${CRYPTOKEY} -X github.com/nebstudio/sealos/controllers/pkg/database.cryptoKey=${CRYPTOKEY}"; \
 	CGO_ENABLED=0 GOOS=linux go build -ldflags "$${LD_FLAGS}" -trimpath -o bin/manager main.go
 
 .PHONY: run

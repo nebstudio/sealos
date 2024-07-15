@@ -71,4 +71,4 @@ type Context interface {
 
 ## Implementation History
 
-- 2022-11-17 First [Proposal and PR](https://github.com/labring/sealos/pull/2096)
+- 2022-11-17 First [Proposal and PR](https://github.com/nebstudio/sealos/pull/2096)

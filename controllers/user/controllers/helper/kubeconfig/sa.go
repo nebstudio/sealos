@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"time"
 
-	config2 "github.com/labring/sealos/controllers/user/controllers/helper/config"
+	config2 "github.com/nebstudio/sealos/controllers/user/controllers/helper/config"
 
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

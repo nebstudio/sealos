@@ -28,13 +28,13 @@ A Cloud Operating System designed for managing cloud-native applications
 
 <div align="center">
 
-[![Open in Dev Container](https://img.shields.io/static/v1?label=Dev%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/github/labring/sealos)
-[![Build Status](https://github.com/labring/sealos/actions/workflows/release.yml/badge.svg)](https://github.com/labring/sealos/actions)
-[![](https://img.shields.io/docker/pulls/labring/kubernetes)](https://hub.docker.com/r/labring/kubernetes)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flabring%2Fsealos.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Flabring%2Fsealos?ref=badge_shield)
-[![codecov](https://codecov.io/gh/labring/sealos/branch/main/graph/badge.svg?token=e41ZDcj06N)](https://codecov.io/gh/labring/sealos)
+[![Open in Dev Container](https://img.shields.io/static/v1?label=Dev%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/github/nebstudio/sealos)
+[![Build Status](https://github.com/nebstudio/sealos/actions/workflows/release.yml/badge.svg)](https://github.com/nebstudio/sealos/actions)
+[![](https://img.shields.io/docker/pulls/nebstudio/kubernetes)](https://hub.docker.com/r/nebstudio/kubernetes)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnebstudio%2Fsealos.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnebstudio%2Fsealos?ref=badge_shield)
+[![codecov](https://codecov.io/gh/nebstudio/sealos/branch/main/graph/badge.svg?token=e41ZDcj06N)](https://codecov.io/gh/nebstudio/sealos)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fpostwoman.io&logo=Postwoman)](https://sealos.io)
-[![OSCS Status](https://www.oscs1024.com/platform/badge/labring/sealos.svg?size=small)](https://www.oscs1024.com/repo/labring/sealos?ref=badge_small)
+[![OSCS Status](https://www.oscs1024.com/platform/badge/nebstudio/sealos.svg?size=small)](https://www.oscs1024.com/repo/nebstudio/sealos?ref=badge_small)
 
 <br />
 
@@ -42,17 +42,17 @@ A Cloud Operating System designed for managing cloud-native applications
 
 </div>
 
-https://github.com/labring/sealos/assets/82700206/b1f8a25a-55cf-4d15-a47b-38cf7d507134
+https://github.com/nebstudio/sealos/assets/82700206/b1f8a25a-55cf-4d15-a47b-38cf7d507134
 
 <p align="center">
   <a href="https://sealos.io/docs/Intro">Docs</a> |
   <a href="./README_zh.md">简体中文</a> | 
-  <a href="https://github.com/orgs/labring/projects/4/views/9">Roadmap</a>
+  <a href="https://github.com/orgs/nebstudio/projects/4/views/9">Roadmap</a>
 </p>
 
 Sealos['siːləs] is a cloud operating system distribution based on the Kubernetes kernel. Using the cloud like using a personal computer, reducing the cost of the cloud to 1/10 of the original.
 
-<img width="916" alt="image" src="https://github.com/labring/sealos/assets/8912557/9e8c1d76-718e-4910-a9ab-94f220a61a9c">
+<img width="916" alt="image" src="https://github.com/nebstudio/sealos/assets/8912557/9e8c1d76-718e-4910-a9ab-94f220a61a9c">
 
 
 ## 🚀 Deploy your app on Sealos
@@ -102,15 +102,15 @@ Sealos['siːləs] is a cloud operating system distribution based on the Kubernet
 + 🌐 Visit the [Sealos website](https://sealos.io/) for full documentation and useful links.
 + 💬 Join our [Discord server](https://discord.gg/qzBmGGZGk7) is to chat with Sealos developers and other Sealos users. This is a good place to learn about Sealos and Kubernetes, ask questions, and share your experiences.
 + 🐦 Tweet at @sealosio on [Twitter](https://twitter.com/sealosio) and follow us.
-+ 🐞 Create [GitHub Issues](https://github.com/labring/sealos/issues/new/choose) for bug reports and feature requests.
++ 🐞 Create [GitHub Issues](https://github.com/nebstudio/sealos/issues/new/choose) for bug reports and feature requests.
 
 ## 🚧 Roadmap
 
-Sealos maintains a [public roadmap](https://github.com/orgs/labring/projects/4/views/9). It gives a high-level view of the main priorities for the project, the maturity of different features and projects, and how to influence the project direction.
+Sealos maintains a [public roadmap](https://github.com/orgs/nebstudio/projects/4/views/9). It gives a high-level view of the main priorities for the project, the maturity of different features and projects, and how to influence the project direction.
 
 ## 👩‍💻 Contributing & Development
 
-Have a look through [existing Issues](https://github.com/labring/sealos/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and [Pull Requests](https://github.com/labring/sealos/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc) that you could help with. If you'd like to request a feature or report a bug, please [create a GitHub Issue](https://github.com/labring/sealos/issues/new/choose) using one of the templates provided.
+Have a look through [existing Issues](https://github.com/nebstudio/sealos/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and [Pull Requests](https://github.com/nebstudio/sealos/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc) that you could help with. If you'd like to request a feature or report a bug, please [create a GitHub Issue](https://github.com/nebstudio/sealos/issues/new/choose) using one of the templates provided.
 
 📖 [See contribution guide →](./CONTRIBUTING.md)
 
@@ -118,9 +118,9 @@ Have a look through [existing Issues](https://github.com/labring/sealos/issues?q
 
 ## Links
 
-- [Laf](https://github.com/labring/laf) is a function as a service application on sealos.
+- [Laf](https://github.com/nebstudio/laf) is a function as a service application on sealos.
 - [Buildah](https://github.com/containers/buildah) The functionalities of Buildah are extensively utilized in Sealos 4.0 to ensure that cluster images are compatible with OCI standard.
 
 <!-- ## License -->
 
-<!-- [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flabring%2Fsealos.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flabring%2Fsealos?ref=badge_large) -->
+<!-- [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnebstudio%2Fsealos.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnebstudio%2Fsealos?ref=badge_large) -->

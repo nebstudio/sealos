@@ -38,9 +38,9 @@ builds:
       - osusergo
       - exclude_graphdriver_btrfs
     ldflags:
-      - -X github.com/labring/sealos/pkg/version.gitVersion={{.Version}}
-      - -X github.com/labring/sealos/pkg/version.gitCommit={{.ShortCommit}}
-      - -X github.com/labring/sealos/pkg/version.buildDate={{.Date}}
+      - -X github.com/nebstudio/sealos/pkg/version.gitVersion={{.Version}}
+      - -X github.com/nebstudio/sealos/pkg/version.gitCommit={{.ShortCommit}}
+      - -X github.com/nebstudio/sealos/pkg/version.buildDate={{.Date}}
       - -s -w
     overrides:
       - goos: linux
@@ -73,9 +73,9 @@ builds:
       - osusergo
       - exclude_graphdriver_btrfs
     ldflags:
-      - -X github.com/labring/sealos/pkg/version.gitVersion={{.Version}}
-      - -X github.com/labring/sealos/pkg/version.gitCommit={{.ShortCommit}}
-      - -X github.com/labring/sealos/pkg/version.buildDate={{.Date}}
+      - -X github.com/nebstudio/sealos/pkg/version.gitVersion={{.Version}}
+      - -X github.com/nebstudio/sealos/pkg/version.gitCommit={{.ShortCommit}}
+      - -X github.com/nebstudio/sealos/pkg/version.buildDate={{.Date}}
       - -s -w
     overrides:
       - goos: linux
@@ -107,9 +107,9 @@ builds:
       - osusergo
       - exclude_graphdriver_btrfs
     ldflags:
-      - -X github.com/labring/sealos/pkg/version.gitVersion={{.Version}}
-      - -X github.com/labring/sealos/pkg/version.gitCommit={{.ShortCommit}}
-      - -X github.com/labring/sealos/pkg/version.buildDate={{.Date}}
+      - -X github.com/nebstudio/sealos/pkg/version.gitVersion={{.Version}}
+      - -X github.com/nebstudio/sealos/pkg/version.gitCommit={{.ShortCommit}}
+      - -X github.com/nebstudio/sealos/pkg/version.buildDate={{.Date}}
       - -s -w
 
   - id: image-cri-shim
@@ -132,9 +132,9 @@ builds:
       - osusergo
       - exclude_graphdriver_btrfs
     ldflags:
-      - -X github.com/labring/sealos/pkg/version.gitVersion={{.Version}}
-      - -X github.com/labring/sealos/pkg/version.gitCommit={{.ShortCommit}}
-      - -X github.com/labring/sealos/pkg/version.buildDate={{.Date}}
+      - -X github.com/nebstudio/sealos/pkg/version.gitVersion={{.Version}}
+      - -X github.com/nebstudio/sealos/pkg/version.gitCommit={{.ShortCommit}}
+      - -X github.com/nebstudio/sealos/pkg/version.buildDate={{.Date}}
       - -s -w
 
 dockers:
@@ -216,8 +216,8 @@ nfpms:
   - id: packages
     builds:
       - sealos
-    vendor: labring
-    homepage: https://github.com/labring/sealos
+    vendor: nebstudio
+    homepage: https://github.com/nebstudio/sealos
     maintainer: fanux (https://github.com/fanux)
     description: Cloud OS distribution with Kubernetes as kernel
     license: Apache 2.0

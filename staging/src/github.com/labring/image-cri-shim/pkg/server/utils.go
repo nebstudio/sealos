@@ -17,11 +17,11 @@ limitations under the License.
 package server
 
 import (
-	"github.com/labring/sreg/pkg/registry/crane"
+	"github.com/nebstudio/sreg/pkg/registry/crane"
 
 	"github.com/docker/docker/api/types"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 // ListImages gets all images currently on the machine.

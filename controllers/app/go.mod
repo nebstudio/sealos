@@ -1,4 +1,4 @@
-module github.com/labring/sealos/controllers/app
+module github.com/nebstudio/sealos/controllers/app
 
 go 1.20
 

@@ -22,9 +22,9 @@ import (
 
 	"github.com/onsi/gomega"
 
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/test/e2e/suites/operators"
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 )
 
 func checkVersionImageList(fakeClient *operators.FakeClient) error {

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/labring/sealos/service/account/common"
+	"github.com/nebstudio/sealos/service/account/common"
 
 	"github.com/dustin/go-humanize"
 

@@ -28,11 +28,11 @@ import (
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/yaml"
 
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
-	"github.com/labring/sealos/test/e2e/testhelper/config"
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/config"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
 	. "github.com/onsi/ginkgo/v2"
 )
@@ -48,7 +48,7 @@ var _ = Describe("E2E_sealos_k3s_basic_test", func() {
 		BeforeEach(func() {
 			By("build rootfs")
 			dFile := config.RootfsDockerfile{
-				BaseImage: "labring/k3s:v1.25-latest",
+				BaseImage: "nebstudio/k3s:v1.25-latest",
 				Copys:     []string{"sealctl opt/"},
 			}
 			tmpdir, err := dFile.Write()

@@ -21,13 +21,13 @@ import (
 	"os"
 	"path"
 
-	"github.com/labring/sealos/test/e2e/testhelper/cmd"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/cmd"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
-	"github.com/labring/sealos/test/e2e/testhelper/config"
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/config"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/test/e2e/suites/checkers"
+	"github.com/nebstudio/sealos/test/e2e/suites/checkers"
 
 	. "github.com/onsi/ginkgo/v2"
 )
@@ -44,7 +44,7 @@ var _ = Describe("E2E_sealos_filesystem_test", func() {
 		BeforeEach(func() {
 			By("build rootfs")
 			dFile := config.RootfsDockerfile{
-				BaseImage: "labring/kubernetes:v1.25.0",
+				BaseImage: "nebstudio/kubernetes:v1.25.0",
 				Copys:     []string{"sealctl opt/"},
 			}
 			tmpdir, err := dFile.Write()
@@ -87,7 +87,7 @@ var _ = Describe("E2E_sealos_filesystem_test", func() {
 			utils.CheckErr(err)
 			err = fakeClient.CmdInterface.AsyncExec("crictl", "images")
 			utils.CheckErr(err)
-			err = fakeClient.Cluster.Run("labring/calico:v3.25.0")
+			err = fakeClient.Cluster.Run("nebstudio/calico:v3.25.0")
 			utils.CheckErr(err)
 			err = fakeClient.CmdInterface.AsyncExec("crictl", "images")
 			utils.CheckErr(err)

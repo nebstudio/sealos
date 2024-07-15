@@ -22,12 +22,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/labring/sealos/controllers/pkg/database/cockroach"
+	"github.com/nebstudio/sealos/controllers/pkg/database/cockroach"
 
-	account2 "github.com/labring/sealos/controllers/pkg/account"
-	"github.com/labring/sealos/controllers/pkg/code"
-	pkgtype "github.com/labring/sealos/controllers/pkg/types"
-	userv1 "github.com/labring/sealos/controllers/user/api/v1"
+	account2 "github.com/nebstudio/sealos/controllers/pkg/account"
+	"github.com/nebstudio/sealos/controllers/pkg/code"
+	pkgtype "github.com/nebstudio/sealos/controllers/pkg/types"
+	userv1 "github.com/nebstudio/sealos/controllers/user/api/v1"
 
 	admissionv1 "k8s.io/api/admission/v1"
 	"k8s.io/apimachinery/pkg/types"

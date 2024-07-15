@@ -1,6 +1,6 @@
 # LVScare
 
-A lightweight LVS baby care, support health check, currently only HTTP prober supported， [sealos](https://github.com/labring/sealos) using lvscare for kubernetes masters HA.
+A lightweight LVS baby care, support health check, currently only HTTP prober supported， [sealos](https://github.com/nebstudio/sealos) using lvscare for kubernetes masters HA.
 
 ## Feature
 

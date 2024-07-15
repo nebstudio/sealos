@@ -61,10 +61,10 @@ date: 2023-12-06T10:00
 这个时候发行版的优势就体现出来了，类似于 Linux 系统中，大多数人更倾向于使用 CentOS、Ubuntu 等发行版，而不是直接操作内核。我们也可以将 K8s 视为一种 “云内核”，如果你只是直接使用内核而不进行适当的定制和优化，可能会觉得它不够好用。因为内核本身只是提供了一个框架，很多功能和优化需要用户自己去实现。而 K8s 发行版则帮助用户解决了这一问题。例如，[Sealos 可以帮你一键](https://sealos.run/docs/self-hosting/lifecycle-management/quick-start/deploy-kubernetes)构建**包括高可用性集群、存储插件和数据库在内的完整系统**。这一切只需要简单的两条命令：
 
 ```bash
-$ sealos run labring/kubernetes:v1.27.7 labring/helm:v3.9.4 labring/cilium:v1.13.4 \
+$ sealos run nebstudio/kubernetes:v1.27.7 nebstudio/helm:v3.9.4 nebstudio/cilium:v1.13.4 \
      --masters 192.168.64.2,192.168.64.22,192.168.64.20 \
      --nodes 192.168.64.21,192.168.64.19 -p [your-ssh-passwd]
-$ sealos run labring/openebs:v3.9.0 labring/mysql:8.0
+$ sealos run nebstudio/openebs:v3.9.0 nebstudio/mysql:8.0
 ```
 
 然后就没有然后了，一个包含高可用集群、存储插件和数据库的系统就诞生了。虽然 Ansible 可以帮助你解决安装问题，但它**无法处理运行时的自愈、多租户等问题**，而 on K8s 可以让数据库 as a Service。
@@ -121,7 +121,7 @@ K8s 是个大杀器，像是无崖子一甲子的功力你能发挥几成，如�
 
 ### 实践案例和效益
 
-目前已经有很多团队在成本、易用性、稳定性和性能等多个维度上成功实践了 K8s，取得了显著的成果，也尝到了这样做的甜头。由奢入俭难，一旦企业体验到了 K8s 带来的好处，很难再回到传统的运维方式。以 Sealos 为例，从 v2 使用 ansible，到 v3 完全转向 golang，[现在已经发展到 v4 和 v5](https://github.com/labring/sealos)，这种技术的演进正是基于 “云计算” 和 “云操作系统” 的思维，而不是传统的 “运维脚本” 思维。脚本连个 API 都实现不了你我谈先进生产力？设计一个系统优先考虑的不一定是给人用的，而是给别的系统调用的，这样整个自动化才能起飞，这就是为什么 API > CLI > GUI 的原因。
+目前已经有很多团队在成本、易用性、稳定性和性能等多个维度上成功实践了 K8s，取得了显著的成果，也尝到了这样做的甜头。由奢入俭难，一旦企业体验到了 K8s 带来的好处，很难再回到传统的运维方式。以 Sealos 为例，从 v2 使用 ansible，到 v3 完全转向 golang，[现在已经发展到 v4 和 v5](https://github.com/nebstudio/sealos)，这种技术的演进正是基于 “云计算” 和 “云操作系统” 的思维，而不是传统的 “运维脚本” 思维。脚本连个 API 都实现不了你我谈先进生产力？设计一个系统优先考虑的不一定是给人用的，而是给别的系统调用的，这样整个自动化才能起飞，这就是为什么 API > CLI > GUI 的原因。
 
 ### 运维角色的转变
 

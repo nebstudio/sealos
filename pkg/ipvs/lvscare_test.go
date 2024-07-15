@@ -17,7 +17,7 @@ package ipvs
 import (
 	"testing"
 
-	"github.com/labring/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/constants"
 )
 
 var want = []string{

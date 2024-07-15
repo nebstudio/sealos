@@ -22,7 +22,7 @@ import (
 	"github.com/spf13/cobra"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 func TestDelete(t *testing.T) {

@@ -23,7 +23,7 @@ This guide will walk you through the process of building cluster images using im
 ```
 
 ```dockerfile
-FROM labring/kubernetes:v1.24.0
+FROM nebstudio/kubernetes:v1.24.0
 COPY cni ./cni
 COPY images ./images
 COPY registry ./registry
@@ -36,7 +36,7 @@ The images listed in CalicoImageList will be pulled locally and then applied to 
 
 The image manifest currently supports the following:
 - Remote images like docker.io/calico/cni:v3.20.0
-- Local OCI container images like containers-storage:docker.io/labring/coredns:v0.0.1
+- Local OCI container images like containers-storage:docker.io/nebstudio/coredns:v0.0.1
 - Local Docker container images like docker-daemon:docker.io/library/nginx:latest
 
 ## Building from Image Tarballs

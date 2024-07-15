@@ -64,7 +64,7 @@ CMD ["kubectl apply -f manifests/deployment.yaml"]
 在准备好所有必需的文件和目录后，我们可以开始构建集群镜像。
 
 ```shell
-sealos build -t labring/nginx:v1.23.1 .
+sealos build -t nebstudio/nginx:v1.23.1 .
 ```
 
 **注意：** 在开始构建前，您需要先在本地主机上安装 sealos 命令。
@@ -77,7 +77,7 @@ sealos build -t labring/nginx:v1.23.1 .
 
 ```shell
 root@ubuntu:~/cloud-images# sealos images
-labring/nginx                      v1.23.1          521c85942ee4   4 minutes ago   56.8 MB
+nebstudio/nginx                      v1.23.1          521c85942ee4   4 minutes ago   56.8 MB
 ```
 
 ## 六、推送镜像
@@ -85,7 +85,7 @@ labring/nginx                      v1.23.1          521c85942ee4   4 minutes ago
 最后，我们可以将构建好的镜像推送至任何Docker镜像仓库，以下命令将其推送至DockerHub。
 
 ```shell
-sealos push labring/nginx:v1.23.1
+sealos push nebstudio/nginx:v1.23.1
 ```
 
 **注意：** 请使用 sealos 命令来操作集群镜像，Docker 命令不受支持。

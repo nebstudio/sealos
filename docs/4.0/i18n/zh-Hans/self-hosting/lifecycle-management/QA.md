@@ -84,13 +84,13 @@ sealos build --arch arm64 --build-arg TARGETOS=linux --build-arg TARGETARCH=arm6
 
 ### Q4：如何使用其他构建工具构建集群镜像？
 
-如果您想使用 Docker 或 Podman 等其他容器工具来构建集群镜像，您可以借助 [sreg](https://github.com/labring/sreg) 来缓存镜像。
+如果您想使用 Docker 或 Podman 等其他容器工具来构建集群镜像，您可以借助 [sreg](https://github.com/nebstudio/sreg) 来缓存镜像。
 
 以下是操作步骤：
 
 1. 安装 sreg：
    ```shell
-   wget https://github.com/labring/sreg/releases/download/v0.1.1/sreg_0.1.1_linux_amd64.tar.gz
+   wget https://github.com/nebstudio/sreg/releases/download/v0.1.1/sreg_0.1.1_linux_amd64.tar.gz
    tar -xzf sreg_0.1.1_linux_amd64.tar.gz sreg
    mv sreg /usr/bin/
    ```
@@ -124,7 +124,7 @@ Sealos会根据您选择的镜像决定使用哪种运行时。如果选择了ku
 
 ### Q2: 如果您在集群中新增了其他域名，或者修改了 service 的 CIDR，并且在添加 master 时出现了错误
 
-为了解决这个问题，Sealos 团队在 4.2.0 版本进行了相应的修复。具体的修复内容和讨论可以在这个 pull request 中查看：https://github.com/labring/sealos/pull/2943 。
+为了解决这个问题，Sealos 团队在 4.2.0 版本进行了相应的修复。具体的修复内容和讨论可以在这个 pull request 中查看：https://github.com/nebstudio/sealos/pull/2943 。
 
 所以，如果您遇到了这个问题，我们建议您升级到 Sealos 4.2.0 版本。更新后的版本应该能够正确处理这些变更，并且在添加 master 时不会出现错误。
 
@@ -136,7 +136,7 @@ Sealos会根据您选择的镜像决定使用哪种运行时。如果选择了ku
 
 ```shell
 export SEALOS_RUNTIME_ROOT=/data/.sealos 
-sealos run labring/kubernetes:v1.24.0
+sealos run nebstudio/kubernetes:v1.24.0
 ```
 
 ### Q2：如何修改`/var/lib/sealos`默认目录的存储位置？
@@ -145,7 +145,7 @@ sealos run labring/kubernetes:v1.24.0
 
 ```shell
 export SEALOS_DATA_ROOT=/data/sealos 
-sealos run labring/kubernetes:v1.24.0
+sealos run nebstudio/kubernetes:v1.24.0
 ```
 
 ### Q3: 如何修改 Sealos 镜像数据和状态的存储路径?
@@ -179,7 +179,7 @@ sealos run labring/kubernetes:v1.24.0
 
 ```shell
 export SEALOS_SCP_CHECKSUM=false
-sealos run labring/kubernetes:v1.24.0
+sealos run nebstudio/kubernetes:v1.24.0
 ```
 
 
@@ -190,7 +190,7 @@ sealos run labring/kubernetes:v1.24.0
 出现此问题时，可通过以下命令解决：
 
 ```shell
-wget https://github.com/labring/sealos/releases/download/v4.2.0/sealos_4.2.0_linux_amd64.tar.gz && tar xvf sealos_4.2.0_linux_amd64.tar.gz image-cri-shim
+wget https://github.com/nebstudio/sealos/releases/download/v4.2.0/sealos_4.2.0_linux_amd64.tar.gz && tar xvf sealos_4.2.0_linux_amd64.tar.gz image-cri-shim
 sealos exec -r master,node "systemctl stop image-cri-shim"
 sealos scp "./image-cri-shim" "/usr/bin/image-cri-shim"
 sealos exec -r master,node "systemctl start image-cri-shim"

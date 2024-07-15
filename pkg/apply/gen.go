@@ -21,13 +21,13 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/labring/sealos/pkg/apply/processor"
-	"github.com/labring/sealos/pkg/buildah"
-	"github.com/labring/sealos/pkg/runtime/factory"
-	"github.com/labring/sealos/pkg/types/v1beta1"
-	"github.com/labring/sealos/pkg/utils/iputils"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/maps"
+	"github.com/nebstudio/sealos/pkg/apply/processor"
+	"github.com/nebstudio/sealos/pkg/buildah"
+	"github.com/nebstudio/sealos/pkg/runtime/factory"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/maps"
 )
 
 func NewClusterFromGenArgs(cmd *cobra.Command, args *RunArgs, imageNames []string) ([]byte, error) {

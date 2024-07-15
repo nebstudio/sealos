@@ -29,7 +29,7 @@ import (
 	utilyaml "k8s.io/apimachinery/pkg/util/yaml"
 	"sigs.k8s.io/yaml"
 
-	fileutil "github.com/labring/sealos/pkg/utils/file"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
 )
 
 const nonStructPointerErrorFmt = "must be a struct pointer, got %T"

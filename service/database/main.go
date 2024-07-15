@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	dbserver "github.com/labring/sealos/service/database/server"
-	"github.com/labring/sealos/service/pkg/server"
+	dbserver "github.com/nebstudio/sealos/service/database/server"
+	"github.com/nebstudio/sealos/service/pkg/server"
 )
 
 func main() {

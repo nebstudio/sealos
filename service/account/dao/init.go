@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/labring/sealos/service/account/helper"
+	"github.com/nebstudio/sealos/service/account/helper"
 )
 
 var DBClient Interface

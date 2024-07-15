@@ -28,9 +28,9 @@ import (
 
 	"k8s.io/client-go/util/homedir"
 
-	executils "github.com/labring/sealos/pkg/utils/exec"
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
+	executils "github.com/nebstudio/sealos/pkg/utils/exec"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 //go:generate go run main.go

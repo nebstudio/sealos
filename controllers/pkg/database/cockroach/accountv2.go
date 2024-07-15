@@ -28,12 +28,12 @@ import (
 
 	"gorm.io/driver/postgres"
 
-	"github.com/labring/sealos/controllers/pkg/crypto"
+	"github.com/nebstudio/sealos/controllers/pkg/crypto"
 
 	"github.com/google/uuid"
 	"gorm.io/gorm"
 
-	"github.com/labring/sealos/controllers/pkg/types"
+	"github.com/nebstudio/sealos/controllers/pkg/types"
 )
 
 type Cockroach struct {

@@ -21,7 +21,7 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/json"
 
-	"github.com/labring/sealos/test/e2e/testhelper/cmd"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/cmd"
 )
 
 type fakeCRIClient struct {

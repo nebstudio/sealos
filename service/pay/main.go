@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/labring/sealos/service/pay/router"
+	"github.com/nebstudio/sealos/service/pay/router"
 )
 
 func main() {

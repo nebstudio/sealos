@@ -90,7 +90,7 @@ spec:
             value: '{{ .OSInternalEndpoint }}'
           - name: oSNamespace
             value: '{{ .OSNamespace }}'
-        image: ghcr.io/labring/sealos-account-controller:latest
+        image: ghcr.io/nebstudio/sealos-account-controller:latest
         imagePullPolicy: Always
         args:
         - "--health-probe-bind-address=:8081"

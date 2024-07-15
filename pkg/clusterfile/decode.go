@@ -23,10 +23,10 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/yaml"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/types/v1beta1"
-	fileutil "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 func Cluster(filepath string) (clusters []v1beta1.Cluster, err error) {

@@ -2,7 +2,7 @@ domain: sealos.io
 layout:
 - go.kubebuilder.io/v3
 projectName: account
-repo: github.com/labring/sealos/controllers/account
+repo: github.com/nebstudio/sealos/controllers/account
 resources:
 - api:
     crdVersion: v1
@@ -11,7 +11,7 @@ resources:
   domain: sealos.io
   group: account
   kind: Account
-  path: github.com/labring/sealos/controllers/account/api/v1
+  path: github.com/nebstudio/sealos/controllers/account/api/v1
   version: v1
 - api:
     crdVersion: v1
@@ -20,7 +20,7 @@ resources:
   domain: sealos.io
   group: account
   kind: Payment
-  path: github.com/labring/sealos/controllers/account/api/v1
+  path: github.com/nebstudio/sealos/controllers/account/api/v1
   version: v1
 - api:
     crdVersion: v1
@@ -29,7 +29,7 @@ resources:
   domain: sealos.io
   group: account
   kind: Debt
-  path: github.com/labring/sealos/controllers/account/api/v1
+  path: github.com/nebstudio/sealos/controllers/account/api/v1
   version: v1
   webhooks:
     conversion: true
@@ -46,7 +46,7 @@ resources:
   domain: sealos.io
   group: account
   kind: BillingRecordQuery
-  path: github.com/labring/sealos/controllers/account/api/v1
+  path: github.com/nebstudio/sealos/controllers/account/api/v1
   version: v1
 - api:
     crdVersion: v1
@@ -54,7 +54,7 @@ resources:
   domain: sealos.io
   group: account
   kind: PriceQuery
-  path: github.com/labring/sealos/controllers/account/api/v1
+  path: github.com/nebstudio/sealos/controllers/account/api/v1
   version: v1
 - controller: true
   group: core
@@ -73,7 +73,7 @@ resources:
   domain: sealos.io
   group: account
   kind: Transfer
-  path: github.com/labring/sealos/controllers/account/api/v1
+  path: github.com/nebstudio/sealos/controllers/account/api/v1
   version: v1
 - api:
     crdVersion: v1
@@ -82,7 +82,7 @@ resources:
   domain: sealos.io
   group: account
   kind: NamespaceBillingHistory
-  path: github.com/labring/sealos/controllers/account/api/v1
+  path: github.com/nebstudio/sealos/controllers/account/api/v1
   version: v1
 - api:
     crdVersion: v1
@@ -91,6 +91,6 @@ resources:
   domain: sealos.io
   group: account
   kind: BillingInfoQuery
-  path: github.com/labring/sealos/controllers/account/api/v1
+  path: github.com/nebstudio/sealos/controllers/account/api/v1
   version: v1
 version: "3"

@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/labring/sealos/pkg/utils/initsystem"
+	"github.com/nebstudio/sealos/pkg/utils/initsystem"
 
-	"github.com/labring/sealos/pkg/template"
+	"github.com/nebstudio/sealos/pkg/template"
 
-	"github.com/labring/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/constants"
 
-	"github.com/labring/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
 )
 
 const (

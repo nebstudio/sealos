@@ -28,14 +28,14 @@ import (
 	"k8s.io/apimachinery/pkg/util/json"
 	"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm"
 
-	"github.com/labring/sealos/pkg/constants"
-	"github.com/labring/sealos/pkg/runtime/kubernetes/types"
-	fileutil "github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/iputils"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/rand"
-	stringsutil "github.com/labring/sealos/pkg/utils/strings"
-	"github.com/labring/sealos/pkg/utils/yaml"
+	"github.com/nebstudio/sealos/pkg/constants"
+	"github.com/nebstudio/sealos/pkg/runtime/kubernetes/types"
+	fileutil "github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/iputils"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/rand"
+	stringsutil "github.com/nebstudio/sealos/pkg/utils/strings"
+	"github.com/nebstudio/sealos/pkg/utils/yaml"
 )
 
 var (

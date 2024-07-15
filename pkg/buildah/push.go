@@ -36,8 +36,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	iutil "github.com/labring/sealos/pkg/buildah/internal/util"
-	"github.com/labring/sealos/pkg/utils/logger"
+	iutil "github.com/nebstudio/sealos/pkg/buildah/internal/util"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
 )
 
 type pushOptions struct {

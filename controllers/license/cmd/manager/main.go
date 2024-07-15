@@ -21,8 +21,8 @@ import (
 	"flag"
 	"os"
 
-	database2 "github.com/labring/sealos/controllers/pkg/database"
-	"github.com/labring/sealos/controllers/pkg/database/cockroach"
+	database2 "github.com/nebstudio/sealos/controllers/pkg/database"
+	"github.com/nebstudio/sealos/controllers/pkg/database/cockroach"
 
 	// Import all Kubernetes client auth plugins (e.g. Azure, GCP, OIDC, etc.)
 	// to ensure that exec-entrypoint and run can make use of them.
@@ -35,11 +35,11 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	accountv1 "github.com/labring/sealos/controllers/account/api/v1"
-	licensev1 "github.com/labring/sealos/controllers/license/api/v1"
-	"github.com/labring/sealos/controllers/license/internal/controller"
-	utilid "github.com/labring/sealos/controllers/license/internal/util/clusterid"
-	"github.com/labring/sealos/controllers/license/internal/util/database"
+	accountv1 "github.com/nebstudio/sealos/controllers/account/api/v1"
+	licensev1 "github.com/nebstudio/sealos/controllers/license/api/v1"
+	"github.com/nebstudio/sealos/controllers/license/internal/controller"
+	utilid "github.com/nebstudio/sealos/controllers/license/internal/util/clusterid"
+	"github.com/nebstudio/sealos/controllers/license/internal/util/database"
 	//+kubebuilder:scaffold:imports
 )
 

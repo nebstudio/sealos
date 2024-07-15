@@ -17,11 +17,11 @@ Security issues are always treated seriously. As our usual principle, we discour
 
 ## Reporting general issues
 
-To be honest, we regard every user of sealos as a very kind contributor. After experiencing sealos, you may have some feedback for the project. Then feel free to open an issue via [NEW ISSUE](https://github.com/labring/sealos/issues/new/choose).
+To be honest, we regard every user of sealos as a very kind contributor. After experiencing sealos, you may have some feedback for the project. Then feel free to open an issue via [NEW ISSUE](https://github.com/nebstudio/sealos/issues/new/choose).
 
 Since we collaborate project sealos in a distributed way, we appreciate **WELL-WRITTEN**, **DETAILED**, **EXPLICIT** issue reports. To make the communication more efficient, we wish everyone could search if your issue is an existing one in the searching list. If you find it existing, please add your details in comments under the existing issue instead of opening a brand new one.
 
-To make the issue details as standard as possible, we setup an [ISSUE TEMPLATE](https://github.com/labring/sealos/tree/main/.github/ISSUE_TEMPLATE) for issue reporters. You can find three kinds of issue templates there: question, bug report and feature request. Please **BE SURE** to follow the instructions to fill fields in template.
+To make the issue details as standard as possible, we setup an [ISSUE TEMPLATE](https://github.com/nebstudio/sealos/tree/main/.github/ISSUE_TEMPLATE) for issue reporters. You can find three kinds of issue templates there: question, bug report and feature request. Please **BE SURE** to follow the instructions to fill fields in template.
 
 There are a lot of cases when you could open an issue:
 
@@ -70,14 +70,14 @@ Since you are ready to improve sealos with a PR, we suggest you could take a loo
 
 To put forward a PR, we assume you have registered a GitHub ID. Then you could finish the preparation in the following steps:
 
-1. **FORK** sealos to your repository. To make this work, you just need to click the button Fork in right-left of [labring/sealos](https://github.com/labring/sealos) main page. Then you will end up with your repository in `https://github.com/<your-username>/sealos`, in which `your-username` is your GitHub username.
+1. **FORK** sealos to your repository. To make this work, you just need to click the button Fork in right-left of [nebstudio/sealos](https://github.com/nebstudio/sealos) main page. Then you will end up with your repository in `https://github.com/<your-username>/sealos`, in which `your-username` is your GitHub username.
 
 1. **CLONE** your own repository to master locally. Use `git clone https://github.com/<your-username>/sealos.git` to clone repository to your local machine. Then you can create new branches to finish the change you wish to make.
 
-1. **Set Remote** upstream to be `https://github.com/labring/sealos.git` using the following two commands:
+1. **Set Remote** upstream to be `https://github.com/nebstudio/sealos.git` using the following two commands:
 
    ```shell
-   git remote add upstream https://github.com/labring/sealos.git
+   git remote add upstream https://github.com/nebstudio/sealos.git
    git remote set-url --push upstream no-pushing
    ```
 
@@ -87,7 +87,7 @@ To put forward a PR, we assume you have registered a GitHub ID. Then you could f
    $ git remote -v
    origin     https://github.com/<your-username>/sealos.git (fetch)
    origin     https://github.com/<your-username>/sealos.git (push)
-   upstream   https://github.com/labring/sealos.git (fetch)
+   upstream   https://github.com/nebstudio/sealos.git (fetch)
    upstream   no-pushing (push)
    ```
 
@@ -148,13 +148,13 @@ To put forward a PR, we assume you have registered a GitHub ID. Then you could f
    # then create pull request, and merge
    ```
 
-1. **File a pull request** to labring/sealos:master
+1. **File a pull request** to nebstudio/sealos:master
 
    It is recommended to review your changes before filing a pull request. Check if your code doesn't conflict with the main branch and no redundant code is included.
 
 ### Branch Definition
 
-Right now we assume every contribution via pull request is for [branch master](https://github.com/labring/sealos/tree/master) in sealos. Before contributing, be aware of branch definition would help a lot.
+Right now we assume every contribution via pull request is for [branch master](https://github.com/nebstudio/sealos/tree/master) in sealos. Before contributing, be aware of branch definition would help a lot.
 
 As a contributor, keep in mind again that every contribution via pull request is for branch master. While in project sealos, there are several other branches, we generally call them rc branches, release branches and backport branches.
 
@@ -201,7 +201,7 @@ No matter what the commit message, or commit content is, we do take more emphasi
 
 ### PR Description
 
-PR is the only way to make change to sealos project files. To help reviewers better get your purpose, PR description could not be too detailed. We encourage contributors to follow the [PR template](https://github.com/labring/sealos/tree/main/.github/PULL_REQUEST_TEMPLATE.md) to finish the pull request.
+PR is the only way to make change to sealos project files. To help reviewers better get your purpose, PR description could not be too detailed. We encourage contributors to follow the [PR template](https://github.com/nebstudio/sealos/tree/main/.github/PULL_REQUEST_TEMPLATE.md) to finish the pull request.
 
 ### Developing Environment
 
@@ -219,19 +219,19 @@ When you develop the sealos project at the local environment, you should use sub
 
 The documentation for sealos includes:
 
-- [README.md](https://github.com/labring/sealos/blob/main/README.md)
-- [CONTRIBUTING.md](https://github.com/labring/sealos/blob/main/CONTRIBUTING.md)
-- [DEVELOPGUIDE.md](https://github.com/labring/sealos/blob/main/DEVELOPGUIDE.md)
-- Files under [docs/4.0](https://github.com/labring/sealos/blob/main/docs/4.0)
-   - English docs under [docs/4.0/docs](https://github.com/labring/sealos/tree/main/docs/4.0/docs)
-   - Chinese docs under [docs/4.0/i18n/zh-Hans](https://github.com/labring/sealos/tree/main/docs/4.0/i18n/zh-Hans)
-   - Images under [docs/4.0/img](https://github.com/labring/sealos/tree/main/docs/4.0/img)
+- [README.md](https://github.com/nebstudio/sealos/blob/main/README.md)
+- [CONTRIBUTING.md](https://github.com/nebstudio/sealos/blob/main/CONTRIBUTING.md)
+- [DEVELOPGUIDE.md](https://github.com/nebstudio/sealos/blob/main/DEVELOPGUIDE.md)
+- Files under [docs/4.0](https://github.com/nebstudio/sealos/blob/main/docs/4.0)
+   - English docs under [docs/4.0/docs](https://github.com/nebstudio/sealos/tree/main/docs/4.0/docs)
+   - Chinese docs under [docs/4.0/i18n/zh-Hans](https://github.com/nebstudio/sealos/tree/main/docs/4.0/i18n/zh-Hans)
+   - Images under [docs/4.0/img](https://github.com/nebstudio/sealos/tree/main/docs/4.0/img)
 
 If you have experiences in [Docusaurus 2](https://docusaurus.io), you might find the directory structure familiar. Indeed, the [sealos documentation website](https://github.com/fanux/sealos-site) is built with [Docusaurus 2](https://docusaurus.io) and any update to the docs **here** will be synchronized **there**.
 
 Therefore, to update the documentation, rather than contributing to the [website repo](https://github.com/fanux/sealos-site), you should contribute to this repo directly, unless you want to update the home page or custom pages like the [company page](https://www.sealos.io/company).
 
-For a complete list of the docs synchronization mappings, see [sync_docs.yml](https://github.com/labring/sealos/tree/main/.github/sync_docs.yml).
+For a complete list of the docs synchronization mappings, see [sync_docs.yml](https://github.com/nebstudio/sealos/tree/main/.github/sync_docs.yml).
 
 #### Formatting
 

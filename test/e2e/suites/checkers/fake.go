@@ -24,9 +24,9 @@ import (
 
 	v1 "k8s.io/api/core/v1"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
 
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/util/yaml"
@@ -34,8 +34,8 @@ import (
 	kubelet "k8s.io/kubelet/config/v1beta1"
 	"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm"
 
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/test/e2e/testhelper/cmd"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/cmd"
 )
 
 type FakeInterface interface {

@@ -1,4 +1,4 @@
-module github.com/labring/sealos/controllers/job/init
+module github.com/nebstudio/sealos/controllers/job/init
 
 go 1.20
 
@@ -12,8 +12,8 @@ replace (
 
 require (
 	github.com/google/uuid v1.3.0
-	github.com/labring/sealos/controllers/pkg v0.0.0-20231019082350-00726c66bb59
-	github.com/labring/sealos/controllers/user v0.0.0
+	github.com/nebstudio/sealos/controllers/pkg v0.0.0-20231019082350-00726c66bb59
+	github.com/nebstudio/sealos/controllers/user v0.0.0
 	go.mongodb.org/mongo-driver v1.12.1
 	k8s.io/apimachinery v0.27.4
 	k8s.io/client-go v0.27.4
@@ -93,4 +93,4 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace github.com/labring/sealos/controllers/user => ../../user
+replace github.com/nebstudio/sealos/controllers/user => ../../user

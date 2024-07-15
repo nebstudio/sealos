@@ -46,14 +46,14 @@ sidebar_position: 1
 - `images/shim`：这个目录用于存放无法从 yaml 文件或 Helm chart 中自动提取的镜像。在构建过程中，sealos 将自动拉取这些镜像。
 - `opt`：二进制文件存储在这里。
 - `registry`：这个目录用于存放构建过程中拉取到本地的镜像。在构建过程中，该目录将自动生成，无需手动创建。
-- `init.sh`：这个脚本在构建过程中由 GitHub Action 自动运行，你可以在这个脚本中编写一些自动化的工作，如初始化环境、预处理数据等。([cluster-image](https://github.com/labring-actions/cluster-image)的规则)
+- `init.sh`：这个脚本在构建过程中由 GitHub Action 自动运行，你可以在这个脚本中编写一些自动化的工作，如初始化环境、预处理数据等。([cluster-image](https://github.com/nebstudio-actions/cluster-image)的规则)
 
 ## Kubefile 参数
 
 `Kubefile` 文件是镜像构建的核心，它支持多种参数，以下是这些参数的详细解析：
 
 ```shell
-FROM labring/kubernetes:v1.24.0
+FROM nebstudio/kubernetes:v1.24.0
 ENV version v1.1.0
 COPY manifests ./manifests
 COPY registry ./registry

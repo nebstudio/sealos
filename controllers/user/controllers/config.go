@@ -15,7 +15,7 @@
 package controllers
 
 import (
-	"github.com/labring/sealos/controllers/pkg/config"
+	"github.com/nebstudio/sealos/controllers/pkg/config"
 )
 
 type Config struct {

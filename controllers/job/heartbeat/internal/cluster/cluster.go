@@ -20,8 +20,8 @@ import (
 
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/labring/sealos/controllers/job/heartbeat/api/v1alpha"
-	"github.com/labring/sealos/controllers/job/heartbeat/internal/util"
+	"github.com/nebstudio/sealos/controllers/job/heartbeat/api/v1alpha"
+	"github.com/nebstudio/sealos/controllers/job/heartbeat/internal/util"
 
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"

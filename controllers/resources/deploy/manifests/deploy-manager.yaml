@@ -69,7 +69,7 @@ spec:
                 secretKeyRef:
                   key: MONGO_URI
                   name: mongo-secret
-          image: ghcr.io/labring/sealos-resources-controller:latest
+          image: ghcr.io/nebstudio/sealos-resources-controller:latest
           imagePullPolicy: Always
           livenessProbe:
             httpGet:

@@ -25,10 +25,10 @@ import (
 	"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm" // internal version
 	"k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/v1beta3"
 
-	"github.com/labring/sealos/pkg/runtime/decode"
-	"github.com/labring/sealos/pkg/utils/file"
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/maps"
+	"github.com/nebstudio/sealos/pkg/runtime/decode"
+	"github.com/nebstudio/sealos/pkg/utils/file"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/maps"
 )
 
 //nolint:all

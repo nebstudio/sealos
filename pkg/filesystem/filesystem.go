@@ -19,7 +19,7 @@ package filesystem
 import (
 	"context"
 
-	v2 "github.com/labring/sealos/pkg/types/v1beta1"
+	v2 "github.com/nebstudio/sealos/pkg/types/v1beta1"
 )
 
 type Mounter interface {

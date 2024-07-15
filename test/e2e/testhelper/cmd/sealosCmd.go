@@ -17,9 +17,9 @@ package cmd
 import (
 	"os"
 
-	"github.com/labring/sealos/test/e2e/testhelper/settings"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/settings"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 )
 
 type SealosCmd struct {

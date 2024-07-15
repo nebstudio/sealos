@@ -21,22 +21,22 @@ import (
 	"strings"
 	"time"
 
-	"github.com/labring/sealos/test/e2e/suites/operators"
+	"github.com/nebstudio/sealos/test/e2e/suites/operators"
 
-	"github.com/labring/sealos/test/e2e/testhelper/utils"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/utils"
 
-	"github.com/labring/sealos/pkg/types/v1beta1"
+	"github.com/nebstudio/sealos/pkg/types/v1beta1"
 
-	cmd2 "github.com/labring/sealos/test/e2e/testhelper/cmd"
-	"github.com/labring/sealos/test/e2e/testhelper/kube"
+	cmd2 "github.com/nebstudio/sealos/test/e2e/testhelper/cmd"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/kube"
 
 	"sigs.k8s.io/yaml"
 
-	"github.com/labring/sealos/pkg/utils/logger"
-	"github.com/labring/sealos/pkg/utils/retry"
+	"github.com/nebstudio/sealos/pkg/utils/logger"
+	"github.com/nebstudio/sealos/pkg/utils/retry"
 
-	"github.com/labring/sealos/test/e2e/terraform"
-	"github.com/labring/sealos/test/e2e/testhelper/settings"
+	"github.com/nebstudio/sealos/test/e2e/terraform"
+	"github.com/nebstudio/sealos/test/e2e/testhelper/settings"
 )
 
 type Applier struct {
